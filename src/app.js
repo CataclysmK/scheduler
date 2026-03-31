@@ -63,6 +63,28 @@ function dateToKey(date) {
     return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
 }
 
+function formatDateDDMMYYYY(dateKeyOrDate) {
+    let dateStr = dateKeyOrDate;
+    if (dateKeyOrDate instanceof Date) {
+        dateStr = dateToKey(dateKeyOrDate);
+    }
+    if (!dateStr || typeof dateStr !== 'string') return dateStr;
+    const parts = dateStr.split('-');
+    if (parts.length === 3) {
+        return `${parts[2]}/${parts[1]}/${parts[0]}`;
+    }
+    return dateStr;
+}
+
+function formatPhoneNumber(phone) {
+    if (!phone) return phone;
+    const phoneStr = String(phone).trim();
+    if (phoneStr && !phoneStr.startsWith('0')) {
+        return '0' + phoneStr;
+    }
+    return phoneStr;
+}
+
 function getAssignmentsForDate(schedule, dateKey, excludeX = false) {
     const entries = (schedule && schedule[dateKey]) || [];
     return Array.isArray(entries)
@@ -74,17 +96,19 @@ function getAssignmentsForDate(schedule, dateKey, excludeX = false) {
 
 function renderCurrentShift(schedule) {
     const todayKey = dateToKey(new Date());
+    const todayDisplay = formatDateDDMMYYYY(todayKey);
     const currentList = getCurrentOnDuty(schedule, todayKey);
     const wrap = document.getElementById('current-shift-info');
     if (currentList.length === 0) {
-        wrap.innerHTML = `<p class="text-gray-600">Ngày hiện tại: <strong class="text-lg text-gray-800">${todayKey}</strong></p><p class="text-yellow-700 bg-yellow-50 px-3 py-2 rounded-lg border border-yellow-200 mt-2">⚠️ Hiện tại không ai trực (có thể nghỉ, mã không rõ hoặc ngoài ca).</p>`;
+        wrap.innerHTML = `<p class="text-gray-600">Ngày hiện tại: <strong class="text-lg text-gray-800">${todayDisplay}</strong></p><p class="text-yellow-700 bg-yellow-50 px-3 py-2 rounded-lg border border-yellow-200 mt-2">⚠️ Hiện tại không ai trực (có thể nghỉ, mã không rõ hoặc ngoài ca).</p>`;
         return;
     }
 
-    wrap.innerHTML = `<p class="text-gray-600 mb-3">Ngày hiện tại: <strong class="text-lg text-gray-800">${todayKey}</strong></p><ul class="space-y-2">` +
+    wrap.innerHTML = `<p class="text-gray-600 mb-3">Ngày hiện tại: <strong class="text-lg text-gray-800">${todayDisplay}</strong></p><ul class="space-y-2">` +
         currentList.map((item) => {
-            const callLink = item.phone ? `tel:${item.phone}` : '#';
-            const zaloLink = item.phone ? `https://zalo.me/${item.phone}` : '#';
+            const phone = formatPhoneNumber(item.phone);
+            const callLink = phone ? `tel:${phone}` : '#';
+            const zaloLink = phone ? `https://zalo.me/${phone}` : '#';
             return `<li class="px-4 py-3 bg-red-50 border-l-4 border-red-500 rounded">
                 <div class="flex justify-between items-start">
                     <div>
@@ -92,7 +116,7 @@ function renderCurrentShift(schedule) {
                         <span class="text-sm text-red-700 font-medium">${item.code} - ${item.role}</span>
                     </div>
                     <div class="flex gap-2">
-                        ${item.phone ? `
+                        ${phone ? `
                         <a href="${callLink}" class="px-3 py-1 bg-blue-500 text-white rounded text-sm font-medium hover:bg-blue-600 transition">📞 Gọi</a>
                         <a href="${zaloLink}" target="_blank" class="px-3 py-1 bg-blue-400 text-white rounded text-sm font-medium hover:bg-blue-500 transition">💬 Zalo</a>
                         ` : ''}
@@ -105,18 +129,20 @@ function renderCurrentShift(schedule) {
 
 function renderDaySchedule(schedule, selectedDate) {
     const key = dateToKey(selectedDate);
+    const keyDisplay = formatDateDDMMYYYY(key);
     const assignments = getAssignmentsForDate(schedule, key, true); // loại bỏ X
     const el = document.getElementById('day-schedule');
 
     if (assignments.length === 0) {
-        el.innerHTML = `<p class="text-gray-600">Ngày <strong>${key}</strong> không có ai trực (trừ ca X).</p>`;
+        el.innerHTML = `<p class="text-gray-600">Ngày <strong>${keyDisplay}</strong> không có ai trực (trừ ca X).</p>`;
         return;
     }
 
-    el.innerHTML = `<p class="text-sm text-gray-600 mb-3">Ngày chọn: <strong class="text-lg text-gray-800">${key}</strong></p><ul class="space-y-2">` +
+    el.innerHTML = `<p class="text-sm text-gray-600 mb-3">Ngày chọn: <strong class="text-lg text-gray-800">${keyDisplay}</strong></p><ul class="space-y-2">` +
         assignments.map((item) => {
-            const callLink = item.phone ? `tel:${item.phone}` : '#';
-            const zaloLink = item.phone ? `https://zalo.me/${item.phone}` : '#';
+            const phone = formatPhoneNumber(item.phone);
+            const callLink = phone ? `tel:${phone}` : '#';
+            const zaloLink = phone ? `https://zalo.me/${phone}` : '#';
             return `<li class="px-3 py-2 bg-white border-l-4 border-green-400 rounded">
                 <div class="flex justify-between items-start">
                     <div>
@@ -124,7 +150,7 @@ function renderDaySchedule(schedule, selectedDate) {
                         <span class="text-gray-600 text-sm">${item.code ? SHIFT_DEFINITIONS[item.code]?.description : ''}</span>
                     </div>
                     <div class="flex gap-2">
-                        ${item.phone ? `
+                        ${phone ? `
                         <a href="${callLink}" class="px-3 py-1 bg-blue-500 text-white rounded text-sm font-medium hover:bg-blue-600 transition whitespace-nowrap">📞 Gọi</a>
                         <a href="${zaloLink}" target="_blank" class="px-3 py-1 bg-blue-400 text-white rounded text-sm font-medium hover:bg-blue-500 transition whitespace-nowrap">💬 Zalo</a>
                         ` : ''}
@@ -256,17 +282,20 @@ function renderWeekSchedule(schedule, selectedDate, person) {
     const monday = new Date(base);
     monday.setDate(base.getDate() - ((dow + 6) % 7));
 
-    let html = `<h3 class="text-lg font-semibold text-gray-800 mb-3">Tuần ${dateToKey(monday)} - ${dateToKey(new Date(monday.getFullYear(), monday.getMonth(), monday.getDate() + 6))} <span class="text-blue-600">${person}</span></h3>`;
+    const mondayDisplay = formatDateDDMMYYYY(dateToKey(monday));
+    const sundayDisplay = formatDateDDMMYYYY(dateToKey(new Date(monday.getFullYear(), monday.getMonth(), monday.getDate() + 6)));
+    let html = `<h3 class="text-lg font-semibold text-gray-800 mb-3">Tuần ${mondayDisplay} - ${sundayDisplay} <span class="text-blue-600">${person}</span></h3>`;
     html += '<div class="overflow-x-auto"><table class="w-full border-collapse"><thead><tr class="bg-blue-50"><th class="border border-gray-300 px-3 py-2 font-semibold text-gray-700">Thứ</th><th class="border border-gray-300 px-3 py-2 font-semibold text-gray-700">Ngày</th><th class="border border-gray-300 px-3 py-2 font-semibold text-gray-700">Ca Trực</th></tr></thead><tbody>';
 
     for (let i = 0; i < 7; i++) {
         const d = new Date(monday);
         d.setDate(monday.getDate() + i);
         const key = dateToKey(d);
+        const keyDisplay = formatDateDDMMYYYY(key);
         const code = getPersonCode(schedule, key, person);
         const label = code ? `<span class="font-semibold">${code}</span><br><span class="text-xs text-gray-600">${SHIFT_DEFINITIONS[code]?.description || 'Không xác định'}</span>` : '<span class="text-gray-400">Nghỉ</span>';
         const cssClass = code ? 'cell-' + code.toLowerCase() : 'cell-off';
-        html += `<tr class="${cssClass}"><td class="border border-gray-300 px-3 py-2 text-center font-medium">${['T2','T3','T4','T5','T6','T7','CN'][i]}</td><td class="border border-gray-300 px-3 py-2 text-center text-sm">${key}</td><td class="border border-gray-300 px-3 py-2 text-center">${label}</td></tr>`;
+        html += `<tr class="${cssClass}"><td class="border border-gray-300 px-3 py-2 text-center font-medium">${['T2','T3','T4','T5','T6','T7','CN'][i]}</td><td class="border border-gray-300 px-3 py-2 text-center text-sm">${keyDisplay}</td><td class="border border-gray-300 px-3 py-2 text-center">${label}</td></tr>`;
     }
 
     html += '</tbody></table></div>';
