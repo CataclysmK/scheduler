@@ -1,0 +1,94 @@
+/* Base Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9fafb;
+}
+
+/* Dropdown */
+.dropdown-item {
+    padding: 10px 12px;
+    cursor: pointer;
+    border-bottom: 1px solid #e5e7eb;
+    font-size: 14px;
+    font-weight: 500;
+    color: #374151;
+    transition: all 0.15s ease;
+}
+
+.dropdown-item:last-child {
+    border-bottom: none;
+}
+
+.dropdown-item:hover {
+    background-color: #dbeafe !important;
+    color: #1e40af;
+}
+
+/* Calendar Tables */
+.calendar-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.calendar-table th,
+.calendar-table td {
+    border: 1px solid #d1d5db;
+    padding: 12px;
+    text-align: center;
+    font-size: 0.95rem;
+}
+
+.calendar-table th {
+    background-color: #f3f4f6;
+    font-weight: 600;
+    color: #374151;
+}
+
+/* Cell Colors - Shift Types */
+.cell-wo { 
+    background-color: #fef3c7;
+    border-left: 4px solid #f59e0b;
+}
+
+.cell-d { 
+    background-color: #dcfce7;
+    border-left: 4px solid #22c55e;
+}
+
+.cell-n { 
+    background-color: #cffafe;
+    border-left: 4px solid #06b6d4;
+}
+
+.cell-o { 
+    background-color: #fee2e2;
+    border-left: 4px solid #ef4444;
+}
+
+.cell-x { 
+    background-color: #f0f9ff;
+    border-left: 4px solid #3b82f6;
+}
+
+.cell-off { 
+    background-color: #f9fafb;
+    color: #9ca3af;
+    border-left: 4px solid #d1d5db;
+}
+
+.date-number { 
+    font-weight: 700;
+    color: #111827;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .calendar-table th,
+    .calendar-table td {
+        padding: 8px;
+        font-size: 0.85rem;
+    }
+}

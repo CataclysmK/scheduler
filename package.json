@@ -1,0 +1,23 @@
+{
+  "name": "my-schedule-site",
+  "version": "1.0.0",
+  "description": "A static website to display work schedules, including current shifts and views by day, week, and month.",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "live-server src",
+    "build": "echo 'Build step not defined'",
+    "test": "echo 'No tests defined'"
+  },
+  "keywords": [
+    "schedule",
+    "work",
+    "shifts",
+    "calendar"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "live-server": "^1.2.1",
+    "xlsx": "^0.18.5"
+  }
+}
