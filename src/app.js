@@ -162,7 +162,9 @@ function renderCurrentShift(schedule) {
 function renderDaySchedule(schedule, selectedDate) {
     const key = dateToKey(selectedDate);
     const keyDisplay = formatDateWithDayOfWeek(key);
-    const assignments = getAssignmentsForDate(schedule, key, true); // loại bỏ X    assignments = sortByShiftPriority(assignments);    const el = document.getElementById('day-schedule');
+    let assignments = getAssignmentsForDate(schedule, key, true); // loại bỏ X
+    assignments = sortByShiftPriority(assignments);
+    const el = document.getElementById('day-schedule');
 
     if (assignments.length === 0) {
         el.innerHTML = `<p class="text-gray-600">Ngày <strong>${keyDisplay}</strong> không có ai trực (trừ ca X).</p>`;
@@ -410,7 +412,7 @@ function setupUI(schedule) {
     }
 
     // Auto-render day schedule when date changes
-    datePicker.addEventListener('change', () => {
+    const updateOnDateChange = () => {
         updateDateDisplay();
         renderDaySchedule(schedule, datePicker.value);
         const person = personSelect.value;
@@ -418,7 +420,10 @@ function setupUI(schedule) {
             renderWeekSchedule(schedule, datePicker.value, person);
             renderMonthSchedule(schedule, datePicker.value, person);
         }
-    });
+    };
+    
+    datePicker.addEventListener('change', updateOnDateChange);
+    datePicker.addEventListener('input', updateOnDateChange);
 
     setInterval(() => renderCurrentShift(schedule), 60000);
 }
