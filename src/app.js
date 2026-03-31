@@ -105,6 +105,17 @@ function formatDateWithDayOfWeek(dateKeyOrDate) {
     return `${dayName} - ${dateDisplay}`;
 }
 
+function sortByShiftPriority(items) {
+    const shiftOrder = { WO: 0, O: 1, D: 2, N: 3 };
+    return items.sort((a, b) => {
+        const aCode = a.code || '??';
+        const bCode = b.code || '??';
+        const aPriority = shiftOrder[aCode] ?? 999;
+        const bPriority = shiftOrder[bCode] ?? 999;
+        return aPriority - bPriority;
+    });
+}
+
 function getAssignmentsForDate(schedule, dateKey, excludeX = false) {
     const entries = (schedule && schedule[dateKey]) || [];
     return Array.isArray(entries)
@@ -117,7 +128,8 @@ function getAssignmentsForDate(schedule, dateKey, excludeX = false) {
 function renderCurrentShift(schedule) {
     const todayKey = dateToKey(new Date());
     const todayDisplay = formatDateWithDayOfWeek(todayKey);
-    const currentList = getCurrentOnDuty(schedule, todayKey);
+    let currentList = getCurrentOnDuty(schedule, todayKey);
+    currentList = sortByShiftPriority(currentList);
     const wrap = document.getElementById('current-shift-info');
     if (currentList.length === 0) {
         wrap.innerHTML = `<p class="text-gray-600">Ngày hiện tại: <strong class="text-lg text-gray-800">${todayDisplay}</strong></p><p class="text-yellow-700 bg-yellow-50 px-3 py-2 rounded-lg border border-yellow-200 mt-2">⚠️ Hiện tại không ai trực (có thể nghỉ, mã không rõ hoặc ngoài ca).</p>`;
@@ -150,8 +162,7 @@ function renderCurrentShift(schedule) {
 function renderDaySchedule(schedule, selectedDate) {
     const key = dateToKey(selectedDate);
     const keyDisplay = formatDateWithDayOfWeek(key);
-    const assignments = getAssignmentsForDate(schedule, key, true); // loại bỏ X
-    const el = document.getElementById('day-schedule');
+    const assignments = getAssignmentsForDate(schedule, key, true); // loại bỏ X    assignments = sortByShiftPriority(assignments);    const el = document.getElementById('day-schedule');
 
     if (assignments.length === 0) {
         el.innerHTML = `<p class="text-gray-600">Ngày <strong>${keyDisplay}</strong> không có ai trực (trừ ca X).</p>`;
