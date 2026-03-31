@@ -316,10 +316,11 @@ function renderMonthSchedule(schedule, selectedDate, person) {
     const daysInMonth = new Date(year, month + 1, 0).getDate();
 
     let html = `<h3 class="text-lg font-semibold text-gray-800 mb-3">Tháng ${month + 1}/${year} <span class="text-purple-600">${person}</span></h3>`;
-    html += '<div class="overflow-x-auto"><table class="w-full border-collapse"><thead><tr class="bg-purple-50"><th class="border border-gray-300 px-2 py-2 font-semibold text-gray-700 text-center">CN</th><th class="border border-gray-300 px-2 py-2 font-semibold text-gray-700 text-center">T2</th><th class="border border-gray-300 px-2 py-2 font-semibold text-gray-700 text-center">T3</th><th class="border border-gray-300 px-2 py-2 font-semibold text-gray-700 text-center">T4</th><th class="border border-gray-300 px-2 py-2 font-semibold text-gray-700 text-center">T5</th><th class="border border-gray-300 px-2 py-2 font-semibold text-gray-700 text-center">T6</th><th class="border border-gray-300 px-2 py-2 font-semibold text-gray-700 text-center">T7</th></tr></thead><tbody><tr>';
+    html += '<div class="overflow-x-auto"><table class="w-full border-collapse"><thead><tr class="bg-purple-50"><th class="border border-gray-300 px-2 py-2 font-semibold text-gray-700 text-center">T2</th><th class="border border-gray-300 px-2 py-2 font-semibold text-gray-700 text-center">T3</th><th class="border border-gray-300 px-2 py-2 font-semibold text-gray-700 text-center">T4</th><th class="border border-gray-300 px-2 py-2 font-semibold text-gray-700 text-center">T5</th><th class="border border-gray-300 px-2 py-2 font-semibold text-gray-700 text-center">T6</th><th class="border border-gray-300 px-2 py-2 font-semibold text-gray-700 text-center">T7</th><th class="border border-gray-300 px-2 py-2 font-semibold text-gray-700 text-center">CN</th></tr></thead><tbody><tr>';
 
-    // start empty until first day
-    for (let i = 0; i < (startDow === 0 ? 0 : startDow); i++) html += '<td class="border border-gray-300 h-20 bg-gray-100"></td>';
+    // start empty until first Monday (startDow: 0=Sunday->6 blanks, 1=Monday->0 blanks, etc.)
+    const emptyStart = startDow === 0 ? 6 : startDow - 1;
+    for (let i = 0; i < emptyStart; i++) html += '<td class="border border-gray-300 h-20 bg-gray-100"></td>';
 
     for (let d = 1; d <= daysInMonth; d++) {
         const date = new Date(year, month, d);
@@ -330,14 +331,13 @@ function renderMonthSchedule(schedule, selectedDate, person) {
 
         html += `<td class="border border-gray-300 h-20 p-2 align-top ${cssClass}"><span class="font-bold text-lg text-gray-800 block">${d}</span><span class="text-center block text-xs">${label}</span></td>`;
 
-        if (date.getDay() === 6 && d < daysInMonth) html += '</tr><tr>';
+        if (date.getDay() === 0 && d < daysInMonth) html += '</tr><tr>';
     }
 
-    // fill trailing empty cells
+    // fill trailing empty cells (if last day is not Sunday)
     const lastDate = new Date(year, month, daysInMonth).getDay();
-    if (lastDate !== 6) {
-        for (let j = lastDate + 1; j <= 6; j++) html += '<td class="border border-gray-300 h-20 bg-gray-100"></td>';
-    }
+    const emptyEnd = lastDate === 0 ? 0 : 7 - lastDate;
+    for (let j = 0; j < emptyEnd; j++) html += '<td class="border border-gray-300 h-20 bg-gray-100"></td>';
 
     html += '</tr></tbody></table></div>';
 
