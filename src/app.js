@@ -47,10 +47,10 @@ function getCurrentOnDuty(schedule, dateKey) {
             if (!def) return;
             const isOnDuty = def.dayWindow.some(([s, e]) => inTimeWindow(now, s, e));
             if (isOnDuty) {
-                result.push({ code: parsed.code, role: def.description, name: parsed.name });
+                result.push({ code: parsed.code, role: def.description, name: parsed.name, phone: parsed.phone });
             }
         } else if (parsed.name) {
-            result.push({ code: '??', role: 'Không xác định ca', name: parsed.name });
+            result.push({ code: '??', role: 'Không xác định ca', name: parsed.name, phone: parsed.phone });
         }
     });
 
@@ -82,7 +82,24 @@ function renderCurrentShift(schedule) {
     }
 
     wrap.innerHTML = `<p class="text-gray-600 mb-3">Ngày hiện tại: <strong class="text-lg text-gray-800">${todayKey}</strong></p><ul class="space-y-2">` +
-        currentList.map((item) => `<li class="px-4 py-3 bg-red-50 border-l-4 border-red-500 rounded"><span class="font-bold text-red-900 text-lg">${item.name || '(không tên)'}</span><br><span class="text-sm text-red-700 font-medium">${item.code} - ${item.role}</span></li>`).join('') +
+        currentList.map((item) => {
+            const callLink = item.phone ? `tel:${item.phone}` : '#';
+            const zaloLink = item.phone ? `https://zalo.me/${item.phone}` : '#';
+            return `<li class="px-4 py-3 bg-red-50 border-l-4 border-red-500 rounded">
+                <div class="flex justify-between items-start">
+                    <div>
+                        <span class="font-bold text-red-900 text-lg">${item.name || '(không tên)'}</span><br>
+                        <span class="text-sm text-red-700 font-medium">${item.code} - ${item.role}</span>
+                    </div>
+                    <div class="flex gap-2">
+                        ${item.phone ? `
+                        <a href="${callLink}" class="px-3 py-1 bg-blue-500 text-white rounded text-sm font-medium hover:bg-blue-600 transition">📞 Gọi</a>
+                        <a href="${zaloLink}" target="_blank" class="px-3 py-1 bg-blue-400 text-white rounded text-sm font-medium hover:bg-blue-500 transition">💬 Zalo</a>
+                        ` : ''}
+                    </div>
+                </div>
+            </li>`;
+        }).join('') +
         '</ul>';
 }
 
@@ -97,7 +114,24 @@ function renderDaySchedule(schedule, selectedDate) {
     }
 
     el.innerHTML = `<p class="text-sm text-gray-600 mb-3">Ngày chọn: <strong class="text-lg text-gray-800">${key}</strong></p><ul class="space-y-2">` +
-        assignments.map((item) => `<li class="px-3 py-2 bg-white border-l-4 border-green-400 rounded"><span class="font-semibold text-gray-800">${item.name || '(Không tên)'}</span> - <span class="inline-block px-2 py-1 bg-green-100 text-green-800 rounded text-sm font-medium">${item.code || '(Unknown code)'}</span> <span class="text-gray-600 text-sm">${item.code ? SHIFT_DEFINITIONS[item.code]?.description : ''}</span></li>`).join('') +
+        assignments.map((item) => {
+            const callLink = item.phone ? `tel:${item.phone}` : '#';
+            const zaloLink = item.phone ? `https://zalo.me/${item.phone}` : '#';
+            return `<li class="px-3 py-2 bg-white border-l-4 border-green-400 rounded">
+                <div class="flex justify-between items-start">
+                    <div>
+                        <span class="font-semibold text-gray-800">${item.name || '(Không tên)'}</span> - <span class="inline-block px-2 py-1 bg-green-100 text-green-800 rounded text-sm font-medium">${item.code || '(Unknown code)'}</span><br>
+                        <span class="text-gray-600 text-sm">${item.code ? SHIFT_DEFINITIONS[item.code]?.description : ''}</span>
+                    </div>
+                    <div class="flex gap-2">
+                        ${item.phone ? `
+                        <a href="${callLink}" class="px-3 py-1 bg-blue-500 text-white rounded text-sm font-medium hover:bg-blue-600 transition whitespace-nowrap">📞 Gọi</a>
+                        <a href="${zaloLink}" target="_blank" class="px-3 py-1 bg-blue-400 text-white rounded text-sm font-medium hover:bg-blue-500 transition whitespace-nowrap">💬 Zalo</a>
+                        ` : ''}
+                    </div>
+                </div>
+            </li>`;
+        }).join('') +
         '</ul>';
 }
 

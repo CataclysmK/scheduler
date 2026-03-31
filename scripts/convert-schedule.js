@@ -38,6 +38,9 @@ for (let rowIndex = 2; rowIndex < rows.length; rowIndex++) {
     const name = row[1] ? String(row[1]).trim() : null;
     if (!name) continue;
 
+    // Get phone number from column D (index 3)
+    const phone = row[3] ? String(row[3]).trim() : null;
+
     for (let col = dateStartIndex; col < header.length; col++) {
         const cellDate = header[col];
         const shiftRaw = row[col];
@@ -57,6 +60,7 @@ for (let rowIndex = 2; rowIndex < rows.length; rowIndex++) {
 
         scheduleData[dateKey].push({
             name,
+            phone,
             code: shift.toUpperCase(),
         });
     }
