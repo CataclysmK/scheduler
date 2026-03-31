@@ -85,6 +85,26 @@ function formatPhoneNumber(phone) {
     return phoneStr;
 }
 
+function formatDateWithDayOfWeek(dateKeyOrDate) {
+    let dateObj = dateKeyOrDate;
+    if (typeof dateKeyOrDate === 'string') {
+        const parts = dateKeyOrDate.split('-');
+        if (parts.length === 3) {
+            dateObj = new Date(parseInt(parts[0]), parseInt(parts[1]) - 1, parseInt(parts[2]));
+        } else {
+            return dateKeyOrDate;
+        }
+    }
+    if (!(dateObj instanceof Date) || isNaN(dateObj)) return dateKeyOrDate;
+    
+    const dayOfWeek = dateObj.getDay();
+    const dayNames = ['Chủ Nhật', 'Thứ 2', 'Thứ 3', 'Thứ 4', 'Thứ 5', 'Thứ 6', 'Thứ 7'];
+    const dayName = dayNames[dayOfWeek];
+    const dateStr = dateToKey(dateObj);
+    const dateDisplay = formatDateDDMMYYYY(dateStr);
+    return `${dayName} - ${dateDisplay}`;
+}
+
 function getAssignmentsForDate(schedule, dateKey, excludeX = false) {
     const entries = (schedule && schedule[dateKey]) || [];
     return Array.isArray(entries)
@@ -96,7 +116,7 @@ function getAssignmentsForDate(schedule, dateKey, excludeX = false) {
 
 function renderCurrentShift(schedule) {
     const todayKey = dateToKey(new Date());
-    const todayDisplay = formatDateDDMMYYYY(todayKey);
+    const todayDisplay = formatDateWithDayOfWeek(todayKey);
     const currentList = getCurrentOnDuty(schedule, todayKey);
     const wrap = document.getElementById('current-shift-info');
     if (currentList.length === 0) {
@@ -129,7 +149,7 @@ function renderCurrentShift(schedule) {
 
 function renderDaySchedule(schedule, selectedDate) {
     const key = dateToKey(selectedDate);
-    const keyDisplay = formatDateDDMMYYYY(key);
+    const keyDisplay = formatDateWithDayOfWeek(key);
     const assignments = getAssignmentsForDate(schedule, key, true); // loại bỏ X
     const el = document.getElementById('day-schedule');
 
@@ -348,9 +368,18 @@ function setupUI(schedule) {
     const datePicker = document.getElementById('date-picker');
     const personSelect = document.getElementById('person-select');
     const selectedPersonDiv = document.getElementById('selected-person');
+    const selectedDateDisplay = document.getElementById('selected-date-display');
     const searchInput = document.getElementById('person-search');
     
     if (!datePicker.value) datePicker.value = dateToKey(new Date());
+
+    // Display selected date with day of week
+    const updateDateDisplay = () => {
+        if (selectedDateDisplay && datePicker.value) {
+            selectedDateDisplay.textContent = formatDateWithDayOfWeek(datePicker.value);
+        }
+    };
+    updateDateDisplay();
 
     setupPersonSearch(schedule);
 
@@ -371,6 +400,7 @@ function setupUI(schedule) {
 
     // Auto-render day schedule when date changes
     datePicker.addEventListener('change', () => {
+        updateDateDisplay();
         renderDaySchedule(schedule, datePicker.value);
         const person = personSelect.value;
         if (person) {
