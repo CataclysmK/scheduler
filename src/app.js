@@ -631,7 +631,7 @@ function renderPhoneButtons(name, fallbackPhone) {
     const formatted = formatPhoneNumber(phone);
     if (formatted) {
         return `<a href="tel:${formatted}" class="px-3 py-1 bg-blue-500 text-white rounded text-sm font-medium hover:bg-blue-600 transition whitespace-nowrap">📞 Gọi</a>
-        <a href="https://zalo.me/${formatted}" target="_blank" class="px-3 py-1 bg-blue-400 text-white rounded text-sm font-medium hover:bg-blue-500 transition whitespace-nowrap">💬 Zalo</a>`;
+        <a href="https://zalo.me/${formatted}" target="_blank" class="inline-flex items-center gap-1 px-3 py-1 bg-blue-400 text-white rounded text-sm font-medium hover:bg-blue-500 transition whitespace-nowrap"><img src="https://cdn.simpleicons.org/zalo/ffffff" style="width:14px;height:14px;" alt="Zalo"> Zalo</a>`;
     }
     return `<span class="px-2 py-1 bg-gray-100 text-gray-400 rounded text-xs font-medium">📵 TBD</span>`;
 }
