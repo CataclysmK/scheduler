@@ -248,9 +248,11 @@ function renderOffToday(schedule, scheduleCoNhiet) {
                 const label = item.code === 'N'
                     ? '<span class="ml-2 px-2 py-0.5 bg-blue-100 text-blue-700 rounded text-xs font-medium">Ca đêm</span>'
                     : '<span class="ml-2 px-2 py-0.5 bg-yellow-100 text-yellow-700 rounded text-xs font-medium">Nghỉ theo lịch</span>';
-                return `<li class="px-3 py-2 bg-gray-50 border-l-4 border-gray-300 rounded flex justify-between items-center">
-                    <span class="font-medium text-gray-700">${item.name || '(không tên)'}${label}</span>
-                    <div class="flex gap-2">${renderPhoneButtons(item.name, item.phone)}</div>
+                return `<li class="px-3 py-2 bg-gray-50 border-l-4 border-gray-300 rounded">
+                    <div class="flex justify-between items-start flex-wrap gap-y-1">
+                        <span class="font-medium text-gray-700">${item.name || '(không tên)'}${label}</span>
+                        <div class="flex gap-2">${renderPhoneButtons(item.name, item.phone)}</div>
+                    </div>
                 </li>`;
             }).join('') + '</ul>';
     };
