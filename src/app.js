@@ -987,7 +987,6 @@ function setupCVHUI(cvhData, datePickerId, displayId, currentShiftDateId, curren
     const currentShiftDateEl = document.getElementById(currentShiftDateId);
     
     if (!datePicker.value) datePicker.value = dateToKey(new Date());
-    initDatePickerDisplay(datePickerId);
     
     const updateDateDisplay = () => {
         if (selectedDateDisplay && datePicker.value) {
