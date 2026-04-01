@@ -477,16 +477,24 @@ function initDatePickerDisplay(inputId) {
     const input = document.getElementById(inputId);
     if (!input) return;
 
+    // Tạo wrapper relative để chứa cả 2 input
+    const wrapper = document.createElement('div');
+    wrapper.style.cssText = 'position:relative; display:inline-block;';
+    input.parentNode.insertBefore(wrapper, input);
+
+    // Input hiển thị DD/MM/YYYY cho người dùng
     const display = document.createElement('input');
     display.type = 'text';
     display.readOnly = true;
     display.className = input.className;
     display.placeholder = 'DD/MM/YYYY';
     display.style.cursor = 'pointer';
-    input.insertAdjacentElement('beforebegin', display);
+    wrapper.appendChild(display);
 
-    // Co input gốc lại, giữ nguyên chức năng
-    input.style.cssText += '; width:0; height:0; padding:0; margin:0; border:0; opacity:0; position:absolute; pointer-events:none;';
+    // Đặt date input thật vào wrapper, phủ trong suốt lên display
+    // iOS Safari sẽ nhận touch trực tiếp → mở native date picker
+    wrapper.appendChild(input);
+    input.style.cssText = 'position:absolute; top:0; left:0; width:100%; height:100%; opacity:0; cursor:pointer; box-sizing:border-box; margin:0;';
 
     const syncDisplay = () => {
         if (input.value) {
@@ -498,9 +506,6 @@ function initDatePickerDisplay(inputId) {
     };
     syncDisplay();
 
-    display.addEventListener('click', () => {
-        try { input.showPicker(); } catch { input.focus(); }
-    });
     input.addEventListener('change', syncDisplay);
     input.addEventListener('input', syncDisplay);
 }
