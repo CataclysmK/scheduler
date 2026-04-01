@@ -1,0 +1,159 @@
+{
+  "thongTinCa": {
+    "ca1": { "gioBatDau": "07:00", "gioKetThuc": "15:00" },
+    "ca2": { "gioBatDau": "15:00", "gioKetThuc": "22:00" },
+    "ca3": { "gioBatDau": "22:00", "gioKetThuc": "07:00" }
+  },
+  "lichTruc": {
+    "2026-04-01": {
+      "ca1": [{ "nhaMay": "Nhà máy điện Nhơn Trạch 3", "cuongVi": "Trưởng ca", "doi": "Ca B", "nhanSu": "Nguyễn Quốc Thắng" }],
+      "ca2": [{ "nhaMay": "Nhà máy điện Nhơn Trạch 3", "cuongVi": "Trưởng ca", "doi": "Ca A", "nhanSu": "Ngô Thế Việt" }],
+      "ca3": [{ "nhaMay": "Nhà máy điện Nhơn Trạch 3", "cuongVi": "Trưởng ca", "doi": "Ca D", "nhanSu": "Lê Phát Minh Đạt" }]
+    },
+    "2026-04-02": {
+      "ca1": [{ "nhaMay": "Nhà máy điện Nhơn Trạch 3", "cuongVi": "Trưởng ca", "doi": "Ca C", "nhanSu": "Hà Ngọc Hoàng" }],
+      "ca2": [{ "nhaMay": "Nhà máy điện Nhơn Trạch 3", "cuongVi": "Trưởng ca", "doi": "Ca B", "nhanSu": "Nguyễn Quốc Thắng" }],
+      "ca3": [{ "nhaMay": "Nhà máy điện Nhơn Trạch 3", "cuongVi": "Trưởng ca", "doi": "Ca A", "nhanSu": "Ngô Thế Việt" }]
+    },
+    "2026-04-03": {
+      "ca1": [{ "nhaMay": "Nhà máy điện Nhơn Trạch 3", "cuongVi": "Trưởng ca", "doi": "Ca C", "nhanSu": "Hà Ngọc Hoàng" }],
+      "ca2": [{ "nhaMay": "Nhà máy điện Nhơn Trạch 3", "cuongVi": "Trưởng ca", "doi": "Ca B", "nhanSu": "Nguyễn Quốc Thắng" }],
+      "ca3": [{ "nhaMay": "Nhà máy điện Nhơn Trạch 3", "cuongVi": "Trưởng ca", "doi": "Ca A", "nhanSu": "Ngô Thế Việt" }]
+    },
+    "2026-04-04": {
+      "ca1": [{ "nhaMay": "Nhà máy điện Nhơn Trạch 3", "cuongVi": "Trưởng ca", "doi": "Ca D", "nhanSu": "Lê Phát Minh Đạt" }],
+      "ca2": [{ "nhaMay": "Nhà máy điện Nhơn Trạch 3", "cuongVi": "Trưởng ca", "doi": "Ca C", "nhanSu": "Hà Ngọc Hoàng" }],
+      "ca3": [{ "nhaMay": "Nhà máy điện Nhơn Trạch 3", "cuongVi": "Trưởng ca", "doi": "Ca B", "nhanSu": "Nguyễn Quốc Thắng" }]
+    },
+    "2026-04-05": {
+      "ca1": [{ "nhaMay": "Nhà máy điện Nhơn Trạch 3", "cuongVi": "Trưởng ca", "doi": "Ca D", "nhanSu": "Lê Phát Minh Đạt" }],
+      "ca2": [{ "nhaMay": "Nhà máy điện Nhơn Trạch 3", "cuongVi": "Trưởng ca", "doi": "Ca C", "nhanSu": "Hà Ngọc Hoàng" }],
+      "ca3": [{ "nhaMay": "Nhà máy điện Nhơn Trạch 3", "cuongVi": "Trưởng ca", "doi": "Ca B", "nhanSu": "Nguyễn Quốc Thắng" }]
+    },
+    "2026-04-06": {
+      "ca1": [{ "nhaMay": "Nhà máy điện Nhơn Trạch 3", "cuongVi": "Trưởng ca", "doi": "Ca A", "nhanSu": "Ngô Thế Việt" }],
+      "ca2": [{ "nhaMay": "Nhà máy điện Nhơn Trạch 3", "cuongVi": "Trưởng ca", "doi": "Ca D", "nhanSu": "Lê Phát Minh Đạt" }],
+      "ca3": [{ "nhaMay": "Nhà máy điện Nhơn Trạch 3", "cuongVi": "Trưởng ca", "doi": "Ca C", "nhanSu": "Hà Ngọc Hoàng" }]
+    },
+    "2026-04-07": {
+      "ca1": [{ "nhaMay": "Nhà máy điện Nhơn Trạch 3", "cuongVi": "Trưởng ca", "doi": "Ca A", "nhanSu": "Ngô Thế Việt" }],
+      "ca2": [{ "nhaMay": "Nhà máy điện Nhơn Trạch 3", "cuongVi": "Trưởng ca", "doi": "Ca D", "nhanSu": "Lê Phát Minh Đạt" }],
+      "ca3": [{ "nhaMay": "Nhà máy điện Nhơn Trạch 3", "cuongVi": "Trưởng ca", "doi": "Ca C", "nhanSu": "Hà Ngọc Hoàng" }]
+    },
+    "2026-04-08": {
+      "ca1": [{ "nhaMay": "Nhà máy điện Nhơn Trạch 3", "cuongVi": "Trưởng ca", "doi": "Ca B", "nhanSu": "Nguyễn Quốc Thắng" }],
+      "ca2": [{ "nhaMay": "Nhà máy điện Nhơn Trạch 3", "cuongVi": "Trưởng ca", "doi": "Ca A", "nhanSu": "Ngô Thế Việt" }],
+      "ca3": [{ "nhaMay": "Nhà máy điện Nhơn Trạch 3", "cuongVi": "Trưởng ca", "doi": "Ca D", "nhanSu": "Lê Phát Minh Đạt" }]
+    },
+    "2026-04-09": {
+      "ca1": [{ "nhaMay": "Nhà máy điện Nhơn Trạch 3", "cuongVi": "Trưởng ca", "doi": "Ca B", "nhanSu": "Nguyễn Quốc Thắng" }],
+      "ca2": [{ "nhaMay": "Nhà máy điện Nhơn Trạch 3", "cuongVi": "Trưởng ca", "doi": "Ca A", "nhanSu": "Ngô Thế Việt" }],
+      "ca3": [{ "nhaMay": "Nhà máy điện Nhơn Trạch 3", "cuongVi": "Trưởng ca", "doi": "Ca D", "nhanSu": "Lê Phát Minh Đạt" }]
+    },
+    "2026-04-10": {
+      "ca1": [{ "nhaMay": "Nhà máy điện Nhơn Trạch 3", "cuongVi": "Trưởng ca", "doi": "Ca C", "nhanSu": "Hà Ngọc Hoàng" }],
+      "ca2": [{ "nhaMay": "Nhà máy điện Nhơn Trạch 3", "cuongVi": "Trưởng ca", "doi": "Ca B", "nhanSu": "Nguyễn Quốc Thắng" }],
+      "ca3": [{ "nhaMay": "Nhà máy điện Nhơn Trạch 3", "cuongVi": "Trưởng ca", "doi": "Ca A", "nhanSu": "Ngô Thế Việt" }]
+    },
+    "2026-04-11": {
+      "ca1": [{ "nhaMay": "Nhà máy điện Nhơn Trạch 3", "cuongVi": "Trưởng ca", "doi": "Ca C", "nhanSu": "Hà Ngọc Hoàng" }],
+      "ca2": [{ "nhaMay": "Nhà máy điện Nhơn Trạch 3", "cuongVi": "Trưởng ca", "doi": "Ca B", "nhanSu": "Nguyễn Quốc Thắng" }],
+      "ca3": [{ "nhaMay": "Nhà máy điện Nhơn Trạch 3", "cuongVi": "Trưởng ca", "doi": "Ca A", "nhanSu": "Ngô Thế Việt" }]
+    },
+    "2026-04-12": {
+      "ca1": [{ "nhaMay": "Nhà máy điện Nhơn Trạch 3", "cuongVi": "Trưởng ca", "doi": "Ca D", "nhanSu": "Lê Phát Minh Đạt" }],
+      "ca2": [{ "nhaMay": "Nhà máy điện Nhơn Trạch 3", "cuongVi": "Trưởng ca", "doi": "Ca C", "nhanSu": "Hà Ngọc Hoàng" }],
+      "ca3": [{ "nhaMay": "Nhà máy điện Nhơn Trạch 3", "cuongVi": "Trưởng ca", "doi": "Ca B", "nhanSu": "Nguyễn Quốc Thắng" }]
+    },
+    "2026-04-13": {
+      "ca1": [{ "nhaMay": "Nhà máy điện Nhơn Trạch 3", "cuongVi": "Trưởng ca", "doi": "Ca D", "nhanSu": "Lê Phát Minh Đạt" }],
+      "ca2": [{ "nhaMay": "Nhà máy điện Nhơn Trạch 3", "cuongVi": "Trưởng ca", "doi": "Ca C", "nhanSu": "Hà Ngọc Hoàng" }],
+      "ca3": [{ "nhaMay": "Nhà máy điện Nhơn Trạch 3", "cuongVi": "Trưởng ca", "doi": "Ca B", "nhanSu": "Nguyễn Quốc Thắng" }]
+    },
+    "2026-04-14": {
+      "ca1": [{ "nhaMay": "Nhà máy điện Nhơn Trạch 3", "cuongVi": "Trưởng ca", "doi": "Ca A", "nhanSu": "Ngô Thế Việt" }],
+      "ca2": [{ "nhaMay": "Nhà máy điện Nhơn Trạch 3", "cuongVi": "Trưởng ca", "doi": "Ca D", "nhanSu": "Lê Phát Minh Đạt" }],
+      "ca3": [{ "nhaMay": "Nhà máy điện Nhơn Trạch 3", "cuongVi": "Trưởng ca", "doi": "Ca C", "nhanSu": "Hà Ngọc Hoàng" }]
+    },
+    "2026-04-15": {
+      "ca1": [{ "nhaMay": "Nhà máy điện Nhơn Trạch 3", "cuongVi": "Trưởng ca", "doi": "Ca A", "nhanSu": "Ngô Thế Việt" }],
+      "ca2": [{ "nhaMay": "Nhà máy điện Nhơn Trạch 3", "cuongVi": "Trưởng ca", "doi": "Ca D", "nhanSu": "Lê Phát Minh Đạt" }],
+      "ca3": [{ "nhaMay": "Nhà máy điện Nhơn Trạch 3", "cuongVi": "Trưởng ca", "doi": "Ca C", "nhanSu": "Hà Ngọc Hoàng" }]
+    },
+    "2026-04-16": {
+      "ca1": [{ "nhaMay": "Nhà máy điện Nhơn Trạch 3", "cuongVi": "Trưởng ca", "doi": "Ca B", "nhanSu": "Nguyễn Quốc Thắng" }],
+      "ca2": [{ "nhaMay": "Nhà máy điện Nhơn Trạch 3", "cuongVi": "Trưởng ca", "doi": "Ca A", "nhanSu": "Ngô Thế Việt" }],
+      "ca3": [{ "nhaMay": "Nhà máy điện Nhơn Trạch 3", "cuongVi": "Trưởng ca", "doi": "Ca D", "nhanSu": "Lê Phát Minh Đạt" }]
+    },
+    "2026-04-17": {
+      "ca1": [{ "nhaMay": "Nhà máy điện Nhơn Trạch 3", "cuongVi": "Trưởng ca", "doi": "Ca B", "nhanSu": "Nguyễn Quốc Thắng" }],
+      "ca2": [{ "nhaMay": "Nhà máy điện Nhơn Trạch 3", "cuongVi": "Trưởng ca", "doi": "Ca A", "nhanSu": "Ngô Thế Việt" }],
+      "ca3": [{ "nhaMay": "Nhà máy điện Nhơn Trạch 3", "cuongVi": "Trưởng ca", "doi": "Ca D", "nhanSu": "Lê Phát Minh Đạt" }]
+    },
+    "2026-04-18": {
+      "ca1": [{ "nhaMay": "Nhà máy điện Nhơn Trạch 3", "cuongVi": "Trưởng ca", "doi": "Ca C", "nhanSu": "Hà Ngọc Hoàng" }],
+      "ca2": [{ "nhaMay": "Nhà máy điện Nhơn Trạch 3", "cuongVi": "Trưởng ca", "doi": "Ca B", "nhanSu": "Nguyễn Quốc Thắng" }],
+      "ca3": [{ "nhaMay": "Nhà máy điện Nhơn Trạch 3", "cuongVi": "Trưởng ca", "doi": "Ca A", "nhanSu": "Ngô Thế Việt" }]
+    },
+    "2026-04-19": {
+      "ca1": [{ "nhaMay": "Nhà máy điện Nhơn Trạch 3", "cuongVi": "Trưởng ca", "doi": "Ca C", "nhanSu": "Hà Ngọc Hoàng" }],
+      "ca2": [{ "nhaMay": "Nhà máy điện Nhơn Trạch 3", "cuongVi": "Trưởng ca", "doi": "Ca B", "nhanSu": "Nguyễn Quốc Thắng" }],
+      "ca3": [{ "nhaMay": "Nhà máy điện Nhơn Trạch 3", "cuongVi": "Trưởng ca", "doi": "Ca A", "nhanSu": "Ngô Thế Việt" }]
+    },
+    "2026-04-20": {
+      "ca1": [{ "nhaMay": "Nhà máy điện Nhơn Trạch 3", "cuongVi": "Trưởng ca", "doi": "Ca D", "nhanSu": "Lê Phát Minh Đạt" }],
+      "ca2": [{ "nhaMay": "Nhà máy điện Nhơn Trạch 3", "cuongVi": "Trưởng ca", "doi": "Ca C", "nhanSu": "Hà Ngọc Hoàng" }],
+      "ca3": [{ "nhaMay": "Nhà máy điện Nhơn Trạch 3", "cuongVi": "Trưởng ca", "doi": "Ca B", "nhanSu": "Nguyễn Quốc Thắng" }]
+    },
+    "2026-04-21": {
+      "ca1": [{ "nhaMay": "Nhà máy điện Nhơn Trạch 3", "cuongVi": "Trưởng ca", "doi": "Ca D", "nhanSu": "Lê Phát Minh Đạt" }],
+      "ca2": [{ "nhaMay": "Nhà máy điện Nhơn Trạch 3", "cuongVi": "Trưởng ca", "doi": "Ca C", "nhanSu": "Hà Ngọc Hoàng" }],
+      "ca3": [{ "nhaMay": "Nhà máy điện Nhơn Trạch 3", "cuongVi": "Trưởng ca", "doi": "Ca B", "nhanSu": "Nguyễn Quốc Thắng" }]
+    },
+    "2026-04-22": {
+      "ca1": [{ "nhaMay": "Nhà máy điện Nhơn Trạch 3", "cuongVi": "Trưởng ca", "doi": "Ca A", "nhanSu": "Ngô Thế Việt" }],
+      "ca2": [{ "nhaMay": "Nhà máy điện Nhơn Trạch 3", "cuongVi": "Trưởng ca", "doi": "Ca D", "nhanSu": "Lê Phát Minh Đạt" }],
+      "ca3": [{ "nhaMay": "Nhà máy điện Nhơn Trạch 3", "cuongVi": "Trưởng ca", "doi": "Ca C", "nhanSu": "Hà Ngọc Hoàng" }]
+    },
+    "2026-04-23": {
+      "ca1": [{ "nhaMay": "Nhà máy điện Nhơn Trạch 3", "cuongVi": "Trưởng ca", "doi": "Ca A", "nhanSu": "Ngô Thế Việt" }],
+      "ca2": [{ "nhaMay": "Nhà máy điện Nhơn Trạch 3", "cuongVi": "Trưởng ca", "doi": "Ca D", "nhanSu": "Lê Phát Minh Đạt" }],
+      "ca3": [{ "nhaMay": "Nhà máy điện Nhơn Trạch 3", "cuongVi": "Trưởng ca", "doi": "Ca C", "nhanSu": "Hà Ngọc Hoàng" }]
+    },
+    "2026-04-24": {
+      "ca1": [{ "nhaMay": "Nhà máy điện Nhơn Trạch 3", "cuongVi": "Trưởng ca", "doi": "Ca B", "nhanSu": "Nguyễn Quốc Thắng" }],
+      "ca2": [{ "nhaMay": "Nhà máy điện Nhơn Trạch 3", "cuongVi": "Trưởng ca", "doi": "Ca A", "nhanSu": "Ngô Thế Việt" }],
+      "ca3": [{ "nhaMay": "Nhà máy điện Nhơn Trạch 3", "cuongVi": "Trưởng ca", "doi": "Ca D", "nhanSu": "Lê Phát Minh Đạt" }]
+    },
+    "2026-04-25": {
+      "ca1": [{ "nhaMay": "Nhà máy điện Nhơn Trạch 3", "cuongVi": "Trưởng ca", "doi": "Ca B", "nhanSu": "Nguyễn Quốc Thắng" }],
+      "ca2": [{ "nhaMay": "Nhà máy điện Nhơn Trạch 3", "cuongVi": "Trưởng ca", "doi": "Ca A", "nhanSu": "Ngô Thế Việt" }],
+      "ca3": [{ "nhaMay": "Nhà máy điện Nhơn Trạch 3", "cuongVi": "Trưởng ca", "doi": "Ca D", "nhanSu": "Lê Phát Minh Đạt" }]
+    },
+    "2026-04-26": {
+      "ca1": [{ "nhaMay": "Nhà máy điện Nhơn Trạch 3", "cuongVi": "Trưởng ca", "doi": "Ca C", "nhanSu": "Hà Ngọc Hoàng" }],
+      "ca2": [{ "nhaMay": "Nhà máy điện Nhơn Trạch 3", "cuongVi": "Trưởng ca", "doi": "Ca B", "nhanSu": "Nguyễn Quốc Thắng" }],
+      "ca3": [{ "nhaMay": "Nhà máy điện Nhơn Trạch 3", "cuongVi": "Trưởng ca", "doi": "Ca A", "nhanSu": "Ngô Thế Việt" }]
+    },
+    "2026-04-27": {
+      "ca1": [{ "nhaMay": "Nhà máy điện Nhơn Trạch 3", "cuongVi": "Trưởng ca", "doi": "Ca C", "nhanSu": "Hà Ngọc Hoàng" }],
+      "ca2": [{ "nhaMay": "Nhà máy điện Nhơn Trạch 3", "cuongVi": "Trưởng ca", "doi": "Ca B", "nhanSu": "Nguyễn Quốc Thắng" }],
+      "ca3": [{ "nhaMay": "Nhà máy điện Nhơn Trạch 3", "cuongVi": "Trưởng ca", "doi": "Ca A", "nhanSu": "Ngô Thế Việt" }]
+    },
+    "2026-04-28": {
+      "ca1": [{ "nhaMay": "Nhà máy điện Nhơn Trạch 3", "cuongVi": "Trưởng ca", "doi": "Ca D", "nhanSu": "Lê Phát Minh Đạt" }],
+      "ca2": [{ "nhaMay": "Nhà máy điện Nhơn Trạch 3", "cuongVi": "Trưởng ca", "doi": "Ca C", "nhanSu": "Hà Ngọc Hoàng" }],
+      "ca3": [{ "nhaMay": "Nhà máy điện Nhơn Trạch 3", "cuongVi": "Trưởng ca", "doi": "Ca B", "nhanSu": "Nguyễn Quốc Thắng" }]
+    },
+    "2026-04-29": {
+      "ca1": [{ "nhaMay": "Nhà máy điện Nhơn Trạch 3", "cuongVi": "Trưởng ca", "doi": "Ca D", "nhanSu": "Lê Phát Minh Đạt" }],
+      "ca2": [{ "nhaMay": "Nhà máy điện Nhơn Trạch 3", "cuongVi": "Trưởng ca", "doi": "Ca C", "nhanSu": "Hà Ngọc Hoàng" }],
+      "ca3": [{ "nhaMay": "Nhà máy điện Nhơn Trạch 3", "cuongVi": "Trưởng ca", "doi": "Ca B", "nhanSu": "Nguyễn Quốc Thắng" }]
+    },
+    "2026-04-30": {
+      "ca1": [{ "nhaMay": "Nhà máy điện Nhơn Trạch 3", "cuongVi": "Trưởng ca", "doi": "Ca A", "nhanSu": "Ngô Thế Việt" }],
+      "ca2": [{ "nhaMay": "Nhà máy điện Nhơn Trạch 3", "cuongVi": "Trưởng ca", "doi": "Ca D", "nhanSu": "Lê Phát Minh Đạt" }],
+      "ca3": [{ "nhaMay": "Nhà máy điện Nhơn Trạch 3", "cuongVi": "Trưởng ca", "doi": "Ca C", "nhanSu": "Hà Ngọc Hoàng" }]
+    }
+  }
+}

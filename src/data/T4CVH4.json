@@ -1,0 +1,3426 @@
+{
+  "thongTinCa": {
+    "ca1": {
+      "gioBatDau": "07:00",
+      "gioKetThuc": "15:00"
+    },
+    "ca2": {
+      "gioBatDau": "15:00",
+      "gioKetThuc": "22:00"
+    },
+    "ca3": {
+      "gioBatDau": "22:00",
+      "gioKetThuc": "07:00"
+    }
+  },
+  "lichTruc": {
+    "2026-04-01": {
+      "ca1": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 500kV)",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Hoàng Nam"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Quốc Trạng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng ca",
+          "doi": "Ca D",
+          "nhanSu": "Phạm Văn Khoa"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca D",
+          "nhanSu": "Tạ Quốc Đông"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Quang Việt"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Văn Tiệp"
+        }
+      ],
+      "ca2": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 500kV)",
+          "doi": "Ca D",
+          "nhanSu": "Lê Anh Tiến"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca D",
+          "nhanSu": "Trương Hoàng Vũ"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng ca",
+          "doi": "Ca C",
+          "nhanSu": "Ôn Văn Hùng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca C",
+          "nhanSu": "Huỳnh Trường An"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca C",
+          "nhanSu": "Đoàn Hoàng Anh Kiệt"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca C",
+          "nhanSu": "Hồ Lê Anh Tuấn"
+        }
+      ],
+      "ca3": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 500kV)",
+          "doi": "Ca C",
+          "nhanSu": "Nguyễn Tấn Dũng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca C",
+          "nhanSu": "Hoàng Tùng Mậu"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng ca",
+          "doi": "Ca B",
+          "nhanSu": "Nguyễn Minh Trung"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca B",
+          "nhanSu": "Trần Nam Quang"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca B",
+          "nhanSu": "Nguyễn Mạnh Đức"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca B",
+          "nhanSu": "Lê Phi Phong"
+        }
+      ]
+    },
+    "2026-04-02": {
+      "ca1": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 500kV)",
+          "doi": "Ca B",
+          "nhanSu": "Nguyễn Công Huấn"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca B",
+          "nhanSu": "Lê Quốc Hùng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng ca",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Hải Âu"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Văn Cường"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca E",
+          "nhanSu": "Võ Chí Thanh"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca E",
+          "nhanSu": "Hồ Tất Đạt"
+        }
+      ],
+      "ca2": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 500kV)",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Hoàng Nam"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Quốc Trạng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng ca",
+          "doi": "Ca D",
+          "nhanSu": "Phạm Văn Khoa"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca D",
+          "nhanSu": "Tạ Quốc Đông"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Quang Việt"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Văn Tiệp"
+        }
+      ],
+      "ca3": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 500kV)",
+          "doi": "Ca D",
+          "nhanSu": "Lê Anh Tiến"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca D",
+          "nhanSu": "Trương Hoàng Vũ"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng ca",
+          "doi": "Ca C",
+          "nhanSu": "Ôn Văn Hùng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca C",
+          "nhanSu": "Huỳnh Trường An"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca C",
+          "nhanSu": "Đoàn Hoàng Anh Kiệt"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca C",
+          "nhanSu": "Hồ Lê Anh Tuấn"
+        }
+      ]
+    },
+    "2026-04-03": {
+      "ca1": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 500kV)",
+          "doi": "Ca B",
+          "nhanSu": "Nguyễn Công Huấn"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca B",
+          "nhanSu": "Lê Quốc Hùng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng ca",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Hải Âu"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Văn Cường"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca E",
+          "nhanSu": "Võ Chí Thanh"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca E",
+          "nhanSu": "Hồ Tất Đạt"
+        }
+      ],
+      "ca2": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 500kV)",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Hoàng Nam"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Quốc Trạng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng ca",
+          "doi": "Ca D",
+          "nhanSu": "Phạm Văn Khoa"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca D",
+          "nhanSu": "Tạ Quốc Đông"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Quang Việt"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Văn Tiệp"
+        }
+      ],
+      "ca3": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 500kV)",
+          "doi": "Ca D",
+          "nhanSu": "Lê Anh Tiến"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca D",
+          "nhanSu": "Trương Hoàng Vũ"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng ca",
+          "doi": "Ca C",
+          "nhanSu": "Ôn Văn Hùng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca C",
+          "nhanSu": "Huỳnh Trường An"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca C",
+          "nhanSu": "Đoàn Hoàng Anh Kiệt"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca C",
+          "nhanSu": "Hồ Lê Anh Tuấn"
+        }
+      ]
+    },
+    "2026-04-04": {
+      "ca1": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 500kV)",
+          "doi": "Ca C",
+          "nhanSu": "Nguyễn Tấn Dũng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca C",
+          "nhanSu": "Hoàng Tùng Mậu"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng ca",
+          "doi": "Ca A",
+          "nhanSu": "Lê Vĩnh Phú"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca A",
+          "nhanSu": "Đoàn Đình Kiên"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca A",
+          "nhanSu": "Trần Văn Đà"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca A",
+          "nhanSu": "Trần Thiên Minh Trí"
+        }
+      ],
+      "ca2": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 500kV)",
+          "doi": "Ca B",
+          "nhanSu": "Nguyễn Công Huấn"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca B",
+          "nhanSu": "Lê Quốc Hùng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng ca",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Hải Âu"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Văn Cường"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca E",
+          "nhanSu": "Võ Chí Thanh"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca E",
+          "nhanSu": "Hồ Tất Đạt"
+        }
+      ],
+      "ca3": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 500kV)",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Hoàng Nam"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Quốc Trạng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng ca",
+          "doi": "Ca D",
+          "nhanSu": "Phạm Văn Khoa"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca D",
+          "nhanSu": "Tạ Quốc Đông"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Quang Việt"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Văn Tiệp"
+        }
+      ]
+    },
+    "2026-04-05": {
+      "ca1": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 500kV)",
+          "doi": "Ca C",
+          "nhanSu": "Nguyễn Tấn Dũng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca C",
+          "nhanSu": "Hoàng Tùng Mậu"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng ca",
+          "doi": "Ca A",
+          "nhanSu": "Lê Vĩnh Phú"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca A",
+          "nhanSu": "Đoàn Đình Kiên"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca A",
+          "nhanSu": "Trần Văn Đà"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca A",
+          "nhanSu": "Trần Thiên Minh Trí"
+        }
+      ],
+      "ca2": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 500kV)",
+          "doi": "Ca B",
+          "nhanSu": "Nguyễn Công Huấn"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca B",
+          "nhanSu": "Lê Quốc Hùng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng ca",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Hải Âu"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Văn Cường"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca E",
+          "nhanSu": "Võ Chí Thanh"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca E",
+          "nhanSu": "Hồ Tất Đạt"
+        }
+      ],
+      "ca3": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 500kV)",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Hoàng Nam"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Quốc Trạng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng ca",
+          "doi": "Ca D",
+          "nhanSu": "Phạm Văn Khoa"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca D",
+          "nhanSu": "Tạ Quốc Đông"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Quang Việt"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Văn Tiệp"
+        }
+      ]
+    },
+    "2026-04-06": {
+      "ca1": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 500kV)",
+          "doi": "Ca D",
+          "nhanSu": "Lê Anh Tiến"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca D",
+          "nhanSu": "Trương Hoàng Vũ"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng ca",
+          "doi": "Ca B",
+          "nhanSu": "Nguyễn Minh Trung"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca B",
+          "nhanSu": "Trần Nam Quang"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca B",
+          "nhanSu": "Nguyễn Mạnh Đức"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca B",
+          "nhanSu": "Lê Phi Phong"
+        }
+      ],
+      "ca2": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 500kV)",
+          "doi": "Ca C",
+          "nhanSu": "Nguyễn Tấn Dũng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca C",
+          "nhanSu": "Hoàng Tùng Mậu"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng ca",
+          "doi": "Ca A",
+          "nhanSu": "Lê Vĩnh Phú"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca A",
+          "nhanSu": "Đoàn Đình Kiên"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca A",
+          "nhanSu": "Trần Văn Đà"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca A",
+          "nhanSu": "Trần Thiên Minh Trí"
+        }
+      ],
+      "ca3": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 500kV)",
+          "doi": "Ca B",
+          "nhanSu": "Nguyễn Công Huấn"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca B",
+          "nhanSu": "Lê Quốc Hùng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng ca",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Hải Âu"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Văn Cường"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca E",
+          "nhanSu": "Võ Chí Thanh"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca E",
+          "nhanSu": "Hồ Tất Đạt"
+        }
+      ]
+    },
+    "2026-04-07": {
+      "ca1": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 500kV)",
+          "doi": "Ca D",
+          "nhanSu": "Lê Anh Tiến"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca D",
+          "nhanSu": "Trương Hoàng Vũ"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng ca",
+          "doi": "Ca B",
+          "nhanSu": "Nguyễn Minh Trung"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca B",
+          "nhanSu": "Trần Nam Quang"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca B",
+          "nhanSu": "Nguyễn Mạnh Đức"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca B",
+          "nhanSu": "Lê Phi Phong"
+        }
+      ],
+      "ca2": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 500kV)",
+          "doi": "Ca C",
+          "nhanSu": "Nguyễn Tấn Dũng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca C",
+          "nhanSu": "Hoàng Tùng Mậu"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng ca",
+          "doi": "Ca A",
+          "nhanSu": "Lê Vĩnh Phú"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca A",
+          "nhanSu": "Đoàn Đình Kiên"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca A",
+          "nhanSu": "Trần Văn Đà"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca A",
+          "nhanSu": "Trần Thiên Minh Trí"
+        }
+      ],
+      "ca3": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 500kV)",
+          "doi": "Ca B",
+          "nhanSu": "Nguyễn Công Huấn"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca B",
+          "nhanSu": "Lê Quốc Hùng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng ca",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Hải Âu"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Văn Cường"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca E",
+          "nhanSu": "Võ Chí Thanh"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca E",
+          "nhanSu": "Hồ Tất Đạt"
+        }
+      ]
+    },
+    "2026-04-08": {
+      "ca1": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 500kV)",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Hoàng Nam"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Quốc Trạng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng ca",
+          "doi": "Ca C",
+          "nhanSu": "Ôn Văn Hùng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca C",
+          "nhanSu": "Huỳnh Trường An"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca C",
+          "nhanSu": "Đoàn Hoàng Anh Kiệt"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca C",
+          "nhanSu": "Hồ Lê Anh Tuấn"
+        }
+      ],
+      "ca2": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 500kV)",
+          "doi": "Ca D",
+          "nhanSu": "Lê Anh Tiến"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca D",
+          "nhanSu": "Trương Hoàng Vũ"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng ca",
+          "doi": "Ca B",
+          "nhanSu": "Nguyễn Minh Trung"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca B",
+          "nhanSu": "Trần Nam Quang"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca B",
+          "nhanSu": "Nguyễn Mạnh Đức"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca B",
+          "nhanSu": "Lê Phi Phong"
+        }
+      ],
+      "ca3": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 500kV)",
+          "doi": "Ca C",
+          "nhanSu": "Nguyễn Tấn Dũng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca C",
+          "nhanSu": "Hoàng Tùng Mậu"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng ca",
+          "doi": "Ca A",
+          "nhanSu": "Lê Vĩnh Phú"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca A",
+          "nhanSu": "Đoàn Đình Kiên"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca A",
+          "nhanSu": "Trần Văn Đà"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca A",
+          "nhanSu": "Trần Thiên Minh Trí"
+        }
+      ]
+    },
+    "2026-04-09": {
+      "ca1": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 500kV)",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Hoàng Nam"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Quốc Trạng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng ca",
+          "doi": "Ca C",
+          "nhanSu": "Ôn Văn Hùng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca C",
+          "nhanSu": "Huỳnh Trường An"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca C",
+          "nhanSu": "Đoàn Hoàng Anh Kiệt"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca C",
+          "nhanSu": "Hồ Lê Anh Tuấn"
+        }
+      ],
+      "ca2": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 500kV)",
+          "doi": "Ca D",
+          "nhanSu": "Lê Anh Tiến"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca D",
+          "nhanSu": "Trương Hoàng Vũ"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng ca",
+          "doi": "Ca B",
+          "nhanSu": "Nguyễn Minh Trung"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca B",
+          "nhanSu": "Trần Nam Quang"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca B",
+          "nhanSu": "Nguyễn Mạnh Đức"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca B",
+          "nhanSu": "Lê Phi Phong"
+        }
+      ],
+      "ca3": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 500kV)",
+          "doi": "Ca C",
+          "nhanSu": "Nguyễn Tấn Dũng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca C",
+          "nhanSu": "Hoàng Tùng Mậu"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng ca",
+          "doi": "Ca A",
+          "nhanSu": "Lê Vĩnh Phú"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca A",
+          "nhanSu": "Đoàn Đình Kiên"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca A",
+          "nhanSu": "Trần Văn Đà"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca A",
+          "nhanSu": "Trần Thiên Minh Trí"
+        }
+      ]
+    },
+    "2026-04-10": {
+      "ca1": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 500kV)",
+          "doi": "Ca B",
+          "nhanSu": "Nguyễn Công Huấn"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca B",
+          "nhanSu": "Lê Quốc Hùng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng ca",
+          "doi": "Ca D",
+          "nhanSu": "Phạm Văn Khoa"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca D",
+          "nhanSu": "Tạ Quốc Đông"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Quang Việt"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Văn Tiệp"
+        }
+      ],
+      "ca2": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 500kV)",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Hoàng Nam"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Quốc Trạng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng ca",
+          "doi": "Ca C",
+          "nhanSu": "Ôn Văn Hùng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca C",
+          "nhanSu": "Huỳnh Trường An"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca C",
+          "nhanSu": "Đoàn Hoàng Anh Kiệt"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca C",
+          "nhanSu": "Hồ Lê Anh Tuấn"
+        }
+      ],
+      "ca3": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 500kV)",
+          "doi": "Ca D",
+          "nhanSu": "Lê Anh Tiến"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca D",
+          "nhanSu": "Trương Hoàng Vũ"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng ca",
+          "doi": "Ca B",
+          "nhanSu": "Nguyễn Minh Trung"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca B",
+          "nhanSu": "Trần Nam Quang"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca B",
+          "nhanSu": "Nguyễn Mạnh Đức"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca B",
+          "nhanSu": "Lê Phi Phong"
+        }
+      ]
+    },
+    "2026-04-11": {
+      "ca1": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 500kV)",
+          "doi": "Ca B",
+          "nhanSu": "Nguyễn Công Huấn"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca B",
+          "nhanSu": "Lê Quốc Hùng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng ca",
+          "doi": "Ca D",
+          "nhanSu": "Phạm Văn Khoa"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca D",
+          "nhanSu": "Tạ Quốc Đông"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Quang Việt"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Văn Tiệp"
+        }
+      ],
+      "ca2": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 500kV)",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Hoàng Nam"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Quốc Trạng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng ca",
+          "doi": "Ca C",
+          "nhanSu": "Ôn Văn Hùng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca C",
+          "nhanSu": "Huỳnh Trường An"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca C",
+          "nhanSu": "Đoàn Hoàng Anh Kiệt"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca C",
+          "nhanSu": "Hồ Lê Anh Tuấn"
+        }
+      ],
+      "ca3": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 500kV)",
+          "doi": "Ca D",
+          "nhanSu": "Lê Anh Tiến"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca D",
+          "nhanSu": "Trương Hoàng Vũ"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng ca",
+          "doi": "Ca B",
+          "nhanSu": "Nguyễn Minh Trung"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca B",
+          "nhanSu": "Trần Nam Quang"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca B",
+          "nhanSu": "Nguyễn Mạnh Đức"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca B",
+          "nhanSu": "Lê Phi Phong"
+        }
+      ]
+    },
+    "2026-04-12": {
+      "ca1": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 500kV)",
+          "doi": "Ca C",
+          "nhanSu": "Nguyễn Tấn Dũng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca C",
+          "nhanSu": "Hoàng Tùng Mậu"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng ca",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Hải Âu"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Văn Cường"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca E",
+          "nhanSu": "Võ Chí Thanh"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca E",
+          "nhanSu": "Hồ Tất Đạt"
+        }
+      ],
+      "ca2": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 500kV)",
+          "doi": "Ca B",
+          "nhanSu": "Nguyễn Công Huấn"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca B",
+          "nhanSu": "Lê Quốc Hùng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng ca",
+          "doi": "Ca D",
+          "nhanSu": "Phạm Văn Khoa"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca D",
+          "nhanSu": "Tạ Quốc Đông"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Quang Việt"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Văn Tiệp"
+        }
+      ],
+      "ca3": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 500kV)",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Hoàng Nam"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Quốc Trạng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng ca",
+          "doi": "Ca C",
+          "nhanSu": "Ôn Văn Hùng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca C",
+          "nhanSu": "Huỳnh Trường An"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca C",
+          "nhanSu": "Đoàn Hoàng Anh Kiệt"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca C",
+          "nhanSu": "Hồ Lê Anh Tuấn"
+        }
+      ]
+    },
+    "2026-04-13": {
+      "ca1": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 500kV)",
+          "doi": "Ca C",
+          "nhanSu": "Nguyễn Tấn Dũng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca C",
+          "nhanSu": "Hoàng Tùng Mậu"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng ca",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Hải Âu"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Văn Cường"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca E",
+          "nhanSu": "Võ Chí Thanh"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca E",
+          "nhanSu": "Hồ Tất Đạt"
+        }
+      ],
+      "ca2": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 500kV)",
+          "doi": "Ca B",
+          "nhanSu": "Nguyễn Công Huấn"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca B",
+          "nhanSu": "Lê Quốc Hùng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng ca",
+          "doi": "Ca D",
+          "nhanSu": "Phạm Văn Khoa"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca D",
+          "nhanSu": "Tạ Quốc Đông"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Quang Việt"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Văn Tiệp"
+        }
+      ],
+      "ca3": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 500kV)",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Hoàng Nam"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Quốc Trạng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng ca",
+          "doi": "Ca C",
+          "nhanSu": "Ôn Văn Hùng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca C",
+          "nhanSu": "Huỳnh Trường An"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca C",
+          "nhanSu": "Đoàn Hoàng Anh Kiệt"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca C",
+          "nhanSu": "Hồ Lê Anh Tuấn"
+        }
+      ]
+    },
+    "2026-04-14": {
+      "ca1": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 500kV)",
+          "doi": "Ca D",
+          "nhanSu": "Lê Anh Tiến"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca D",
+          "nhanSu": "Trương Hoàng Vũ"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng ca",
+          "doi": "Ca A",
+          "nhanSu": "Lê Vĩnh Phú"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca A",
+          "nhanSu": "Đoàn Đình Kiên"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca A",
+          "nhanSu": "Trần Văn Đà"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca A",
+          "nhanSu": "Trần Thiên Minh Trí"
+        }
+      ],
+      "ca2": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 500kV)",
+          "doi": "Ca C",
+          "nhanSu": "Nguyễn Tấn Dũng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca C",
+          "nhanSu": "Hoàng Tùng Mậu"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng ca",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Hải Âu"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Văn Cường"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca E",
+          "nhanSu": "Võ Chí Thanh"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca E",
+          "nhanSu": "Hồ Tất Đạt"
+        }
+      ],
+      "ca3": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 500kV)",
+          "doi": "Ca B",
+          "nhanSu": "Nguyễn Công Huấn"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca B",
+          "nhanSu": "Lê Quốc Hùng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng ca",
+          "doi": "Ca D",
+          "nhanSu": "Phạm Văn Khoa"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca D",
+          "nhanSu": "Tạ Quốc Đông"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Quang Việt"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Văn Tiệp"
+        }
+      ]
+    },
+    "2026-04-15": {
+      "ca1": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 500kV)",
+          "doi": "Ca D",
+          "nhanSu": "Lê Anh Tiến"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca D",
+          "nhanSu": "Trương Hoàng Vũ"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng ca",
+          "doi": "Ca A",
+          "nhanSu": "Lê Vĩnh Phú"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca A",
+          "nhanSu": "Đoàn Đình Kiên"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca A",
+          "nhanSu": "Trần Văn Đà"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca A",
+          "nhanSu": "Trần Thiên Minh Trí"
+        }
+      ],
+      "ca2": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 500kV)",
+          "doi": "Ca C",
+          "nhanSu": "Nguyễn Tấn Dũng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca C",
+          "nhanSu": "Hoàng Tùng Mậu"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng ca",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Hải Âu"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Văn Cường"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca E",
+          "nhanSu": "Võ Chí Thanh"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca E",
+          "nhanSu": "Hồ Tất Đạt"
+        }
+      ],
+      "ca3": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 500kV)",
+          "doi": "Ca B",
+          "nhanSu": "Nguyễn Công Huấn"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca B",
+          "nhanSu": "Lê Quốc Hùng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng ca",
+          "doi": "Ca D",
+          "nhanSu": "Phạm Văn Khoa"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca D",
+          "nhanSu": "Tạ Quốc Đông"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Quang Việt"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Văn Tiệp"
+        }
+      ]
+    },
+    "2026-04-16": {
+      "ca1": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 500kV)",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Hoàng Nam"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Quốc Trạng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng ca",
+          "doi": "Ca B",
+          "nhanSu": "Nguyễn Minh Trung"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca B",
+          "nhanSu": "Trần Nam Quang"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca B",
+          "nhanSu": "Nguyễn Mạnh Đức"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca B",
+          "nhanSu": "Lê Phi Phong"
+        }
+      ],
+      "ca2": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 500kV)",
+          "doi": "Ca D",
+          "nhanSu": "Lê Anh Tiến"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca D",
+          "nhanSu": "Trương Hoàng Vũ"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng ca",
+          "doi": "Ca A",
+          "nhanSu": "Lê Vĩnh Phú"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca A",
+          "nhanSu": "Đoàn Đình Kiên"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca A",
+          "nhanSu": "Trần Văn Đà"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca A",
+          "nhanSu": "Trần Thiên Minh Trí"
+        }
+      ],
+      "ca3": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 500kV)",
+          "doi": "Ca C",
+          "nhanSu": "Nguyễn Tấn Dũng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca C",
+          "nhanSu": "Hoàng Tùng Mậu"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng ca",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Hải Âu"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Văn Cường"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca E",
+          "nhanSu": "Võ Chí Thanh"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca E",
+          "nhanSu": "Hồ Tất Đạt"
+        }
+      ]
+    },
+    "2026-04-17": {
+      "ca1": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 500kV)",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Hoàng Nam"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Quốc Trạng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng ca",
+          "doi": "Ca B",
+          "nhanSu": "Nguyễn Minh Trung"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca B",
+          "nhanSu": "Trần Nam Quang"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca B",
+          "nhanSu": "Nguyễn Mạnh Đức"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca B",
+          "nhanSu": "Lê Phi Phong"
+        }
+      ],
+      "ca2": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 500kV)",
+          "doi": "Ca D",
+          "nhanSu": "Lê Anh Tiến"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca D",
+          "nhanSu": "Trương Hoàng Vũ"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng ca",
+          "doi": "Ca A",
+          "nhanSu": "Lê Vĩnh Phú"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca A",
+          "nhanSu": "Đoàn Đình Kiên"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca A",
+          "nhanSu": "Trần Văn Đà"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca A",
+          "nhanSu": "Trần Thiên Minh Trí"
+        }
+      ],
+      "ca3": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 500kV)",
+          "doi": "Ca C",
+          "nhanSu": "Nguyễn Tấn Dũng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca C",
+          "nhanSu": "Hoàng Tùng Mậu"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng ca",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Hải Âu"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Văn Cường"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca E",
+          "nhanSu": "Võ Chí Thanh"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca E",
+          "nhanSu": "Hồ Tất Đạt"
+        }
+      ]
+    },
+    "2026-04-18": {
+      "ca1": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 500kV)",
+          "doi": "Ca B",
+          "nhanSu": "Nguyễn Công Huấn"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca B",
+          "nhanSu": "Lê Quốc Hùng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng ca",
+          "doi": "Ca C",
+          "nhanSu": "Ôn Văn Hùng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca C",
+          "nhanSu": "Huỳnh Trường An"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca C",
+          "nhanSu": "Đoàn Hoàng Anh Kiệt"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca C",
+          "nhanSu": "Hồ Lê Anh Tuấn"
+        }
+      ],
+      "ca2": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 500kV)",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Hoàng Nam"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Quốc Trạng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng ca",
+          "doi": "Ca B",
+          "nhanSu": "Nguyễn Minh Trung"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca B",
+          "nhanSu": "Trần Nam Quang"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca B",
+          "nhanSu": "Nguyễn Mạnh Đức"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca B",
+          "nhanSu": "Lê Phi Phong"
+        }
+      ],
+      "ca3": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 500kV)",
+          "doi": "Ca D",
+          "nhanSu": "Lê Anh Tiến"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca D",
+          "nhanSu": "Trương Hoàng Vũ"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng ca",
+          "doi": "Ca A",
+          "nhanSu": "Lê Vĩnh Phú"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca A",
+          "nhanSu": "Đoàn Đình Kiên"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca A",
+          "nhanSu": "Trần Văn Đà"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca A",
+          "nhanSu": "Trần Thiên Minh Trí"
+        }
+      ]
+    },
+    "2026-04-19": {
+      "ca1": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 500kV)",
+          "doi": "Ca B",
+          "nhanSu": "Nguyễn Công Huấn"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca B",
+          "nhanSu": "Lê Quốc Hùng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng ca",
+          "doi": "Ca C",
+          "nhanSu": "Ôn Văn Hùng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca C",
+          "nhanSu": "Huỳnh Trường An"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca C",
+          "nhanSu": "Đoàn Hoàng Anh Kiệt"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca C",
+          "nhanSu": "Hồ Lê Anh Tuấn"
+        }
+      ],
+      "ca2": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 500kV)",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Hoàng Nam"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Quốc Trạng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng ca",
+          "doi": "Ca B",
+          "nhanSu": "Nguyễn Minh Trung"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca B",
+          "nhanSu": "Trần Nam Quang"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca B",
+          "nhanSu": "Nguyễn Mạnh Đức"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca B",
+          "nhanSu": "Lê Phi Phong"
+        }
+      ],
+      "ca3": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 500kV)",
+          "doi": "Ca D",
+          "nhanSu": "Lê Anh Tiến"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca D",
+          "nhanSu": "Trương Hoàng Vũ"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng ca",
+          "doi": "Ca A",
+          "nhanSu": "Lê Vĩnh Phú"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca A",
+          "nhanSu": "Đoàn Đình Kiên"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca A",
+          "nhanSu": "Trần Văn Đà"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca A",
+          "nhanSu": "Trần Thiên Minh Trí"
+        }
+      ]
+    },
+    "2026-04-20": {
+      "ca1": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 500kV)",
+          "doi": "Ca C",
+          "nhanSu": "Nguyễn Tấn Dũng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca C",
+          "nhanSu": "Hoàng Tùng Mậu"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng ca",
+          "doi": "Ca D",
+          "nhanSu": "Phạm Văn Khoa"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca D",
+          "nhanSu": "Tạ Quốc Đông"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Quang Việt"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Văn Tiệp"
+        }
+      ],
+      "ca2": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 500kV)",
+          "doi": "Ca B",
+          "nhanSu": "Nguyễn Công Huấn"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca B",
+          "nhanSu": "Lê Quốc Hùng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng ca",
+          "doi": "Ca C",
+          "nhanSu": "Ôn Văn Hùng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca C",
+          "nhanSu": "Huỳnh Trường An"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca C",
+          "nhanSu": "Đoàn Hoàng Anh Kiệt"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca C",
+          "nhanSu": "Hồ Lê Anh Tuấn"
+        }
+      ],
+      "ca3": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 500kV)",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Hoàng Nam"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Quốc Trạng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng ca",
+          "doi": "Ca B",
+          "nhanSu": "Nguyễn Minh Trung"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca B",
+          "nhanSu": "Trần Nam Quang"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca B",
+          "nhanSu": "Nguyễn Mạnh Đức"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca B",
+          "nhanSu": "Lê Phi Phong"
+        }
+      ]
+    },
+    "2026-04-21": {
+      "ca1": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 500kV)",
+          "doi": "Ca C",
+          "nhanSu": "Nguyễn Tấn Dũng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca C",
+          "nhanSu": "Hoàng Tùng Mậu"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng ca",
+          "doi": "Ca D",
+          "nhanSu": "Phạm Văn Khoa"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca D",
+          "nhanSu": "Tạ Quốc Đông"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Quang Việt"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Văn Tiệp"
+        }
+      ],
+      "ca2": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 500kV)",
+          "doi": "Ca B",
+          "nhanSu": "Nguyễn Công Huấn"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca B",
+          "nhanSu": "Lê Quốc Hùng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng ca",
+          "doi": "Ca C",
+          "nhanSu": "Ôn Văn Hùng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca C",
+          "nhanSu": "Huỳnh Trường An"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca C",
+          "nhanSu": "Đoàn Hoàng Anh Kiệt"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca C",
+          "nhanSu": "Hồ Lê Anh Tuấn"
+        }
+      ],
+      "ca3": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 500kV)",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Hoàng Nam"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Quốc Trạng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng ca",
+          "doi": "Ca B",
+          "nhanSu": "Nguyễn Minh Trung"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca B",
+          "nhanSu": "Trần Nam Quang"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca B",
+          "nhanSu": "Nguyễn Mạnh Đức"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca B",
+          "nhanSu": "Lê Phi Phong"
+        }
+      ]
+    },
+    "2026-04-22": {
+      "ca1": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 500kV)",
+          "doi": "Ca D",
+          "nhanSu": "Lê Anh Tiến"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca D",
+          "nhanSu": "Trương Hoàng Vũ"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng ca",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Hải Âu"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Văn Cường"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca E",
+          "nhanSu": "Võ Chí Thanh"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca E",
+          "nhanSu": "Hồ Tất Đạt"
+        }
+      ],
+      "ca2": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 500kV)",
+          "doi": "Ca C",
+          "nhanSu": "Nguyễn Tấn Dũng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca C",
+          "nhanSu": "Hoàng Tùng Mậu"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng ca",
+          "doi": "Ca D",
+          "nhanSu": "Phạm Văn Khoa"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca D",
+          "nhanSu": "Tạ Quốc Đông"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Quang Việt"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Văn Tiệp"
+        }
+      ],
+      "ca3": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 500kV)",
+          "doi": "Ca B",
+          "nhanSu": "Nguyễn Công Huấn"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca B",
+          "nhanSu": "Lê Quốc Hùng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng ca",
+          "doi": "Ca C",
+          "nhanSu": "Ôn Văn Hùng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca C",
+          "nhanSu": "Huỳnh Trường An"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca C",
+          "nhanSu": "Đoàn Hoàng Anh Kiệt"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca C",
+          "nhanSu": "Hồ Lê Anh Tuấn"
+        }
+      ]
+    },
+    "2026-04-23": {
+      "ca1": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 500kV)",
+          "doi": "Ca D",
+          "nhanSu": "Lê Anh Tiến"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca D",
+          "nhanSu": "Trương Hoàng Vũ"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng ca",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Hải Âu"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Văn Cường"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca E",
+          "nhanSu": "Võ Chí Thanh"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca E",
+          "nhanSu": "Hồ Tất Đạt"
+        }
+      ],
+      "ca2": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 500kV)",
+          "doi": "Ca C",
+          "nhanSu": "Nguyễn Tấn Dũng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca C",
+          "nhanSu": "Hoàng Tùng Mậu"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng ca",
+          "doi": "Ca D",
+          "nhanSu": "Phạm Văn Khoa"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca D",
+          "nhanSu": "Tạ Quốc Đông"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Quang Việt"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Văn Tiệp"
+        }
+      ],
+      "ca3": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 500kV)",
+          "doi": "Ca B",
+          "nhanSu": "Nguyễn Công Huấn"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca B",
+          "nhanSu": "Lê Quốc Hùng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng ca",
+          "doi": "Ca C",
+          "nhanSu": "Ôn Văn Hùng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca C",
+          "nhanSu": "Huỳnh Trường An"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca C",
+          "nhanSu": "Đoàn Hoàng Anh Kiệt"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca C",
+          "nhanSu": "Hồ Lê Anh Tuấn"
+        }
+      ]
+    },
+    "2026-04-24": {
+      "ca1": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 500kV)",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Hoàng Nam"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Quốc Trạng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng ca",
+          "doi": "Ca A",
+          "nhanSu": "Lê Vĩnh Phú"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca A",
+          "nhanSu": "Đoàn Đình Kiên"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca A",
+          "nhanSu": "Trần Văn Đà"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca A",
+          "nhanSu": "Trần Thiên Minh Trí"
+        }
+      ],
+      "ca2": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 500kV)",
+          "doi": "Ca D",
+          "nhanSu": "Lê Anh Tiến"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca D",
+          "nhanSu": "Trương Hoàng Vũ"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng ca",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Hải Âu"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Văn Cường"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca E",
+          "nhanSu": "Võ Chí Thanh"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca E",
+          "nhanSu": "Hồ Tất Đạt"
+        }
+      ],
+      "ca3": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 500kV)",
+          "doi": "Ca C",
+          "nhanSu": "Nguyễn Tấn Dũng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca C",
+          "nhanSu": "Hoàng Tùng Mậu"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng ca",
+          "doi": "Ca D",
+          "nhanSu": "Phạm Văn Khoa"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca D",
+          "nhanSu": "Tạ Quốc Đông"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Quang Việt"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Văn Tiệp"
+        }
+      ]
+    },
+    "2026-04-25": {
+      "ca1": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 500kV)",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Hoàng Nam"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Quốc Trạng"
+        }
+      ],
+      "ca2": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 500kV)",
+          "doi": "Ca D",
+          "nhanSu": "Lê Anh Tiến"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca D",
+          "nhanSu": "Trương Hoàng Vũ"
+        }
+      ],
+      "ca3": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 500kV)",
+          "doi": "Ca C",
+          "nhanSu": "Nguyễn Tấn Dũng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca C",
+          "nhanSu": "Hoàng Tùng Mậu"
+        }
+      ]
+    },
+    "2026-04-26": {
+      "ca1": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 500kV)",
+          "doi": "Ca B",
+          "nhanSu": "Nguyễn Công Huấn"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca B",
+          "nhanSu": "Lê Quốc Hùng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng ca",
+          "doi": "Ca B",
+          "nhanSu": "Nguyễn Minh Trung"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca B",
+          "nhanSu": "Trần Nam Quang"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca B",
+          "nhanSu": "Nguyễn Mạnh Đức"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca B",
+          "nhanSu": "Lê Phi Phong"
+        }
+      ],
+      "ca2": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 500kV)",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Hoàng Nam"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Quốc Trạng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng ca",
+          "doi": "Ca A",
+          "nhanSu": "Lê Vĩnh Phú"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca A",
+          "nhanSu": "Đoàn Đình Kiên"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca A",
+          "nhanSu": "Trần Văn Đà"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca A",
+          "nhanSu": "Trần Thiên Minh Trí"
+        }
+      ],
+      "ca3": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 500kV)",
+          "doi": "Ca D",
+          "nhanSu": "Lê Anh Tiến"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca D",
+          "nhanSu": "Trương Hoàng Vũ"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng ca",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Hải Âu"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Văn Cường"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca E",
+          "nhanSu": "Võ Chí Thanh"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca E",
+          "nhanSu": "Hồ Tất Đạt"
+        }
+      ]
+    },
+    "2026-04-27": {
+      "ca1": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 500kV)",
+          "doi": "Ca B",
+          "nhanSu": "Nguyễn Công Huấn"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca B",
+          "nhanSu": "Lê Quốc Hùng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng ca",
+          "doi": "Ca B",
+          "nhanSu": "Nguyễn Minh Trung"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca B",
+          "nhanSu": "Trần Nam Quang"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca B",
+          "nhanSu": "Nguyễn Mạnh Đức"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca B",
+          "nhanSu": "Lê Phi Phong"
+        }
+      ],
+      "ca2": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 500kV)",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Hoàng Nam"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Quốc Trạng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng ca",
+          "doi": "Ca A",
+          "nhanSu": "Lê Vĩnh Phú"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca A",
+          "nhanSu": "Đoàn Đình Kiên"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca A",
+          "nhanSu": "Trần Văn Đà"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca A",
+          "nhanSu": "Trần Thiên Minh Trí"
+        }
+      ],
+      "ca3": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 500kV)",
+          "doi": "Ca D",
+          "nhanSu": "Lê Anh Tiến"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca D",
+          "nhanSu": "Trương Hoàng Vũ"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng ca",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Hải Âu"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Văn Cường"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca E",
+          "nhanSu": "Võ Chí Thanh"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca E",
+          "nhanSu": "Hồ Tất Đạt"
+        }
+      ]
+    },
+    "2026-04-28": {
+      "ca1": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 500kV)",
+          "doi": "Ca C",
+          "nhanSu": "Nguyễn Tấn Dũng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca C",
+          "nhanSu": "Hoàng Tùng Mậu"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng ca",
+          "doi": "Ca C",
+          "nhanSu": "Ôn Văn Hùng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca C",
+          "nhanSu": "Huỳnh Trường An"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca C",
+          "nhanSu": "Đoàn Hoàng Anh Kiệt"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca C",
+          "nhanSu": "Hồ Lê Anh Tuấn"
+        }
+      ],
+      "ca2": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 500kV)",
+          "doi": "Ca B",
+          "nhanSu": "Nguyễn Công Huấn"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca B",
+          "nhanSu": "Lê Quốc Hùng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng ca",
+          "doi": "Ca B",
+          "nhanSu": "Nguyễn Minh Trung"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca B",
+          "nhanSu": "Trần Nam Quang"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca B",
+          "nhanSu": "Nguyễn Mạnh Đức"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca B",
+          "nhanSu": "Lê Phi Phong"
+        }
+      ],
+      "ca3": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 500kV)",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Hoàng Nam"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Quốc Trạng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng ca",
+          "doi": "Ca A",
+          "nhanSu": "Lê Vĩnh Phú"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca A",
+          "nhanSu": "Đoàn Đình Kiên"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca A",
+          "nhanSu": "Trần Văn Đà"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca A",
+          "nhanSu": "Trần Thiên Minh Trí"
+        }
+      ]
+    },
+    "2026-04-29": {
+      "ca1": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 500kV)",
+          "doi": "Ca C",
+          "nhanSu": "Nguyễn Tấn Dũng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca C",
+          "nhanSu": "Hoàng Tùng Mậu"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng ca",
+          "doi": "Ca C",
+          "nhanSu": "Ôn Văn Hùng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca C",
+          "nhanSu": "Huỳnh Trường An"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca C",
+          "nhanSu": "Đoàn Hoàng Anh Kiệt"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca C",
+          "nhanSu": "Hồ Lê Anh Tuấn"
+        }
+      ],
+      "ca2": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 500kV)",
+          "doi": "Ca B",
+          "nhanSu": "Nguyễn Công Huấn"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca B",
+          "nhanSu": "Lê Quốc Hùng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng ca",
+          "doi": "Ca B",
+          "nhanSu": "Nguyễn Minh Trung"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca B",
+          "nhanSu": "Trần Nam Quang"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca B",
+          "nhanSu": "Nguyễn Mạnh Đức"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca B",
+          "nhanSu": "Lê Phi Phong"
+        }
+      ],
+      "ca3": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 500kV)",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Hoàng Nam"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Quốc Trạng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng ca",
+          "doi": "Ca A",
+          "nhanSu": "Lê Vĩnh Phú"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca A",
+          "nhanSu": "Đoàn Đình Kiên"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca A",
+          "nhanSu": "Trần Văn Đà"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca A",
+          "nhanSu": "Trần Thiên Minh Trí"
+        }
+      ]
+    },
+    "2026-04-30": {
+      "ca1": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 500kV)",
+          "doi": "Ca D",
+          "nhanSu": "Lê Anh Tiến"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca D",
+          "nhanSu": "Trương Hoàng Vũ"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng ca",
+          "doi": "Ca D",
+          "nhanSu": "Phạm Văn Khoa"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca D",
+          "nhanSu": "Tạ Quốc Đông"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Quang Việt"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Văn Tiệp"
+        }
+      ],
+      "ca2": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 500kV)",
+          "doi": "Ca C",
+          "nhanSu": "Nguyễn Tấn Dũng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca C",
+          "nhanSu": "Hoàng Tùng Mậu"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng ca",
+          "doi": "Ca C",
+          "nhanSu": "Ôn Văn Hùng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca C",
+          "nhanSu": "Huỳnh Trường An"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca C",
+          "nhanSu": "Đoàn Hoàng Anh Kiệt"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca C",
+          "nhanSu": "Hồ Lê Anh Tuấn"
+        }
+      ],
+      "ca3": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 500kV)",
+          "doi": "Ca B",
+          "nhanSu": "Nguyễn Công Huấn"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca B",
+          "nhanSu": "Lê Quốc Hùng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Trưởng ca",
+          "doi": "Ca B",
+          "nhanSu": "Nguyễn Minh Trung"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca B",
+          "nhanSu": "Trần Nam Quang"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca B",
+          "nhanSu": "Nguyễn Mạnh Đức"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 4",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca B",
+          "nhanSu": "Lê Phi Phong"
+        }
+      ]
+    }
+  }
+}

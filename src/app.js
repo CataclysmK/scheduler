@@ -6,6 +6,52 @@ const SHIFT_DEFINITIONS = {
     N: { label: 'N', description: 'Ca đêm 18:00-06:00', dayWindow:[['18:00','06:00']] },
 };
 
+const ROLE_ORDER = [
+    'Trưởng ca',
+    'Trưởng kíp (Kiêm vận hành Trạm 500kV)',
+    'Trưởng kíp (Kiêm vận hành Trạm 220kV)',
+    'Vận hành MTĐK HRSG &WSC',
+    'Vận hành MTĐK GT/ST',
+    'GM GT/ST',
+    'GM HRSG &WSC',
+    'Ngoài Gian Máy BOP',
+];
+
+const ROLE_COLORS = {
+    'Trưởng ca': { bg: 'bg-red-100', border: 'border-red-600', text: 'text-red-900', badge: 'bg-red-300 text-red-950', leader: true },
+    'Trưởng kíp (Kiêm vận hành Trạm 500kV)': { bg: 'bg-purple-100', border: 'border-purple-600', text: 'text-purple-900', badge: 'bg-purple-300 text-purple-950', leader: true },
+    'Trưởng kíp (Kiêm vận hành Trạm 220kV)': { bg: 'bg-indigo-100', border: 'border-indigo-600', text: 'text-indigo-900', badge: 'bg-indigo-300 text-indigo-950', leader: true },
+    'Vận hành MTĐK HRSG &WSC': { bg: 'bg-blue-50', border: 'border-blue-400', text: 'text-blue-800', badge: 'bg-blue-200 text-blue-900' },
+    'Vận hành MTĐK GT/ST': { bg: 'bg-green-50', border: 'border-green-400', text: 'text-green-800', badge: 'bg-green-200 text-green-900' },
+    'GM GT/ST': { bg: 'bg-orange-100', border: 'border-orange-500', text: 'text-orange-900', badge: 'bg-orange-300 text-orange-950' },
+    'GM HRSG &WSC': { bg: 'bg-amber-100', border: 'border-amber-500', text: 'text-amber-900', badge: 'bg-amber-300 text-amber-950' },
+    'Ngoài Gian Máy BOP': { bg: 'bg-pink-50', border: 'border-pink-400', text: 'text-pink-800', badge: 'bg-pink-200 text-pink-900' },
+};
+
+function getColorForRole(cuongVi) {
+    if (!cuongVi) return { bg: 'bg-gray-50', border: 'border-gray-400', text: 'text-gray-800', badge: 'bg-gray-200 text-gray-900' };
+    for (const [role, colors] of Object.entries(ROLE_COLORS)) {
+        if (cuongVi.includes(role)) {
+            return colors;
+        }
+    }
+    return { bg: 'bg-gray-50', border: 'border-gray-400', text: 'text-gray-800', badge: 'bg-gray-200 text-gray-900' };
+}
+
+function getRoleIndex(cuongVi) {
+    if (!cuongVi) return 999;
+    const index = ROLE_ORDER.findIndex(role => cuongVi.includes(role));
+    return index === -1 ? 999 : index;
+}
+
+function sortStaffByRole(staffArray) {
+    return [...staffArray].sort((a, b) => {
+        const indexA = getRoleIndex(a.cuongVi);
+        const indexB = getRoleIndex(b.cuongVi);
+        return indexA - indexB;
+    });
+}
+
 function parseScheduleEntry(value) {
     if (!value) return null;
     if (typeof value === 'string') {
@@ -439,6 +485,477 @@ async function loadSchedule() {
     }
 }
 
+async function loadOperationsSchedule(dataFile) {
+    try {
+        const res = await fetch(`./data/${dataFile}`);
+        if (!res.ok) throw new Error(`Lỗi tải dữ liệu ${dataFile}`);
+        return await res.json();
+    } catch (e) {
+        console.error(`Không thể load ${dataFile}:`, e);
+        return null;
+    }
+}
+
+function isShiftTimeWindow(now, startTime, endTime) {
+    const [sh, sm] = startTime.split(':').map(Number);
+    const [eh, em] = endTime.split(':').map(Number);
+    const nowMin = now.getHours() * 60 + now.getMinutes();
+    const startMin = sh * 60 + sm;
+    const endMin = eh * 60 + em;
+    if (startMin <= endMin) return nowMin >= startMin && nowMin < endMin;
+    return nowMin >= startMin || nowMin < endMin;
+}
+
+function getCurrentShiftCode(thongTinCa) {
+    const now = new Date();
+    for (const [caCode, shiftInfo] of Object.entries(thongTinCa)) {
+        if (isShiftTimeWindow(now, shiftInfo.gioBatDau, shiftInfo.gioKetThuc)) {
+            return caCode;
+        }
+    }
+    return null;
+}
+
+function getNextShiftCode(thongTinCa) {
+    const now = new Date();
+    const currentShift = getCurrentShiftCode(thongTinCa);
+    const caOrder = ['ca1', 'ca2', 'ca3'];
+    const currentIndex = caOrder.indexOf(currentShift);
+    if (currentIndex !== -1) {
+        return caOrder[(currentIndex + 1) % 3];
+    }
+    return 'ca1';
+}
+
+function renderOperationsCurrentShift(t4tcData, t4vhvData) {
+    const todayKey = dateToKey(new Date());
+    const todayDisplay = formatDateWithDayOfWeek(todayKey);
+    
+    // T4TC Current Shift
+    const t4tcCurrentShift = getCurrentShiftCode(t4tcData.thongTinCa);
+    const t4tcNextShift = getNextShiftCode(t4tcData.thongTinCa);
+    const t4tcCurrentStaff = (t4tcData.lichTruc[todayKey] && t4tcData.lichTruc[todayKey][t4tcCurrentShift]) || [];
+    const t4tcNextStaff = (t4tcData.lichTruc[todayKey] && t4tcData.lichTruc[todayKey][t4tcNextShift]) || [];
+    
+    const t4tcCurrentInfo = document.getElementById('operations-t4tc-current');
+    let t4tcHtml = '';
+    
+    if (t4tcCurrentShift) {
+        const currentShiftInfo = t4tcData.thongTinCa[t4tcCurrentShift];
+        t4tcHtml += `<div class="mb-3">
+            <p class="text-sm text-gray-600 mb-2">Đang trực (${currentShiftInfo.gioBatDau} - ${currentShiftInfo.gioKetThuc})</p>
+            <div id="t4tc-current-list">`;
+        
+        if (t4tcCurrentStaff.length > 0) {
+            t4tcHtml += t4tcCurrentStaff.map(staff => `
+                <div class="bg-blue-50 border-l-4 border-blue-500 px-3 py-2 mb-2 rounded">
+                    <p class="font-semibold text-gray-800">${staff.nhanSu}</p>
+                    <p class="text-xs text-gray-600">${staff.cuongVi} - ${staff.doi}</p>
+                </div>
+            `).join('');
+        } else {
+            t4tcHtml += '<p class="text-gray-500">Không có dữ liệu</p>';
+        }
+        
+        t4tcHtml += `</div></div>`;
+    } else {
+        t4tcHtml += '<p class="text-gray-500">Không xác định ca</p>';
+    }
+    
+    if (t4tcNextShift) {
+        const nextShiftInfo = t4tcData.thongTinCa[t4tcNextShift];
+        t4tcHtml += `<div class="border-t pt-3">
+            <p class="text-sm text-gray-600 mb-2">Ca tiếp theo (${nextShiftInfo.gioBatDau} - ${nextShiftInfo.gioKetThuc})</p>
+            <div id="t4tc-next-list">`;
+        
+        if (t4tcNextStaff.length > 0) {
+            t4tcHtml += t4tcNextStaff.map(staff => `
+                <div class="bg-blue-100 border-l-4 border-blue-300 px-3 py-2 mb-2 rounded">
+                    <p class="font-semibold text-gray-800">${staff.nhanSu}</p>
+                    <p class="text-xs text-gray-600">${staff.cuongVi} - ${staff.doi}</p>
+                </div>
+            `).join('');
+        } else {
+            t4tcHtml += '<p class="text-gray-500">Không có dữ liệu</p>';
+        }
+        
+        t4tcHtml += `</div></div>`;
+    }
+    
+    t4tcCurrentInfo.innerHTML = t4tcHtml;
+    
+    // T4VHV Current Shift
+    const t4vhvCurrentShift = getCurrentShiftCode(t4vhvData.thongTinCa);
+    const t4vhvNextShift = getNextShiftCode(t4vhvData.thongTinCa);
+    const t4vhvCurrentStaff = (t4vhvData.lichTruc[todayKey] && t4vhvData.lichTruc[todayKey][t4vhvCurrentShift]) || [];
+    const t4vhvNextStaff = (t4vhvData.lichTruc[todayKey] && t4vhvData.lichTruc[todayKey][t4vhvNextShift]) || [];
+    
+    const t4vhvCurrentInfo = document.getElementById('operations-t4vhv-current');
+    let t4vhvHtml = '';
+    
+    if (t4vhvCurrentShift) {
+        const currentShiftInfo = t4vhvData.thongTinCa[t4vhvCurrentShift];
+        t4vhvHtml += `<div class="mb-3">
+            <p class="text-sm text-gray-600 mb-2">Đang trực (${currentShiftInfo.gioBatDau} - ${currentShiftInfo.gioKetThuc})</p>
+            <div id="t4vhv-current-list">`;
+        
+        if (t4vhvCurrentStaff.length > 0) {
+            t4vhvHtml += t4vhvCurrentStaff.map(staff => `
+                <div class="bg-green-50 border-l-4 border-green-500 px-3 py-2 mb-2 rounded">
+                    <p class="font-semibold text-gray-800">${staff.nhanSu}</p>
+                    <p class="text-xs text-gray-600">${staff.cuongVi} - ${staff.doi}</p>
+                </div>
+            `).join('');
+        } else {
+            t4vhvHtml += '<p class="text-gray-500">Không có dữ liệu</p>';
+        }
+        
+        t4vhvHtml += `</div></div>`;
+    } else {
+        t4vhvHtml += '<p class="text-gray-500">Không xác định ca</p>';
+    }
+    
+    if (t4vhvNextShift) {
+        const nextShiftInfo = t4vhvData.thongTinCa[t4vhvNextShift];
+        t4vhvHtml += `<div class="border-t pt-3">
+            <p class="text-sm text-gray-600 mb-2">Ca tiếp theo (${nextShiftInfo.gioBatDau} - ${nextShiftInfo.gioKetThuc})</p>
+            <div id="t4vhv-next-list">`;
+        
+        if (t4vhvNextStaff.length > 0) {
+            t4vhvHtml += t4vhvNextStaff.map(staff => `
+                <div class="bg-green-100 border-l-4 border-green-300 px-3 py-2 mb-2 rounded">
+                    <p class="font-semibold text-gray-800">${staff.nhanSu}</p>
+                    <p class="text-xs text-gray-600">${staff.cuongVi} - ${staff.doi}</p>
+                </div>
+            `).join('');
+        } else {
+            t4vhvHtml += '<p class="text-gray-500">Không có dữ liệu</p>';
+        }
+        
+        t4vhvHtml += `</div></div>`;
+    }
+    
+    t4vhvCurrentInfo.innerHTML = t4vhvHtml;
+}
+
+function renderCVHCurrentShift(cvhData, targetElementId) {
+    const todayKey = dateToKey(new Date());
+    
+    const currentShiftCode = getCurrentShiftCode(cvhData.thongTinCa);
+    const currentStaff = (cvhData.lichTruc[todayKey] && cvhData.lichTruc[todayKey][currentShiftCode]) || [];
+    
+    const sortedCurrentStaff = sortStaffByRole(currentStaff);
+    const targetEl = document.getElementById(targetElementId);
+    let html = '';
+    
+    if (currentShiftCode) {
+        const shiftInfo = cvhData.thongTinCa[currentShiftCode];
+        
+        // Tách Trưởng Ca/Trưởng kíp riêng
+        const leaders = sortedCurrentStaff.filter(staff => {
+            const colors = getColorForRole(staff.cuongVi);
+            return colors.leader === true;
+        });
+        const staff = sortedCurrentStaff.filter(s => {
+            const colors = getColorForRole(s.cuongVi);
+            return colors.leader !== true;
+        });
+        
+        html += `<div class="mb-4">
+            <p class="text-sm font-semibold text-orange-700 mb-3">Đang trực (${shiftInfo.gioBatDau} - ${shiftInfo.gioKetThuc})</p>`;
+        
+        // Hiển thị Trưởng Ca/Trưởng kíp nổi bật
+        if (leaders.length > 0) {
+            html += `<div class="mb-4 pb-4 border-b-2 border-orange-300">`;
+            html += leaders.map(person => {
+                const colors = getColorForRole(person.cuongVi);
+                return `
+                <div class="staff-card ${colors.bg} border-l-4 ${colors.border} px-4 py-3 mb-2 rounded shadow-md">
+                    <p class="font-bold text-lg ${colors.text}">${person.nhanSu}</p>
+                    <p class="text-xs ${colors.text} font-semibold">${person.cuongVi}</p>
+                </div>
+            `}).join('');
+            html += `</div>`;
+        }
+        
+        // Hiển thị Vận Hành Viên
+        if (staff.length > 0) {
+            html += staff.map(person => {
+                const colors = getColorForRole(person.cuongVi);
+                return `
+                <div class="staff-card ${colors.bg} border-l-4 ${colors.border} px-3 py-2 mb-2 rounded">
+                    <p class="font-semibold ${colors.text}">${person.nhanSu}</p>
+                    <p class="text-xs ${colors.text} opacity-75">${person.cuongVi}</p>
+                </div>
+            `}).join('');
+        }
+        
+        html += `</div>`;
+    } else {
+        html += '<p class="text-gray-500">Không xác định ca</p>';
+    }
+    
+    targetEl.innerHTML = html;
+}
+
+function renderOperationsDaySchedule(t4tcData, t4vhvData, selectedDate) {
+    const key = dateToKey(selectedDate);
+    const keyDisplay = formatDateWithDayOfWeek(key);
+    
+    // T4TC Day Schedule
+    const t4tcDayData = t4tcData.lichTruc[key] || {};
+    const t4tcEl = document.getElementById('operations-t4tc-day-schedule');
+    let t4tcHtml = '';
+    
+    if (Object.keys(t4tcDayData).length === 0) {
+        t4tcHtml = '<p class="text-gray-500">Không có dữ liệu</p>';
+    } else {
+        const caOrder = ['ca1', 'ca2', 'ca3'];
+        const sortedCas = caOrder.filter(ca => ca in t4tcDayData);
+        
+        t4tcHtml = sortedCas.map(caCode => {
+            const caStaff = t4tcDayData[caCode] || [];
+            const caInfo = t4tcData.thongTinCa[caCode];
+            return `<div class="mb-3 pb-3 border-b last:border-b-0">
+                <p class="text-sm font-semibold text-blue-700 mb-2">${caCode.toUpperCase()} (${caInfo.gioBatDau} - ${caInfo.gioKetThuc})</p>
+                ${caStaff.map(staff => `
+                    <div class="bg-white px-2 py-1 mb-1 text-sm">
+                        <p class="font-medium text-gray-800">${staff.nhanSu}</p>
+                        <p class="text-xs text-gray-600">${staff.cuongVi}</p>
+                    </div>
+                `).join('')}
+            </div>`;
+        }).join('');
+    }
+    
+    t4tcEl.innerHTML = t4tcHtml;
+    
+    // T4VHV Day Schedule
+    const t4vhvDayData = t4vhvData.lichTruc[key] || {};
+    const t4vhvEl = document.getElementById('operations-t4vhv-day-schedule');
+    let t4vhvHtml = '';
+    
+    if (Object.keys(t4vhvDayData).length === 0) {
+        t4vhvHtml = '<p class="text-gray-500">Không có dữ liệu</p>';
+    } else {
+        const caOrder = ['ca1', 'ca2', 'ca3'];
+        const sortedCas = caOrder.filter(ca => ca in t4vhvDayData);
+        
+        t4vhvHtml = sortedCas.map(caCode => {
+            const caStaff = t4vhvDayData[caCode] || [];
+            const caInfo = t4vhvData.thongTinCa[caCode];
+            return `<div class="mb-3 pb-3 border-b last:border-b-0">
+                <p class="text-sm font-semibold text-green-700 mb-2">${caCode.toUpperCase()} (${caInfo.gioBatDau} - ${caInfo.gioKetThuc})</p>
+                ${caStaff.map(staff => `
+                    <div class="bg-white px-2 py-1 mb-1 text-sm">
+                        <p class="font-medium text-gray-800">${staff.nhanSu}</p>
+                        <p class="text-xs text-gray-600">${staff.cuongVi}</p>
+                    </div>
+                `).join('')}
+            </div>`;
+        }).join('');
+    }
+    
+    t4vhvEl.innerHTML = t4vhvHtml;
+}
+
+function renderCVHDaySchedule(cvhData, selectedDate, targetElementId) {
+    const key = dateToKey(selectedDate);
+    const keyDisplay = formatDateWithDayOfWeek(key);
+    
+    const dayData = cvhData.lichTruc[key] || {};
+    const targetEl = document.getElementById(targetElementId);
+    let html = '';
+    
+    if (Object.keys(dayData).length === 0) {
+        html = '<p class="text-gray-500">Không có dữ liệu</p>';
+    } else {
+        const caOrder = ['ca1', 'ca2', 'ca3'];
+        const sortedCas = caOrder.filter(ca => ca in dayData);
+        
+        html = sortedCas.map(caCode => {
+            const caStaff = dayData[caCode] || [];
+            const sortedStaff = sortStaffByRole(caStaff);
+            const caInfo = cvhData.thongTinCa[caCode];
+            
+            // Tách Trưởng Ca/Trưởng kíp riêng
+            const leaders = sortedStaff.filter(person => {
+                const colors = getColorForRole(person.cuongVi);
+                return colors.leader === true;
+            });
+            const staff = sortedStaff.filter(person => {
+                const colors = getColorForRole(person.cuongVi);
+                return colors.leader !== true;
+            });
+            
+            let caHtml = `<div class="mb-4 pb-4 border-b last:border-b-0">
+                <p class="text-sm font-semibold text-teal-700 mb-3">${caCode.toUpperCase()} (${caInfo.gioBatDau} - ${caInfo.gioKetThuc})</p>`;
+            
+            // Hiển thị Trưởng Ca/Trưởng kíp nổi bật
+            if (leaders.length > 0) {
+                caHtml += `<div class="mb-3 pb-3 border-b-2 border-teal-200">`;
+                caHtml += leaders.map(person => {
+                    const colors = getColorForRole(person.cuongVi);
+                    return `
+                    <div class="staff-card ${colors.bg} px-4 py-3 mb-2 border-l-4 ${colors.border} rounded shadow-md">
+                        <p class="font-bold text-base ${colors.text}">${person.nhanSu}</p>
+                        <p class="text-xs ${colors.text} font-semibold">${person.cuongVi}</p>
+                    </div>
+                `}).join('');
+                caHtml += `</div>`;
+            }
+            
+            // Hiển thị Vận Hành Viên
+            if (staff.length > 0) {
+                caHtml += staff.map(person => {
+                    const colors = getColorForRole(person.cuongVi);
+                    return `
+                    <div class="staff-card ${colors.bg} px-3 py-2 mb-2 border-l-4 ${colors.border} rounded">
+                        <p class="font-medium ${colors.text}">${person.nhanSu}</p>
+                        <p class="text-xs ${colors.text} opacity-75">${person.cuongVi}</p>
+                    </div>
+                `}).join('');
+            }
+            
+            caHtml += `</div>`;
+            return caHtml;
+        }).join('');
+    }
+    
+    targetEl.innerHTML = html;
+}
+
+function setupOperationsUI(t4tcData, t4vhvData) {
+    const datePickerOps = document.getElementById('operations-date-picker');
+    const selectedDateDisplayOps = document.getElementById('operations-selected-date-display');
+    
+    if (!datePickerOps.value) datePickerOps.value = dateToKey(new Date());
+    
+    const updateOpsDateDisplay = () => {
+        if (selectedDateDisplayOps && datePickerOps.value) {
+            selectedDateDisplayOps.textContent = formatDateWithDayOfWeek(datePickerOps.value);
+        }
+    };
+    updateOpsDateDisplay();
+    
+    renderOperationsCurrentShift(t4tcData, t4vhvData);
+    renderOperationsDaySchedule(t4tcData, t4vhvData, datePickerOps.value);
+    
+    const updateOpsOnDateChange = () => {
+        updateOpsDateDisplay();
+        renderOperationsDaySchedule(t4tcData, t4vhvData, datePickerOps.value);
+    };
+    
+    datePickerOps.addEventListener('change', updateOpsOnDateChange);
+    datePickerOps.addEventListener('input', updateOpsOnDateChange);
+    
+    setInterval(() => {
+        renderOperationsCurrentShift(t4tcData, t4vhvData);
+    }, 60000);
+}
+
+function setupCVHUI(cvhData, datePickerId, displayId, currentShiftDateId, currentId, dayScheduleId) {
+    const datePicker = document.getElementById(datePickerId);
+    const selectedDateDisplay = document.getElementById(displayId);
+    const currentShiftDateEl = document.getElementById(currentShiftDateId);
+    
+    if (!datePicker.value) datePicker.value = dateToKey(new Date());
+    
+    const updateDateDisplay = () => {
+        if (selectedDateDisplay && datePicker.value) {
+            selectedDateDisplay.textContent = formatDateWithDayOfWeek(datePicker.value);
+        }
+    };
+    updateDateDisplay();
+    
+    // Update header date for current shift
+    const updateCurrentShiftDate = () => {
+        if (currentShiftDateEl) {
+            currentShiftDateEl.textContent = formatDateWithDayOfWeek(dateToKey(new Date()));
+        }
+    };
+    updateCurrentShiftDate();
+    
+    renderCVHCurrentShift(cvhData, currentId);
+    renderCVHDaySchedule(cvhData, datePicker.value, dayScheduleId);
+    
+    const updateOnDateChange = () => {
+        updateDateDisplay();
+        renderCVHDaySchedule(cvhData, datePicker.value, dayScheduleId);
+    };
+    
+    datePicker.addEventListener('change', updateOnDateChange);
+    datePicker.addEventListener('input', updateOnDateChange);
+    
+    setInterval(() => {
+        renderCVHCurrentShift(cvhData, currentId);
+        updateCurrentShiftDate();
+    }, 60000);
+}
+
+function mergeCVH3Data(t4tcData, t4vhvData) {
+    const merged = {
+        thongTinCa: t4vhvData.thongTinCa,
+        lichTruc: {}
+    };
+    
+    for (const dateKey in t4vhvData.lichTruc) {
+        merged.lichTruc[dateKey] = {};
+        
+        for (const caCode in t4vhvData.lichTruc[dateKey]) {
+            merged.lichTruc[dateKey][caCode] = [];
+            
+            const t4tcStaff = (t4tcData.lichTruc[dateKey] && t4tcData.lichTruc[dateKey][caCode]) || [];
+            const t4vhvStaff = t4vhvData.lichTruc[dateKey][caCode] || [];
+            
+            merged.lichTruc[dateKey][caCode] = [...t4tcStaff, ...t4vhvStaff];
+        }
+    }
+    
+    return merged;
+}
+
+function setupTabSwitching() {
+    const tab1Btn = document.getElementById('tab-1-btn');
+    const tab2Btn = document.getElementById('tab-2-btn');
+    const tab3Btn = document.getElementById('tab-3-btn');
+    const tab1Content = document.getElementById('tab-1-content');
+    const tab2Content = document.getElementById('tab-2-content');
+    const tab3Content = document.getElementById('tab-3-content');
+    
+    if (!tab1Btn || !tab2Btn || !tab3Btn) return;
+    
+    const activateTab = (btn, content) => {
+        [tab1Btn, tab2Btn, tab3Btn].forEach(b => b.classList.remove('active'));
+        [tab1Content, tab2Content, tab3Content].forEach(c => c.classList.add('hidden'));
+        btn.classList.add('active');
+        content.classList.remove('hidden');
+    };
+    
+    tab1Btn.addEventListener('click', () => {
+        activateTab(tab1Btn, tab1Content);
+        localStorage.setItem('activeTab', 'tab1');
+    });
+    
+    tab2Btn.addEventListener('click', () => {
+        activateTab(tab2Btn, tab2Content);
+        localStorage.setItem('activeTab', 'tab2');
+    });
+    
+    tab3Btn.addEventListener('click', () => {
+        activateTab(tab3Btn, tab3Content);
+        localStorage.setItem('activeTab', 'tab3');
+    });
+    
+    const activeTab = localStorage.getItem('activeTab') || 'tab1';
+    if (activeTab === 'tab2') {
+        tab2Btn.click();
+    } else if (activeTab === 'tab3') {
+        tab3Btn.click();
+    }
+}
+
+
 (async function init() {
     const schedule = await loadSchedule();
     if (!schedule) {
@@ -446,4 +963,39 @@ async function loadSchedule() {
         return;
     }
     setupUI(schedule);
+    
+    const t4tcData = await loadOperationsSchedule('T4TC3.JSON');
+    const t4vhvData = await loadOperationsSchedule('T4VHV.json');
+    const t4cvh4Data = await loadOperationsSchedule('T4CVH4.json');
+    
+    // CVH 3: Merge T4TC3 (Trưởng Ca) + T4VHV (Vận Hành Viên)
+    if (t4tcData && t4vhvData) {
+        const cvh3MergedData = mergeCVH3Data(t4tcData, t4vhvData);
+        setupCVHUI(
+            cvh3MergedData,
+            'operations-date-picker',
+            'operations-selected-date-display',
+            'operations-cvh3-date',
+            'operations-cvh3-current',
+            'operations-cvh3-day-schedule'
+        );
+    } else {
+        document.getElementById('operations-cvh3-current').textContent = 'Không tải được dữ liệu CVH 3 (T4TC3 hoặc T4VHV)';
+    }
+    
+    // CVH 4: Single file
+    if (t4cvh4Data) {
+        setupCVHUI(
+            t4cvh4Data,
+            'operations4-date-picker',
+            'operations4-selected-date-display',
+            'operations-cvh4-date',
+            'operations-cvh4-current',
+            'operations-cvh4-day-schedule'
+        );
+    } else {
+        document.getElementById('operations-cvh4-current').textContent = 'Không tải được dữ liệu CVH 4 (T4CVH4)';
+    }
+    
+    setupTabSwitching();
 })();

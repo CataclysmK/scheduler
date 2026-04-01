@@ -1,0 +1,3498 @@
+{
+  "thongTinCa": {
+    "ca1": {
+      "gioBatDau": "07:00",
+      "gioKetThuc": "15:00"
+    },
+    "ca2": {
+      "gioBatDau": "15:00",
+      "gioKetThuc": "22:00"
+    },
+    "ca3": {
+      "gioBatDau": "22:00",
+      "gioKetThuc": "07:00"
+    }
+  },
+  "lichTruc": {
+    "2026-04-01": {
+      "ca1": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 220kV)",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Quốc Sơn"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Hữu Lãm"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca D",
+          "nhanSu": "Văn Ngọc Trường"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Đức Anh"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Hạnh Duy"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Ngoài Gian Máy BOP",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Chu Hùng"
+        }
+      ],
+      "ca2": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 220kV)",
+          "doi": "Ca C",
+          "nhanSu": "Thái Minh Mẫn"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca C",
+          "nhanSu": "Nguyễn Văn Vàng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca C",
+          "nhanSu": "Võ Nhất Sinh"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca C",
+          "nhanSu": "Võ Đình Luật"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca C",
+          "nhanSu": "Đỗ Đức Dũng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Ngoài Gian Máy BOP",
+          "doi": "Ca C",
+          "nhanSu": "Vũ Lê Minh Hiếu"
+        }
+      ],
+      "ca3": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 220kV)",
+          "doi": "Ca B",
+          "nhanSu": "Đinh Hữu Hiền"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca B",
+          "nhanSu": "Vũ Hùng Phong"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca B",
+          "nhanSu": "Thiều Sỹ Chinh"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca B",
+          "nhanSu": "Phạm Hùng Cường"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca B",
+          "nhanSu": "Nguyễn Huy Hoàng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Ngoài Gian Máy BOP",
+          "doi": "Ca B",
+          "nhanSu": "Lê Đình An"
+        }
+      ]
+    },
+    "2026-04-02": {
+      "ca1": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 220kV)",
+          "doi": "Ca E",
+          "nhanSu": "Dương Văn Dũng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Thanh Tùng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Hoài Thiên Vũ"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca E",
+          "nhanSu": "Trần Quang Truyền"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Văn Lượng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Ngoài Gian Máy BOP",
+          "doi": "Ca E",
+          "nhanSu": "Đặng Trường Giang"
+        }
+      ],
+      "ca2": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 220kV)",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Quốc Sơn"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Hữu Lãm"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca D",
+          "nhanSu": "Văn Ngọc Trường"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Đức Anh"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Hạnh Duy"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Ngoài Gian Máy BOP",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Chu Hùng"
+        }
+      ],
+      "ca3": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 220kV)",
+          "doi": "Ca C",
+          "nhanSu": "Thái Minh Mẫn"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca C",
+          "nhanSu": "Nguyễn Văn Vàng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca C",
+          "nhanSu": "Võ Nhất Sinh"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca C",
+          "nhanSu": "Võ Đình Luật"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca C",
+          "nhanSu": "Đỗ Đức Dũng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Ngoài Gian Máy BOP",
+          "doi": "Ca C",
+          "nhanSu": "Vũ Lê Minh Hiếu"
+        }
+      ]
+    },
+    "2026-04-03": {
+      "ca1": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 220kV)",
+          "doi": "Ca E",
+          "nhanSu": "Dương Văn Dũng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Thanh Tùng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Hoài Thiên Vũ"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca E",
+          "nhanSu": "Trần Quang Truyền"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Văn Lượng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Ngoài Gian Máy BOP",
+          "doi": "Ca E",
+          "nhanSu": "Đặng Trường Giang"
+        }
+      ],
+      "ca2": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 220kV)",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Quốc Sơn"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Hữu Lãm"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca D",
+          "nhanSu": "Văn Ngọc Trường"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Đức Anh"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Hạnh Duy"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Ngoài Gian Máy BOP",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Chu Hùng"
+        }
+      ],
+      "ca3": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 220kV)",
+          "doi": "Ca C",
+          "nhanSu": "Thái Minh Mẫn"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca C",
+          "nhanSu": "Nguyễn Văn Vàng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca C",
+          "nhanSu": "Võ Nhất Sinh"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca C",
+          "nhanSu": "Võ Đình Luật"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca C",
+          "nhanSu": "Đỗ Đức Dũng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Ngoài Gian Máy BOP",
+          "doi": "Ca C",
+          "nhanSu": "Vũ Lê Minh Hiếu"
+        }
+      ]
+    },
+    "2026-04-04": {
+      "ca1": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 220kV)",
+          "doi": "Ca A",
+          "nhanSu": "Lê Văn Trường"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca A",
+          "nhanSu": "Lê Đức Hùng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca A",
+          "nhanSu": "Đào Huy Hai"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca A",
+          "nhanSu": "Nguyễn Trung Thông"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca A",
+          "nhanSu": "Nguyễn Trung Quân"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Ngoài Gian Máy BOP",
+          "doi": "Ca A",
+          "nhanSu": "Nguyễn Trung Đông"
+        }
+      ],
+      "ca2": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 220kV)",
+          "doi": "Ca E",
+          "nhanSu": "Dương Văn Dũng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Thanh Tùng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Hoài Thiên Vũ"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca E",
+          "nhanSu": "Trần Quang Truyền"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Văn Lượng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Ngoài Gian Máy BOP",
+          "doi": "Ca E",
+          "nhanSu": "Đặng Trường Giang"
+        }
+      ],
+      "ca3": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 220kV)",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Quốc Sơn"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Hữu Lãm"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca D",
+          "nhanSu": "Văn Ngọc Trường"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Đức Anh"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Hạnh Duy"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Ngoài Gian Máy BOP",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Chu Hùng"
+        }
+      ]
+    },
+    "2026-04-05": {
+      "ca1": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 220kV)",
+          "doi": "Ca A",
+          "nhanSu": "Lê Văn Trường"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca A",
+          "nhanSu": "Lê Đức Hùng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca A",
+          "nhanSu": "Đào Huy Hai"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca A",
+          "nhanSu": "Nguyễn Trung Thông"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca A",
+          "nhanSu": "Nguyễn Trung Quân"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Ngoài Gian Máy BOP",
+          "doi": "Ca A",
+          "nhanSu": "Nguyễn Trung Đông"
+        }
+      ],
+      "ca2": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 220kV)",
+          "doi": "Ca E",
+          "nhanSu": "Dương Văn Dũng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Thanh Tùng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Hoài Thiên Vũ"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca E",
+          "nhanSu": "Trần Quang Truyền"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Văn Lượng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Ngoài Gian Máy BOP",
+          "doi": "Ca E",
+          "nhanSu": "Đặng Trường Giang"
+        }
+      ],
+      "ca3": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 220kV)",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Quốc Sơn"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Hữu Lãm"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca D",
+          "nhanSu": "Văn Ngọc Trường"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Đức Anh"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Hạnh Duy"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Ngoài Gian Máy BOP",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Chu Hùng"
+        }
+      ]
+    },
+    "2026-04-06": {
+      "ca1": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 220kV)",
+          "doi": "Ca B",
+          "nhanSu": "Đinh Hữu Hiền"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca B",
+          "nhanSu": "Vũ Hùng Phong"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca B",
+          "nhanSu": "Thiều Sỹ Chinh"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca B",
+          "nhanSu": "Phạm Hùng Cường"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca B",
+          "nhanSu": "Nguyễn Huy Hoàng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Ngoài Gian Máy BOP",
+          "doi": "Ca B",
+          "nhanSu": "Lê Đình An"
+        }
+      ],
+      "ca2": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 220kV)",
+          "doi": "Ca A",
+          "nhanSu": "Lê Văn Trường"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca A",
+          "nhanSu": "Lê Đức Hùng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca A",
+          "nhanSu": "Đào Huy Hai"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca A",
+          "nhanSu": "Nguyễn Trung Thông"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca A",
+          "nhanSu": "Nguyễn Trung Quân"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Ngoài Gian Máy BOP",
+          "doi": "Ca A",
+          "nhanSu": "Nguyễn Trung Đông"
+        }
+      ],
+      "ca3": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 220kV)",
+          "doi": "Ca E",
+          "nhanSu": "Dương Văn Dũng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Thanh Tùng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Hoài Thiên Vũ"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca E",
+          "nhanSu": "Trần Quang Truyền"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Văn Lượng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Ngoài Gian Máy BOP",
+          "doi": "Ca E",
+          "nhanSu": "Đặng Trường Giang"
+        }
+      ]
+    },
+    "2026-04-07": {
+      "ca1": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 220kV)",
+          "doi": "Ca B",
+          "nhanSu": "Đinh Hữu Hiền"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca B",
+          "nhanSu": "Vũ Hùng Phong"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca B",
+          "nhanSu": "Thiều Sỹ Chinh"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca B",
+          "nhanSu": "Phạm Hùng Cường"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca B",
+          "nhanSu": "Nguyễn Huy Hoàng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Ngoài Gian Máy BOP",
+          "doi": "Ca B",
+          "nhanSu": "Lê Đình An"
+        }
+      ],
+      "ca2": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 220kV)",
+          "doi": "Ca A",
+          "nhanSu": "Lê Văn Trường"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca A",
+          "nhanSu": "Lê Đức Hùng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca A",
+          "nhanSu": "Đào Huy Hai"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca A",
+          "nhanSu": "Nguyễn Trung Thông"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca A",
+          "nhanSu": "Nguyễn Trung Quân"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Ngoài Gian Máy BOP",
+          "doi": "Ca A",
+          "nhanSu": "Nguyễn Trung Đông"
+        }
+      ],
+      "ca3": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 220kV)",
+          "doi": "Ca E",
+          "nhanSu": "Dương Văn Dũng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Thanh Tùng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Hoài Thiên Vũ"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca E",
+          "nhanSu": "Trần Quang Truyền"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Văn Lượng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Ngoài Gian Máy BOP",
+          "doi": "Ca E",
+          "nhanSu": "Đặng Trường Giang"
+        }
+      ]
+    },
+    "2026-04-08": {
+      "ca1": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 220kV)",
+          "doi": "Ca C",
+          "nhanSu": "Thái Minh Mẫn"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca C",
+          "nhanSu": "Nguyễn Văn Vàng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca C",
+          "nhanSu": "Võ Nhất Sinh"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca C",
+          "nhanSu": "Võ Đình Luật"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca C",
+          "nhanSu": "Đỗ Đức Dũng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Ngoài Gian Máy BOP",
+          "doi": "Ca C",
+          "nhanSu": "Vũ Lê Minh Hiếu"
+        }
+      ],
+      "ca2": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 220kV)",
+          "doi": "Ca B",
+          "nhanSu": "Đinh Hữu Hiền"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca B",
+          "nhanSu": "Vũ Hùng Phong"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca B",
+          "nhanSu": "Thiều Sỹ Chinh"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca B",
+          "nhanSu": "Phạm Hùng Cường"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca B",
+          "nhanSu": "Nguyễn Huy Hoàng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Ngoài Gian Máy BOP",
+          "doi": "Ca B",
+          "nhanSu": "Lê Đình An"
+        }
+      ],
+      "ca3": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 220kV)",
+          "doi": "Ca A",
+          "nhanSu": "Lê Văn Trường"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca A",
+          "nhanSu": "Lê Đức Hùng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca A",
+          "nhanSu": "Đào Huy Hai"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca A",
+          "nhanSu": "Nguyễn Trung Thông"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca A",
+          "nhanSu": "Nguyễn Trung Quân"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Ngoài Gian Máy BOP",
+          "doi": "Ca A",
+          "nhanSu": "Nguyễn Trung Đông"
+        }
+      ]
+    },
+    "2026-04-09": {
+      "ca1": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 220kV)",
+          "doi": "Ca C",
+          "nhanSu": "Thái Minh Mẫn"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca C",
+          "nhanSu": "Nguyễn Văn Vàng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca C",
+          "nhanSu": "Võ Nhất Sinh"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca C",
+          "nhanSu": "Võ Đình Luật"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca C",
+          "nhanSu": "Đỗ Đức Dũng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Ngoài Gian Máy BOP",
+          "doi": "Ca C",
+          "nhanSu": "Vũ Lê Minh Hiếu"
+        }
+      ],
+      "ca2": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 220kV)",
+          "doi": "Ca B",
+          "nhanSu": "Đinh Hữu Hiền"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca B",
+          "nhanSu": "Vũ Hùng Phong"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca B",
+          "nhanSu": "Thiều Sỹ Chinh"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca B",
+          "nhanSu": "Phạm Hùng Cường"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca B",
+          "nhanSu": "Nguyễn Huy Hoàng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Ngoài Gian Máy BOP",
+          "doi": "Ca B",
+          "nhanSu": "Lê Đình An"
+        }
+      ],
+      "ca3": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 220kV)",
+          "doi": "Ca A",
+          "nhanSu": "Lê Văn Trường"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca A",
+          "nhanSu": "Lê Đức Hùng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca A",
+          "nhanSu": "Đào Huy Hai"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca A",
+          "nhanSu": "Nguyễn Trung Thông"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca A",
+          "nhanSu": "Nguyễn Trung Quân"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Ngoài Gian Máy BOP",
+          "doi": "Ca A",
+          "nhanSu": "Nguyễn Trung Đông"
+        }
+      ]
+    },
+    "2026-04-10": {
+      "ca1": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 220kV)",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Quốc Sơn"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Hữu Lãm"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca D",
+          "nhanSu": "Văn Ngọc Trường"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Đức Anh"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Hạnh Duy"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Ngoài Gian Máy BOP",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Chu Hùng"
+        }
+      ],
+      "ca2": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 220kV)",
+          "doi": "Ca C",
+          "nhanSu": "Thái Minh Mẫn"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca C",
+          "nhanSu": "Nguyễn Văn Vàng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca C",
+          "nhanSu": "Võ Nhất Sinh"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca C",
+          "nhanSu": "Võ Đình Luật"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca C",
+          "nhanSu": "Đỗ Đức Dũng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Ngoài Gian Máy BOP",
+          "doi": "Ca C",
+          "nhanSu": "Vũ Lê Minh Hiếu"
+        }
+      ],
+      "ca3": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 220kV)",
+          "doi": "Ca B",
+          "nhanSu": "Đinh Hữu Hiền"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca B",
+          "nhanSu": "Vũ Hùng Phong"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca B",
+          "nhanSu": "Thiều Sỹ Chinh"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca B",
+          "nhanSu": "Phạm Hùng Cường"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca B",
+          "nhanSu": "Nguyễn Huy Hoàng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Ngoài Gian Máy BOP",
+          "doi": "Ca B",
+          "nhanSu": "Lê Đình An"
+        }
+      ]
+    },
+    "2026-04-11": {
+      "ca1": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 220kV)",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Quốc Sơn"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Hữu Lãm"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca D",
+          "nhanSu": "Văn Ngọc Trường"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Đức Anh"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Hạnh Duy"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Ngoài Gian Máy BOP",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Chu Hùng"
+        }
+      ],
+      "ca2": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 220kV)",
+          "doi": "Ca C",
+          "nhanSu": "Thái Minh Mẫn"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca C",
+          "nhanSu": "Nguyễn Văn Vàng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca C",
+          "nhanSu": "Võ Nhất Sinh"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca C",
+          "nhanSu": "Võ Đình Luật"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca C",
+          "nhanSu": "Đỗ Đức Dũng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Ngoài Gian Máy BOP",
+          "doi": "Ca C",
+          "nhanSu": "Vũ Lê Minh Hiếu"
+        }
+      ],
+      "ca3": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 220kV)",
+          "doi": "Ca B",
+          "nhanSu": "Đinh Hữu Hiền"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca B",
+          "nhanSu": "Vũ Hùng Phong"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca B",
+          "nhanSu": "Thiều Sỹ Chinh"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca B",
+          "nhanSu": "Phạm Hùng Cường"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca B",
+          "nhanSu": "Nguyễn Huy Hoàng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Ngoài Gian Máy BOP",
+          "doi": "Ca B",
+          "nhanSu": "Lê Đình An"
+        }
+      ]
+    },
+    "2026-04-12": {
+      "ca1": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 220kV)",
+          "doi": "Ca E",
+          "nhanSu": "Dương Văn Dũng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Thanh Tùng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Hoài Thiên Vũ"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca E",
+          "nhanSu": "Trần Quang Truyền"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Văn Lượng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Ngoài Gian Máy BOP",
+          "doi": "Ca E",
+          "nhanSu": "Đặng Trường Giang"
+        }
+      ],
+      "ca2": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 220kV)",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Quốc Sơn"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Hữu Lãm"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca D",
+          "nhanSu": "Văn Ngọc Trường"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Đức Anh"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Hạnh Duy"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Ngoài Gian Máy BOP",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Chu Hùng"
+        }
+      ],
+      "ca3": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 220kV)",
+          "doi": "Ca C",
+          "nhanSu": "Thái Minh Mẫn"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca C",
+          "nhanSu": "Nguyễn Văn Vàng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca C",
+          "nhanSu": "Võ Nhất Sinh"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca C",
+          "nhanSu": "Võ Đình Luật"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca C",
+          "nhanSu": "Đỗ Đức Dũng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Ngoài Gian Máy BOP",
+          "doi": "Ca C",
+          "nhanSu": "Vũ Lê Minh Hiếu"
+        }
+      ]
+    },
+    "2026-04-13": {
+      "ca1": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 220kV)",
+          "doi": "Ca E",
+          "nhanSu": "Dương Văn Dũng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Thanh Tùng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Hoài Thiên Vũ"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca E",
+          "nhanSu": "Trần Quang Truyền"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Văn Lượng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Ngoài Gian Máy BOP",
+          "doi": "Ca E",
+          "nhanSu": "Đặng Trường Giang"
+        }
+      ],
+      "ca2": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 220kV)",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Quốc Sơn"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Hữu Lãm"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca D",
+          "nhanSu": "Văn Ngọc Trường"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Đức Anh"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Hạnh Duy"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Ngoài Gian Máy BOP",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Chu Hùng"
+        }
+      ],
+      "ca3": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 220kV)",
+          "doi": "Ca C",
+          "nhanSu": "Thái Minh Mẫn"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca C",
+          "nhanSu": "Nguyễn Văn Vàng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca C",
+          "nhanSu": "Võ Nhất Sinh"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca C",
+          "nhanSu": "Võ Đình Luật"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca C",
+          "nhanSu": "Đỗ Đức Dũng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Ngoài Gian Máy BOP",
+          "doi": "Ca C",
+          "nhanSu": "Vũ Lê Minh Hiếu"
+        }
+      ]
+    },
+    "2026-04-14": {
+      "ca1": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 220kV)",
+          "doi": "Ca A",
+          "nhanSu": "Lê Văn Trường"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca A",
+          "nhanSu": "Lê Đức Hùng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca A",
+          "nhanSu": "Đào Huy Hai"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca A",
+          "nhanSu": "Nguyễn Trung Thông"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca A",
+          "nhanSu": "Nguyễn Trung Quân"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Ngoài Gian Máy BOP",
+          "doi": "Ca A",
+          "nhanSu": "Nguyễn Trung Đông"
+        }
+      ],
+      "ca2": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 220kV)",
+          "doi": "Ca E",
+          "nhanSu": "Dương Văn Dũng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Thanh Tùng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Hoài Thiên Vũ"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca E",
+          "nhanSu": "Trần Quang Truyền"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Văn Lượng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Ngoài Gian Máy BOP",
+          "doi": "Ca E",
+          "nhanSu": "Đặng Trường Giang"
+        }
+      ],
+      "ca3": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 220kV)",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Quốc Sơn"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Hữu Lãm"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca D",
+          "nhanSu": "Văn Ngọc Trường"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Đức Anh"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Hạnh Duy"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Ngoài Gian Máy BOP",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Chu Hùng"
+        }
+      ]
+    },
+    "2026-04-15": {
+      "ca1": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 220kV)",
+          "doi": "Ca A",
+          "nhanSu": "Lê Văn Trường"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca A",
+          "nhanSu": "Lê Đức Hùng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca A",
+          "nhanSu": "Đào Huy Hai"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca A",
+          "nhanSu": "Nguyễn Trung Thông"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca A",
+          "nhanSu": "Nguyễn Trung Quân"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Ngoài Gian Máy BOP",
+          "doi": "Ca A",
+          "nhanSu": "Nguyễn Trung Đông"
+        }
+      ],
+      "ca2": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 220kV)",
+          "doi": "Ca E",
+          "nhanSu": "Dương Văn Dũng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Thanh Tùng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Hoài Thiên Vũ"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca E",
+          "nhanSu": "Trần Quang Truyền"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Văn Lượng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Ngoài Gian Máy BOP",
+          "doi": "Ca E",
+          "nhanSu": "Đặng Trường Giang"
+        }
+      ],
+      "ca3": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 220kV)",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Quốc Sơn"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Hữu Lãm"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca D",
+          "nhanSu": "Văn Ngọc Trường"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Đức Anh"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Hạnh Duy"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Ngoài Gian Máy BOP",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Chu Hùng"
+        }
+      ]
+    },
+    "2026-04-16": {
+      "ca1": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 220kV)",
+          "doi": "Ca B",
+          "nhanSu": "Đinh Hữu Hiền"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca B",
+          "nhanSu": "Vũ Hùng Phong"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca B",
+          "nhanSu": "Thiều Sỹ Chinh"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca B",
+          "nhanSu": "Phạm Hùng Cường"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca B",
+          "nhanSu": "Nguyễn Huy Hoàng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Ngoài Gian Máy BOP",
+          "doi": "Ca B",
+          "nhanSu": "Lê Đình An"
+        }
+      ],
+      "ca2": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 220kV)",
+          "doi": "Ca A",
+          "nhanSu": "Lê Văn Trường"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca A",
+          "nhanSu": "Lê Đức Hùng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca A",
+          "nhanSu": "Đào Huy Hai"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca A",
+          "nhanSu": "Nguyễn Trung Thông"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca A",
+          "nhanSu": "Nguyễn Trung Quân"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Ngoài Gian Máy BOP",
+          "doi": "Ca A",
+          "nhanSu": "Nguyễn Trung Đông"
+        }
+      ],
+      "ca3": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 220kV)",
+          "doi": "Ca E",
+          "nhanSu": "Dương Văn Dũng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Thanh Tùng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Hoài Thiên Vũ"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca E",
+          "nhanSu": "Trần Quang Truyền"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Văn Lượng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Ngoài Gian Máy BOP",
+          "doi": "Ca E",
+          "nhanSu": "Đặng Trường Giang"
+        }
+      ]
+    },
+    "2026-04-17": {
+      "ca1": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 220kV)",
+          "doi": "Ca B",
+          "nhanSu": "Đinh Hữu Hiền"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca B",
+          "nhanSu": "Vũ Hùng Phong"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca B",
+          "nhanSu": "Thiều Sỹ Chinh"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca B",
+          "nhanSu": "Phạm Hùng Cường"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca B",
+          "nhanSu": "Nguyễn Huy Hoàng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Ngoài Gian Máy BOP",
+          "doi": "Ca B",
+          "nhanSu": "Lê Đình An"
+        }
+      ],
+      "ca2": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 220kV)",
+          "doi": "Ca A",
+          "nhanSu": "Lê Văn Trường"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca A",
+          "nhanSu": "Lê Đức Hùng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca A",
+          "nhanSu": "Đào Huy Hai"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca A",
+          "nhanSu": "Nguyễn Trung Thông"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca A",
+          "nhanSu": "Nguyễn Trung Quân"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Ngoài Gian Máy BOP",
+          "doi": "Ca A",
+          "nhanSu": "Nguyễn Trung Đông"
+        }
+      ],
+      "ca3": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 220kV)",
+          "doi": "Ca E",
+          "nhanSu": "Dương Văn Dũng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Thanh Tùng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Hoài Thiên Vũ"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca E",
+          "nhanSu": "Trần Quang Truyền"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Văn Lượng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Ngoài Gian Máy BOP",
+          "doi": "Ca E",
+          "nhanSu": "Đặng Trường Giang"
+        }
+      ]
+    },
+    "2026-04-18": {
+      "ca1": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 220kV)",
+          "doi": "Ca C",
+          "nhanSu": "Thái Minh Mẫn"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca C",
+          "nhanSu": "Nguyễn Văn Vàng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca C",
+          "nhanSu": "Võ Nhất Sinh"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca C",
+          "nhanSu": "Võ Đình Luật"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca C",
+          "nhanSu": "Đỗ Đức Dũng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Ngoài Gian Máy BOP",
+          "doi": "Ca C",
+          "nhanSu": "Vũ Lê Minh Hiếu"
+        }
+      ],
+      "ca2": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 220kV)",
+          "doi": "Ca B",
+          "nhanSu": "Đinh Hữu Hiền"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca B",
+          "nhanSu": "Vũ Hùng Phong"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca B",
+          "nhanSu": "Thiều Sỹ Chinh"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca B",
+          "nhanSu": "Phạm Hùng Cường"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca B",
+          "nhanSu": "Nguyễn Huy Hoàng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Ngoài Gian Máy BOP",
+          "doi": "Ca B",
+          "nhanSu": "Lê Đình An"
+        }
+      ],
+      "ca3": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 220kV)",
+          "doi": "Ca A",
+          "nhanSu": "Lê Văn Trường"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca A",
+          "nhanSu": "Lê Đức Hùng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca A",
+          "nhanSu": "Đào Huy Hai"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca A",
+          "nhanSu": "Nguyễn Trung Thông"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca A",
+          "nhanSu": "Nguyễn Trung Quân"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Ngoài Gian Máy BOP",
+          "doi": "Ca A",
+          "nhanSu": "Nguyễn Trung Đông"
+        }
+      ]
+    },
+    "2026-04-19": {
+      "ca1": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 220kV)",
+          "doi": "Ca C",
+          "nhanSu": "Thái Minh Mẫn"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca C",
+          "nhanSu": "Nguyễn Văn Vàng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca C",
+          "nhanSu": "Võ Nhất Sinh"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca C",
+          "nhanSu": "Võ Đình Luật"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca C",
+          "nhanSu": "Đỗ Đức Dũng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Ngoài Gian Máy BOP",
+          "doi": "Ca C",
+          "nhanSu": "Vũ Lê Minh Hiếu"
+        }
+      ],
+      "ca2": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 220kV)",
+          "doi": "Ca B",
+          "nhanSu": "Đinh Hữu Hiền"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca B",
+          "nhanSu": "Vũ Hùng Phong"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca B",
+          "nhanSu": "Thiều Sỹ Chinh"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca B",
+          "nhanSu": "Phạm Hùng Cường"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca B",
+          "nhanSu": "Nguyễn Huy Hoàng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Ngoài Gian Máy BOP",
+          "doi": "Ca B",
+          "nhanSu": "Lê Đình An"
+        }
+      ],
+      "ca3": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 220kV)",
+          "doi": "Ca A",
+          "nhanSu": "Lê Văn Trường"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca A",
+          "nhanSu": "Lê Đức Hùng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca A",
+          "nhanSu": "Đào Huy Hai"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca A",
+          "nhanSu": "Nguyễn Trung Thông"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca A",
+          "nhanSu": "Nguyễn Trung Quân"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Ngoài Gian Máy BOP",
+          "doi": "Ca A",
+          "nhanSu": "Nguyễn Trung Đông"
+        }
+      ]
+    },
+    "2026-04-20": {
+      "ca1": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 220kV)",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Quốc Sơn"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Hữu Lãm"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca D",
+          "nhanSu": "Văn Ngọc Trường"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Đức Anh"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Hạnh Duy"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Ngoài Gian Máy BOP",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Chu Hùng"
+        }
+      ],
+      "ca2": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 220kV)",
+          "doi": "Ca C",
+          "nhanSu": "Thái Minh Mẫn"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca C",
+          "nhanSu": "Nguyễn Văn Vàng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca C",
+          "nhanSu": "Võ Nhất Sinh"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca C",
+          "nhanSu": "Võ Đình Luật"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca C",
+          "nhanSu": "Đỗ Đức Dũng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Ngoài Gian Máy BOP",
+          "doi": "Ca C",
+          "nhanSu": "Vũ Lê Minh Hiếu"
+        }
+      ],
+      "ca3": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 220kV)",
+          "doi": "Ca B",
+          "nhanSu": "Đinh Hữu Hiền"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca B",
+          "nhanSu": "Vũ Hùng Phong"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca B",
+          "nhanSu": "Thiều Sỹ Chinh"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca B",
+          "nhanSu": "Phạm Hùng Cường"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca B",
+          "nhanSu": "Nguyễn Huy Hoàng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Ngoài Gian Máy BOP",
+          "doi": "Ca B",
+          "nhanSu": "Lê Đình An"
+        }
+      ]
+    },
+    "2026-04-21": {
+      "ca1": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 220kV)",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Quốc Sơn"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Hữu Lãm"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca D",
+          "nhanSu": "Văn Ngọc Trường"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Đức Anh"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Hạnh Duy"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Ngoài Gian Máy BOP",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Chu Hùng"
+        }
+      ],
+      "ca2": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 220kV)",
+          "doi": "Ca C",
+          "nhanSu": "Thái Minh Mẫn"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca C",
+          "nhanSu": "Nguyễn Văn Vàng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca C",
+          "nhanSu": "Võ Nhất Sinh"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca C",
+          "nhanSu": "Võ Đình Luật"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca C",
+          "nhanSu": "Đỗ Đức Dũng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Ngoài Gian Máy BOP",
+          "doi": "Ca C",
+          "nhanSu": "Vũ Lê Minh Hiếu"
+        }
+      ],
+      "ca3": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 220kV)",
+          "doi": "Ca B",
+          "nhanSu": "Đinh Hữu Hiền"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca B",
+          "nhanSu": "Vũ Hùng Phong"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca B",
+          "nhanSu": "Thiều Sỹ Chinh"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca B",
+          "nhanSu": "Phạm Hùng Cường"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca B",
+          "nhanSu": "Nguyễn Huy Hoàng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Ngoài Gian Máy BOP",
+          "doi": "Ca B",
+          "nhanSu": "Lê Đình An"
+        }
+      ]
+    },
+    "2026-04-22": {
+      "ca1": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 220kV)",
+          "doi": "Ca E",
+          "nhanSu": "Dương Văn Dũng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Thanh Tùng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Hoài Thiên Vũ"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca E",
+          "nhanSu": "Trần Quang Truyền"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Văn Lượng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Ngoài Gian Máy BOP",
+          "doi": "Ca E",
+          "nhanSu": "Đặng Trường Giang"
+        }
+      ],
+      "ca2": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 220kV)",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Quốc Sơn"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Hữu Lãm"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca D",
+          "nhanSu": "Văn Ngọc Trường"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Đức Anh"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Hạnh Duy"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Ngoài Gian Máy BOP",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Chu Hùng"
+        }
+      ],
+      "ca3": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 220kV)",
+          "doi": "Ca C",
+          "nhanSu": "Thái Minh Mẫn"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca C",
+          "nhanSu": "Nguyễn Văn Vàng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca C",
+          "nhanSu": "Võ Nhất Sinh"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca C",
+          "nhanSu": "Võ Đình Luật"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca C",
+          "nhanSu": "Đỗ Đức Dũng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Ngoài Gian Máy BOP",
+          "doi": "Ca C",
+          "nhanSu": "Vũ Lê Minh Hiếu"
+        }
+      ]
+    },
+    "2026-04-23": {
+      "ca1": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 220kV)",
+          "doi": "Ca E",
+          "nhanSu": "Dương Văn Dũng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Thanh Tùng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Hoài Thiên Vũ"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca E",
+          "nhanSu": "Trần Quang Truyền"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Văn Lượng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Ngoài Gian Máy BOP",
+          "doi": "Ca E",
+          "nhanSu": "Đặng Trường Giang"
+        }
+      ],
+      "ca2": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 220kV)",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Quốc Sơn"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Hữu Lãm"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca D",
+          "nhanSu": "Văn Ngọc Trường"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Đức Anh"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Hạnh Duy"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Ngoài Gian Máy BOP",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Chu Hùng"
+        }
+      ],
+      "ca3": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 220kV)",
+          "doi": "Ca C",
+          "nhanSu": "Thái Minh Mẫn"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca C",
+          "nhanSu": "Nguyễn Văn Vàng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca C",
+          "nhanSu": "Võ Nhất Sinh"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca C",
+          "nhanSu": "Võ Đình Luật"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca C",
+          "nhanSu": "Đỗ Đức Dũng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Ngoài Gian Máy BOP",
+          "doi": "Ca C",
+          "nhanSu": "Vũ Lê Minh Hiếu"
+        }
+      ]
+    },
+    "2026-04-24": {
+      "ca1": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 220kV)",
+          "doi": "Ca A",
+          "nhanSu": "Lê Văn Trường"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca A",
+          "nhanSu": "Lê Đức Hùng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca A",
+          "nhanSu": "Đào Huy Hai"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca A",
+          "nhanSu": "Nguyễn Trung Thông"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca A",
+          "nhanSu": "Nguyễn Trung Quân"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Ngoài Gian Máy BOP",
+          "doi": "Ca A",
+          "nhanSu": "Nguyễn Trung Đông"
+        }
+      ],
+      "ca2": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 220kV)",
+          "doi": "Ca E",
+          "nhanSu": "Dương Văn Dũng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Thanh Tùng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Hoài Thiên Vũ"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca E",
+          "nhanSu": "Trần Quang Truyền"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Văn Lượng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Ngoài Gian Máy BOP",
+          "doi": "Ca E",
+          "nhanSu": "Đặng Trường Giang"
+        }
+      ],
+      "ca3": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 220kV)",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Quốc Sơn"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Hữu Lãm"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca D",
+          "nhanSu": "Văn Ngọc Trường"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Đức Anh"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Hạnh Duy"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Ngoài Gian Máy BOP",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Chu Hùng"
+        }
+      ]
+    },
+    "2026-04-25": {
+      "ca1": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 220kV)",
+          "doi": "Ca A",
+          "nhanSu": "Lê Văn Trường"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca A",
+          "nhanSu": "Lê Đức Hùng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca A",
+          "nhanSu": "Đào Huy Hai"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca A",
+          "nhanSu": "Nguyễn Trung Thông"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca A",
+          "nhanSu": "Nguyễn Trung Quân"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Ngoài Gian Máy BOP",
+          "doi": "Ca A",
+          "nhanSu": "Nguyễn Trung Đông"
+        }
+      ],
+      "ca2": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 220kV)",
+          "doi": "Ca E",
+          "nhanSu": "Dương Văn Dũng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Thanh Tùng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Hoài Thiên Vũ"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca E",
+          "nhanSu": "Trần Quang Truyền"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Văn Lượng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Ngoài Gian Máy BOP",
+          "doi": "Ca E",
+          "nhanSu": "Đặng Trường Giang"
+        }
+      ],
+      "ca3": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 220kV)",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Quốc Sơn"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Hữu Lãm"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca D",
+          "nhanSu": "Văn Ngọc Trường"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Đức Anh"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Hạnh Duy"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Ngoài Gian Máy BOP",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Chu Hùng"
+        }
+      ]
+    },
+    "2026-04-26": {
+      "ca1": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 220kV)",
+          "doi": "Ca B",
+          "nhanSu": "Đinh Hữu Hiền"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca B",
+          "nhanSu": "Vũ Hùng Phong"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca B",
+          "nhanSu": "Thiều Sỹ Chinh"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca B",
+          "nhanSu": "Phạm Hùng Cường"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca B",
+          "nhanSu": "Nguyễn Huy Hoàng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Ngoài Gian Máy BOP",
+          "doi": "Ca B",
+          "nhanSu": "Lê Đình An"
+        }
+      ],
+      "ca2": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 220kV)",
+          "doi": "Ca A",
+          "nhanSu": "Lê Văn Trường"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca A",
+          "nhanSu": "Lê Đức Hùng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca A",
+          "nhanSu": "Đào Huy Hai"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca A",
+          "nhanSu": "Nguyễn Trung Thông"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca A",
+          "nhanSu": "Nguyễn Trung Quân"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Ngoài Gian Máy BOP",
+          "doi": "Ca A",
+          "nhanSu": "Nguyễn Trung Đông"
+        }
+      ],
+      "ca3": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 220kV)",
+          "doi": "Ca E",
+          "nhanSu": "Dương Văn Dũng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Thanh Tùng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Hoài Thiên Vũ"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca E",
+          "nhanSu": "Trần Quang Truyền"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Văn Lượng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Ngoài Gian Máy BOP",
+          "doi": "Ca E",
+          "nhanSu": "Đặng Trường Giang"
+        }
+      ]
+    },
+    "2026-04-27": {
+      "ca1": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 220kV)",
+          "doi": "Ca B",
+          "nhanSu": "Đinh Hữu Hiền"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca B",
+          "nhanSu": "Vũ Hùng Phong"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca B",
+          "nhanSu": "Thiều Sỹ Chinh"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca B",
+          "nhanSu": "Phạm Hùng Cường"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca B",
+          "nhanSu": "Nguyễn Huy Hoàng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Ngoài Gian Máy BOP",
+          "doi": "Ca B",
+          "nhanSu": "Lê Đình An"
+        }
+      ],
+      "ca2": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 220kV)",
+          "doi": "Ca A",
+          "nhanSu": "Lê Văn Trường"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca A",
+          "nhanSu": "Lê Đức Hùng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca A",
+          "nhanSu": "Đào Huy Hai"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca A",
+          "nhanSu": "Nguyễn Trung Thông"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca A",
+          "nhanSu": "Nguyễn Trung Quân"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Ngoài Gian Máy BOP",
+          "doi": "Ca A",
+          "nhanSu": "Nguyễn Trung Đông"
+        }
+      ],
+      "ca3": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 220kV)",
+          "doi": "Ca E",
+          "nhanSu": "Dương Văn Dũng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Thanh Tùng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Hoài Thiên Vũ"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca E",
+          "nhanSu": "Trần Quang Truyền"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca E",
+          "nhanSu": "Nguyễn Văn Lượng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Ngoài Gian Máy BOP",
+          "doi": "Ca E",
+          "nhanSu": "Đặng Trường Giang"
+        }
+      ]
+    },
+    "2026-04-28": {
+      "ca1": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 220kV)",
+          "doi": "Ca C",
+          "nhanSu": "Thái Minh Mẫn"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca C",
+          "nhanSu": "Nguyễn Văn Vàng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca C",
+          "nhanSu": "Võ Nhất Sinh"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca C",
+          "nhanSu": "Võ Đình Luật"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca C",
+          "nhanSu": "Đỗ Đức Dũng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Ngoài Gian Máy BOP",
+          "doi": "Ca C",
+          "nhanSu": "Vũ Lê Minh Hiếu"
+        }
+      ],
+      "ca2": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 220kV)",
+          "doi": "Ca B",
+          "nhanSu": "Đinh Hữu Hiền"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca B",
+          "nhanSu": "Vũ Hùng Phong"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca B",
+          "nhanSu": "Thiều Sỹ Chinh"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca B",
+          "nhanSu": "Phạm Hùng Cường"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca B",
+          "nhanSu": "Nguyễn Huy Hoàng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Ngoài Gian Máy BOP",
+          "doi": "Ca B",
+          "nhanSu": "Lê Đình An"
+        }
+      ],
+      "ca3": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 220kV)",
+          "doi": "Ca A",
+          "nhanSu": "Lê Văn Trường"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca A",
+          "nhanSu": "Lê Đức Hùng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca A",
+          "nhanSu": "Đào Huy Hai"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca A",
+          "nhanSu": "Nguyễn Trung Thông"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca A",
+          "nhanSu": "Nguyễn Trung Quân"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Ngoài Gian Máy BOP",
+          "doi": "Ca A",
+          "nhanSu": "Nguyễn Trung Đông"
+        }
+      ]
+    },
+    "2026-04-29": {
+      "ca1": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 220kV)",
+          "doi": "Ca C",
+          "nhanSu": "Thái Minh Mẫn"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca C",
+          "nhanSu": "Nguyễn Văn Vàng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca C",
+          "nhanSu": "Võ Nhất Sinh"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca C",
+          "nhanSu": "Võ Đình Luật"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca C",
+          "nhanSu": "Đỗ Đức Dũng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Ngoài Gian Máy BOP",
+          "doi": "Ca C",
+          "nhanSu": "Vũ Lê Minh Hiếu"
+        }
+      ],
+      "ca2": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 220kV)",
+          "doi": "Ca B",
+          "nhanSu": "Đinh Hữu Hiền"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca B",
+          "nhanSu": "Vũ Hùng Phong"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca B",
+          "nhanSu": "Thiều Sỹ Chinh"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca B",
+          "nhanSu": "Phạm Hùng Cường"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca B",
+          "nhanSu": "Nguyễn Huy Hoàng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Ngoài Gian Máy BOP",
+          "doi": "Ca B",
+          "nhanSu": "Lê Đình An"
+        }
+      ],
+      "ca3": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 220kV)",
+          "doi": "Ca A",
+          "nhanSu": "Lê Văn Trường"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca A",
+          "nhanSu": "Lê Đức Hùng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca A",
+          "nhanSu": "Đào Huy Hai"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca A",
+          "nhanSu": "Nguyễn Trung Thông"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca A",
+          "nhanSu": "Nguyễn Trung Quân"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Ngoài Gian Máy BOP",
+          "doi": "Ca A",
+          "nhanSu": "Nguyễn Trung Đông"
+        }
+      ]
+    },
+    "2026-04-30": {
+      "ca1": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 220kV)",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Quốc Sơn"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Hữu Lãm"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca D",
+          "nhanSu": "Văn Ngọc Trường"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Đức Anh"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Hạnh Duy"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Ngoài Gian Máy BOP",
+          "doi": "Ca D",
+          "nhanSu": "Nguyễn Chu Hùng"
+        }
+      ],
+      "ca2": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 220kV)",
+          "doi": "Ca C",
+          "nhanSu": "Thái Minh Mẫn"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca C",
+          "nhanSu": "Nguyễn Văn Vàng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca C",
+          "nhanSu": "Võ Nhất Sinh"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca C",
+          "nhanSu": "Võ Đình Luật"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca C",
+          "nhanSu": "Đỗ Đức Dũng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Ngoài Gian Máy BOP",
+          "doi": "Ca C",
+          "nhanSu": "Vũ Lê Minh Hiếu"
+        }
+      ],
+      "ca3": [
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Trưởng kíp (Kiêm vận hành Trạm 220kV)",
+          "doi": "Ca B",
+          "nhanSu": "Đinh Hữu Hiền"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK HRSG &WSC",
+          "doi": "Ca B",
+          "nhanSu": "Vũ Hùng Phong"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Vận hành MTĐK GT/ST",
+          "doi": "Ca B",
+          "nhanSu": "Thiều Sỹ Chinh"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM GT/ST",
+          "doi": "Ca B",
+          "nhanSu": "Phạm Hùng Cường"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "GM HRSG &WSC",
+          "doi": "Ca B",
+          "nhanSu": "Nguyễn Huy Hoàng"
+        },
+        {
+          "nhaMay": "Nhà máy điện Nhơn Trạch 3",
+          "cuongVi": "Ngoài Gian Máy BOP",
+          "doi": "Ca B",
+          "nhanSu": "Lê Đình An"
+        }
+      ]
+    }
+  }
+}
