@@ -4,6 +4,7 @@ const SHIFT_DEFINITIONS = {
     WO: { label: 'WO', description: 'Giờ hành chính + on-call đêm 18:00-06:00', dayWindow: [['08:00','17:00'], ['18:00','06:00']] },
     D: { label: 'D', description: 'Ca ngày 06:00-18:00', dayWindow:[['06:00','18:00']] },
     N: { label: 'N', description: 'Ca đêm 18:00-06:00', dayWindow:[['18:00','06:00']] },
+    V: { label: 'V', description: 'Nghỉ phép', dayWindow: [] },
 };
 
 const ROLE_ORDER = [
@@ -51,6 +52,8 @@ function sortStaffByRole(staffArray) {
         return indexA - indexB;
     });
 }
+
+let phoneBook = new Map();
 
 function parseScheduleEntry(value) {
     if (!value) return null;
@@ -167,37 +170,36 @@ function getAssignmentsForDate(schedule, dateKey, excludeX = false) {
     return Array.isArray(entries)
         ? entries
               .map((entry) => parseScheduleEntry(entry))
-              .filter((item) => item && (!excludeX || item.code !== 'X'))
+              .filter((item) => item && (!excludeX || item.code !== 'X') && item.code !== 'V')
         : [];
 }
 
-function renderCurrentShift(schedule) {
+function renderCurrentShift(schedule, targetId = 'current-shift-info') {
     const todayKey = dateToKey(new Date());
     const todayDisplay = formatDateWithDayOfWeek(todayKey);
     let currentList = getCurrentOnDuty(schedule, todayKey);
     currentList = sortByShiftPriority(currentList);
-    const wrap = document.getElementById('current-shift-info');
+    const wrap = document.getElementById(targetId);
+
+    // Cập nhật ngày chung (chỉ 1 lần cho cả section)
+    const dateEl = document.getElementById('current-shift-date');
+    if (dateEl) dateEl.innerHTML = `Ngày hiện tại: <strong class="text-lg text-gray-800">${todayDisplay}</strong>`;
+
     if (currentList.length === 0) {
-        wrap.innerHTML = `<p class="text-gray-600">Ngày hiện tại: <strong class="text-lg text-gray-800">${todayDisplay}</strong></p><p class="text-yellow-700 bg-yellow-50 px-3 py-2 rounded-lg border border-yellow-200 mt-2">⚠️ Hiện tại không ai trực (có thể nghỉ, mã không rõ hoặc ngoài ca).</p>`;
+        wrap.innerHTML = `<p class="text-yellow-700 bg-yellow-50 px-3 py-2 rounded-lg border border-yellow-200">⚠️ Hiện tại không ai trực (có thể nghỉ, mã không rõ hoặc ngoài ca).</p>`;
         return;
     }
 
-    wrap.innerHTML = `<p class="text-gray-600 mb-3">Ngày hiện tại: <strong class="text-lg text-gray-800">${todayDisplay}</strong></p><ul class="space-y-2">` +
+    wrap.innerHTML = `<ul class="space-y-2">` +
         currentList.map((item) => {
-            const phone = formatPhoneNumber(item.phone);
-            const callLink = phone ? `tel:${phone}` : '#';
-            const zaloLink = phone ? `https://zalo.me/${phone}` : '#';
             return `<li class="px-4 py-3 bg-red-50 border-l-4 border-red-500 rounded">
                 <div class="flex justify-between items-start">
                     <div>
                         <span class="font-bold text-red-900 text-lg">${item.name || '(không tên)'}</span><br>
                         <span class="text-sm text-red-700 font-medium">${item.code} - ${item.role}</span>
                     </div>
-                    <div class="flex gap-2">
-                        ${phone ? `
-                        <a href="${callLink}" class="px-3 py-1 bg-blue-500 text-white rounded text-sm font-medium hover:bg-blue-600 transition">📞 Gọi</a>
-                        <a href="${zaloLink}" target="_blank" class="px-3 py-1 bg-blue-400 text-white rounded text-sm font-medium hover:bg-blue-500 transition">💬 Zalo</a>
-                        ` : ''}
+                    <div class="flex gap-2 mt-1">
+                        ${renderPhoneButtons(item.name, item.phone)}
                     </div>
                 </div>
             </li>`;
@@ -205,34 +207,80 @@ function renderCurrentShift(schedule) {
         '</ul>';
 }
 
-function renderDaySchedule(schedule, selectedDate) {
+function renderOffToday(schedule, scheduleCoNhiet) {
+    const today = new Date();
+    const dow = today.getDay(); // 0=Sun, 6=Sat
+    const todayKey = dateToKey(today);
+    const todayDisplay = formatDateWithDayOfWeek(todayKey);
+
+    const dateEl = document.getElementById('off-today-date');
+    if (dateEl) dateEl.innerHTML = `Ngày hiện tại: <strong class="text-lg text-gray-800">${todayDisplay}</strong>`;
+
+    const weekdayDiv = document.getElementById('off-today-weekday');
+    const weekendDiv = document.getElementById('off-today-weekend');
+
+    if (dow === 0 || dow === 6) {
+        weekdayDiv.classList.add('hidden');
+        weekendDiv.classList.remove('hidden');
+        return;
+    }
+    weekendDiv.classList.add('hidden');
+    weekdayDiv.classList.remove('hidden');
+
+    const renderOffList = (sched, targetId) => {
+        const entries = (sched && sched[todayKey]) || [];
+        const offPeople = Array.isArray(entries)
+            ? entries.map(e => parseScheduleEntry(e)).filter(e => {
+                if (!e) return false;
+                const code = e.code;
+                // V = Nghỉ phép, N = Ca đêm (nghỉ giờ hành chính)
+                return code === 'V' || code === 'N';
+              })
+            : [];
+        const el = document.getElementById(targetId);
+        if (!el) return;
+        if (offPeople.length === 0) {
+            el.innerHTML = '<p class="text-gray-500">Không có ai nghỉ hôm nay.</p>';
+            return;
+        }
+        el.innerHTML = '<ul class="space-y-1">' +
+            offPeople.map(item => {
+                const label = item.code === 'N'
+                    ? '<span class="ml-2 px-2 py-0.5 bg-blue-100 text-blue-700 rounded text-xs font-medium">Ca đêm</span>'
+                    : '<span class="ml-2 px-2 py-0.5 bg-yellow-100 text-yellow-700 rounded text-xs font-medium">Nghỉ theo lịch</span>';
+                return `<li class="px-3 py-2 bg-gray-50 border-l-4 border-gray-300 rounded flex justify-between items-center">
+                    <span class="font-medium text-gray-700">${item.name || '(không tên)'}${label}</span>
+                    <div class="flex gap-2">${renderPhoneButtons(item.name, item.phone)}</div>
+                </li>`;
+            }).join('') + '</ul>';
+    };
+
+    renderOffList(schedule, 'off-today-dien-ci');
+    renderOffList(scheduleCoNhiet, 'off-today-co-nhiet');
+}
+
+function renderDaySchedule(schedule, selectedDate, targetId = 'day-schedule') {
     const key = dateToKey(selectedDate);
     const keyDisplay = formatDateWithDayOfWeek(key);
     let assignments = getAssignmentsForDate(schedule, key, true); // loại bỏ X
     assignments = sortByShiftPriority(assignments);
-    const el = document.getElementById('day-schedule');
+    const el = document.getElementById(targetId);
 
     if (assignments.length === 0) {
-        el.innerHTML = `<p class="text-gray-600">Ngày <strong>${keyDisplay}</strong> không có ai trực (trừ ca X).</p>`;
+        el.innerHTML = `<p class="text-gray-600">Không có ai trực (trừ ca X).</p>`;
         return;
     }
 
-    el.innerHTML = `<p class="text-sm text-gray-600 mb-3">Ngày chọn: <strong class="text-lg text-gray-800">${keyDisplay}</strong></p><ul class="space-y-2">` +
+    el.innerHTML = `<ul class="space-y-2">` +
         assignments.map((item) => {
-            const phone = formatPhoneNumber(item.phone);
-            const callLink = phone ? `tel:${phone}` : '#';
-            const zaloLink = phone ? `https://zalo.me/${phone}` : '#';
             return `<li class="px-3 py-2 bg-white border-l-4 border-green-400 rounded">
                 <div class="flex justify-between items-start">
                     <div>
                         <span class="font-semibold text-gray-800">${item.name || '(Không tên)'}</span> - <span class="inline-block px-2 py-1 bg-green-100 text-green-800 rounded text-sm font-medium">${item.code || '(Unknown code)'}</span><br>
                         <span class="text-gray-600 text-sm">${item.code ? SHIFT_DEFINITIONS[item.code]?.description : ''}</span>
                     </div>
-                    <div class="flex gap-2">
-                        ${phone ? `
-                        <a href="${callLink}" class="px-3 py-1 bg-blue-500 text-white rounded text-sm font-medium hover:bg-blue-600 transition whitespace-nowrap">📞 Gọi</a>
-                        <a href="${zaloLink}" target="_blank" class="px-3 py-1 bg-blue-400 text-white rounded text-sm font-medium hover:bg-blue-500 transition whitespace-nowrap">💬 Zalo</a>
-                        ` : ''}
+                    <div class="flex gap-2 mt-1">
+                        ${renderPhoneButtons(item.name, item.phone)}
                     </div>
                 </div>
             </li>`;
@@ -346,7 +394,7 @@ function getPersonCode(schedule, dateKey, person) {
     });
     if (!item) return null;
     const parsed = parseScheduleEntry(item);
-    if (parsed && parsed.code) return parsed.code;
+    if (parsed && parsed.code) return parsed.code === 'V' ? null : parsed.code;
     return null;
 }
 
@@ -423,7 +471,50 @@ function renderMonthSchedule(schedule, selectedDate, person) {
     document.getElementById('month-schedule').innerHTML = html;
 }
 
-function setupUI(schedule) {
+function initDatePickerDisplay(inputId) {
+    const input = document.getElementById(inputId);
+    if (!input) return;
+
+    const display = document.createElement('input');
+    display.type = 'text';
+    display.readOnly = true;
+    display.className = input.className;
+    display.placeholder = 'DD/MM/YYYY';
+    display.style.cursor = 'pointer';
+    input.insertAdjacentElement('beforebegin', display);
+
+    // Co input gốc lại, giữ nguyên chức năng
+    input.style.cssText += '; width:0; height:0; padding:0; margin:0; border:0; opacity:0; position:absolute; pointer-events:none;';
+
+    const syncDisplay = () => {
+        if (input.value) {
+            const [y, m, d] = input.value.split('-');
+            display.value = `${d}/${m}/${y}`;
+        } else {
+            display.value = '';
+        }
+    };
+    syncDisplay();
+
+    display.addEventListener('click', () => {
+        try { input.showPicker(); } catch { input.focus(); }
+    });
+    input.addEventListener('change', syncDisplay);
+    input.addEventListener('input', syncDisplay);
+}
+
+function mergeSchedulesForTSC(s1, s2) {
+    const merged = {};
+    const allKeys = new Set([...Object.keys(s1 || {}), ...Object.keys(s2 || {})]);
+    allKeys.forEach(key => {
+        const a = (s1 && Array.isArray(s1[key])) ? s1[key] : [];
+        const b = (s2 && Array.isArray(s2[key])) ? s2[key] : [];
+        merged[key] = [...a, ...b];
+    });
+    return merged;
+}
+
+function setupUI(schedule, scheduleCoNhiet) {
     const datePicker = document.getElementById('date-picker');
     const personSelect = document.getElementById('person-select');
     const selectedPersonDiv = document.getElementById('selected-person');
@@ -431,6 +522,9 @@ function setupUI(schedule) {
     const searchInput = document.getElementById('person-search');
     
     if (!datePicker.value) datePicker.value = dateToKey(new Date());
+    initDatePickerDisplay('date-picker');
+
+    const mergedSchedule = mergeSchedulesForTSC(schedule, scheduleCoNhiet);
 
     // Display selected date with day of week
     const updateDateDisplay = () => {
@@ -440,10 +534,13 @@ function setupUI(schedule) {
     };
     updateDateDisplay();
 
-    setupPersonSearch(schedule);
+    setupPersonSearch(mergedSchedule);
 
     renderCurrentShift(schedule);
+    if (scheduleCoNhiet) renderCurrentShift(scheduleCoNhiet, 'current-shift-co-nhiet-info');
+    renderOffToday(schedule, scheduleCoNhiet);
     renderDaySchedule(schedule, datePicker.value);
+    if (scheduleCoNhiet) renderDaySchedule(scheduleCoNhiet, datePicker.value, 'day-schedule-co-nhiet');
 
     // Load previously selected person from localStorage
     const savedPerson = localStorage.getItem('selectedPerson');
@@ -453,25 +550,30 @@ function setupUI(schedule) {
         selectedPersonDiv.textContent = `✓ Đã chọn: ${savedPerson}`;
         selectedPersonDiv.classList.remove('hidden');
         // Auto-render both week and month for previously selected person
-        renderWeekSchedule(schedule, datePicker.value, savedPerson);
-        renderMonthSchedule(schedule, datePicker.value, savedPerson);
+        renderWeekSchedule(mergedSchedule, datePicker.value, savedPerson);
+        renderMonthSchedule(mergedSchedule, datePicker.value, savedPerson);
     }
 
     // Auto-render day schedule when date changes
     const updateOnDateChange = () => {
         updateDateDisplay();
         renderDaySchedule(schedule, datePicker.value);
+        if (scheduleCoNhiet) renderDaySchedule(scheduleCoNhiet, datePicker.value, 'day-schedule-co-nhiet');
         const person = personSelect.value;
         if (person) {
-            renderWeekSchedule(schedule, datePicker.value, person);
-            renderMonthSchedule(schedule, datePicker.value, person);
+            renderWeekSchedule(mergedSchedule, datePicker.value, person);
+            renderMonthSchedule(mergedSchedule, datePicker.value, person);
         }
     };
     
     datePicker.addEventListener('change', updateOnDateChange);
     datePicker.addEventListener('input', updateOnDateChange);
 
-    setInterval(() => renderCurrentShift(schedule), 60000);
+    setInterval(() => {
+        renderCurrentShift(schedule);
+        if (scheduleCoNhiet) renderCurrentShift(scheduleCoNhiet, 'current-shift-co-nhiet-info');
+        renderOffToday(schedule, scheduleCoNhiet);
+    }, 60000);
 }
 
 async function loadSchedule() {
@@ -494,6 +596,42 @@ async function loadOperationsSchedule(dataFile) {
         console.error(`Không thể load ${dataFile}:`, e);
         return null;
     }
+}
+
+async function loadDanhBa() {
+    try {
+        const res = await fetch('./data/DanhBa.json');
+        if (!res.ok) throw new Error('Lỗi tải danh bạ');
+        return await res.json();
+    } catch (e) {
+        console.error('Không thể load DanhBa:', e);
+        return null;
+    }
+}
+
+function buildPhoneBook(danhBaData) {
+    const map = new Map();
+    if (!danhBaData || !Array.isArray(danhBaData.danhBa)) return map;
+    danhBaData.danhBa.forEach(entry => {
+        if (entry.hoVaTen) map.set(entry.hoVaTen.trim(), entry.soDienThoai || '');
+    });
+    return map;
+}
+
+function renderPhoneButtons(name, fallbackPhone) {
+    let phone = '';
+    if (name) {
+        const fromBook = phoneBook.get(name.trim());
+        phone = (fromBook !== undefined && fromBook !== '') ? fromBook : (fallbackPhone || '');
+    } else {
+        phone = fallbackPhone || '';
+    }
+    const formatted = formatPhoneNumber(phone);
+    if (formatted) {
+        return `<a href="tel:${formatted}" class="px-3 py-1 bg-blue-500 text-white rounded text-sm font-medium hover:bg-blue-600 transition whitespace-nowrap">📞 Gọi</a>
+        <a href="https://zalo.me/${formatted}" target="_blank" class="px-3 py-1 bg-blue-400 text-white rounded text-sm font-medium hover:bg-blue-500 transition whitespace-nowrap">💬 Zalo</a>`;
+    }
+    return `<span class="px-2 py-1 bg-gray-100 text-gray-400 rounded text-xs font-medium">📵 TBD</span>`;
 }
 
 function isShiftTimeWindow(now, startTime, endTime) {
@@ -671,8 +809,13 @@ function renderCVHCurrentShift(cvhData, targetElementId) {
                 const colors = getColorForRole(person.cuongVi);
                 return `
                 <div class="staff-card ${colors.bg} border-l-4 ${colors.border} px-4 py-3 mb-2 rounded shadow-md">
-                    <p class="font-bold text-lg ${colors.text}">${person.nhanSu}</p>
-                    <p class="text-xs ${colors.text} font-semibold">${person.cuongVi}</p>
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <p class="font-bold text-lg ${colors.text}">${person.nhanSu}</p>
+                            <p class="text-xs ${colors.text} font-semibold">${person.cuongVi}</p>
+                        </div>
+                        <div class="flex gap-2 mt-1">${renderPhoneButtons(person.nhanSu, null)}</div>
+                    </div>
                 </div>
             `}).join('');
             html += `</div>`;
@@ -684,8 +827,13 @@ function renderCVHCurrentShift(cvhData, targetElementId) {
                 const colors = getColorForRole(person.cuongVi);
                 return `
                 <div class="staff-card ${colors.bg} border-l-4 ${colors.border} px-3 py-2 mb-2 rounded">
-                    <p class="font-semibold ${colors.text}">${person.nhanSu}</p>
-                    <p class="text-xs ${colors.text} opacity-75">${person.cuongVi}</p>
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <p class="font-semibold ${colors.text}">${person.nhanSu}</p>
+                            <p class="text-xs ${colors.text} opacity-75">${person.cuongVi}</p>
+                        </div>
+                        <div class="flex gap-2 mt-1">${renderPhoneButtons(person.nhanSu, null)}</div>
+                    </div>
                 </div>
             `}).join('');
         }
@@ -798,8 +946,13 @@ function renderCVHDaySchedule(cvhData, selectedDate, targetElementId) {
                     const colors = getColorForRole(person.cuongVi);
                     return `
                     <div class="staff-card ${colors.bg} px-4 py-3 mb-2 border-l-4 ${colors.border} rounded shadow-md">
-                        <p class="font-bold text-base ${colors.text}">${person.nhanSu}</p>
-                        <p class="text-xs ${colors.text} font-semibold">${person.cuongVi}</p>
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <p class="font-bold text-base ${colors.text}">${person.nhanSu}</p>
+                                <p class="text-xs ${colors.text} font-semibold">${person.cuongVi}</p>
+                            </div>
+                            <div class="flex gap-2 mt-1">${renderPhoneButtons(person.nhanSu, null)}</div>
+                        </div>
                     </div>
                 `}).join('');
                 caHtml += `</div>`;
@@ -811,8 +964,13 @@ function renderCVHDaySchedule(cvhData, selectedDate, targetElementId) {
                     const colors = getColorForRole(person.cuongVi);
                     return `
                     <div class="staff-card ${colors.bg} px-3 py-2 mb-2 border-l-4 ${colors.border} rounded">
-                        <p class="font-medium ${colors.text}">${person.nhanSu}</p>
-                        <p class="text-xs ${colors.text} opacity-75">${person.cuongVi}</p>
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <p class="font-medium ${colors.text}">${person.nhanSu}</p>
+                                <p class="text-xs ${colors.text} opacity-75">${person.cuongVi}</p>
+                            </div>
+                            <div class="flex gap-2 mt-1">${renderPhoneButtons(person.nhanSu, null)}</div>
+                        </div>
                     </div>
                 `}).join('');
             }
@@ -860,6 +1018,7 @@ function setupCVHUI(cvhData, datePickerId, displayId, currentShiftDateId, curren
     const currentShiftDateEl = document.getElementById(currentShiftDateId);
     
     if (!datePicker.value) datePicker.value = dateToKey(new Date());
+    initDatePickerDisplay(datePickerId);
     
     const updateDateDisplay = () => {
         if (selectedDateDisplay && datePicker.value) {
@@ -871,7 +1030,7 @@ function setupCVHUI(cvhData, datePickerId, displayId, currentShiftDateId, curren
     // Update header date for current shift
     const updateCurrentShiftDate = () => {
         if (currentShiftDateEl) {
-            currentShiftDateEl.textContent = formatDateWithDayOfWeek(dateToKey(new Date()));
+            currentShiftDateEl.innerHTML = `Ngày hiện tại: <strong class="text-lg text-gray-800">${formatDateWithDayOfWeek(dateToKey(new Date()))}</strong>`;
         }
     };
     updateCurrentShiftDate();
@@ -915,23 +1074,51 @@ function mergeCVH3Data(t4tcData, t4vhvData) {
     return merged;
 }
 
-function setupTabSwitching() {
+function renderDashboard(schedule, scheduleCoNhiet, cvh3Data, cvh4Data) {
+    const todayKey = dateToKey(new Date());
+    const todayDisplay = formatDateWithDayOfWeek(todayKey);
+
+    const dateEl = document.getElementById('dashboard-date');
+    if (dateEl) dateEl.innerHTML = `Ngày hiện tại: <strong class="text-lg text-gray-800">${todayDisplay}</strong>`;
+
+    renderCurrentShift(schedule, 'dashboard-tsc-dien-ci');
+    if (scheduleCoNhiet) renderCurrentShift(scheduleCoNhiet, 'dashboard-tsc-co-nhiet');
+    else document.getElementById('dashboard-tsc-co-nhiet').innerHTML = '<p class="text-gray-500">Không có dữ liệu.</p>';
+
+    if (cvh3Data) renderCVHCurrentShift(cvh3Data, 'dashboard-nt3');
+    else document.getElementById('dashboard-nt3').innerHTML = '<p class="text-gray-500">Không có dữ liệu.</p>';
+
+    if (cvh4Data) renderCVHCurrentShift(cvh4Data, 'dashboard-nt4');
+    else document.getElementById('dashboard-nt4').innerHTML = '<p class="text-gray-500">Không có dữ liệu.</p>';
+}
+
+function setupTabSwitching(onDashboardActivate) {
+    const tab0Btn = document.getElementById('tab-0-btn');
     const tab1Btn = document.getElementById('tab-1-btn');
     const tab2Btn = document.getElementById('tab-2-btn');
     const tab3Btn = document.getElementById('tab-3-btn');
+    const tab0Content = document.getElementById('tab-0-content');
     const tab1Content = document.getElementById('tab-1-content');
     const tab2Content = document.getElementById('tab-2-content');
     const tab3Content = document.getElementById('tab-3-content');
     
-    if (!tab1Btn || !tab2Btn || !tab3Btn) return;
+    if (!tab0Btn || !tab1Btn || !tab2Btn || !tab3Btn) return;
     
+    const allBtns = [tab0Btn, tab1Btn, tab2Btn, tab3Btn];
+    const allContents = [tab0Content, tab1Content, tab2Content, tab3Content];
+
     const activateTab = (btn, content) => {
-        [tab1Btn, tab2Btn, tab3Btn].forEach(b => b.classList.remove('active'));
-        [tab1Content, tab2Content, tab3Content].forEach(c => c.classList.add('hidden'));
+        allBtns.forEach(b => b.classList.remove('active'));
+        allContents.forEach(c => c.classList.add('hidden'));
         btn.classList.add('active');
         content.classList.remove('hidden');
     };
     
+    tab0Btn.addEventListener('click', () => {
+        activateTab(tab0Btn, tab0Content);
+        localStorage.setItem('activeTab', 'tab0');
+    });
+
     tab1Btn.addEventListener('click', () => {
         activateTab(tab1Btn, tab1Content);
         localStorage.setItem('activeTab', 'tab1');
@@ -947,30 +1134,44 @@ function setupTabSwitching() {
         localStorage.setItem('activeTab', 'tab3');
     });
     
-    const activeTab = localStorage.getItem('activeTab') || 'tab1';
-    if (activeTab === 'tab2') {
+    const activeTab = localStorage.getItem('activeTab') || 'tab0';
+    if (activeTab === 'tab1') {
+        tab1Btn.click();
+    } else if (activeTab === 'tab2') {
         tab2Btn.click();
     } else if (activeTab === 'tab3') {
         tab3Btn.click();
     }
+    // default: tab0 is already active/visible via HTML
 }
 
 
 (async function init() {
-    const schedule = await loadSchedule();
+    const [schedule, scheduleCoNhiet, t4tcData, t4vhvData, t4cvh4Data, danhBaData] = await Promise.all([
+        loadSchedule(),
+        loadOperationsSchedule('Thang4Co.json'),
+        loadOperationsSchedule('T4TC3.JSON'),
+        loadOperationsSchedule('T4VHV.json'),
+        loadOperationsSchedule('T4CVH4.json'),
+        loadDanhBa(),
+    ]);
+
+    phoneBook = buildPhoneBook(danhBaData);
+
     if (!schedule) {
         document.getElementById('current-shift-info').textContent = 'Không tải được lịch. Vui lòng kiểm tra data/schedule.json.';
         return;
     }
-    setupUI(schedule);
-    
-    const t4tcData = await loadOperationsSchedule('T4TC3.JSON');
-    const t4vhvData = await loadOperationsSchedule('T4VHV.json');
-    const t4cvh4Data = await loadOperationsSchedule('T4CVH4.json');
-    
+    setupUI(schedule, scheduleCoNhiet);
+
+    const cvh3MergedData = (t4tcData && t4vhvData) ? mergeCVH3Data(t4tcData, t4vhvData) : null;
+
+    // Dashboard: Thông Tin Chung
+    renderDashboard(schedule, scheduleCoNhiet, cvh3MergedData, t4cvh4Data);
+    setInterval(() => renderDashboard(schedule, scheduleCoNhiet, cvh3MergedData, t4cvh4Data), 60000);
+
     // CVH 3: Merge T4TC3 (Trưởng Ca) + T4VHV (Vận Hành Viên)
-    if (t4tcData && t4vhvData) {
-        const cvh3MergedData = mergeCVH3Data(t4tcData, t4vhvData);
+    if (cvh3MergedData) {
         setupCVHUI(
             cvh3MergedData,
             'operations-date-picker',
@@ -982,7 +1183,6 @@ function setupTabSwitching() {
     } else {
         document.getElementById('operations-cvh3-current').textContent = 'Không tải được dữ liệu CVH 3 (T4TC3 hoặc T4VHV)';
     }
-    
     // CVH 4: Single file
     if (t4cvh4Data) {
         setupCVHUI(
