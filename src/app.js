@@ -473,43 +473,6 @@ function renderMonthSchedule(schedule, selectedDate, person) {
     document.getElementById('month-schedule').innerHTML = html;
 }
 
-function initDatePickerDisplay(inputId) {
-    const input = document.getElementById(inputId);
-    if (!input) return;
-
-    // Tạo wrapper relative để chứa cả 2 input
-    const wrapper = document.createElement('div');
-    wrapper.style.cssText = 'position:relative; display:inline-block;';
-    input.parentNode.insertBefore(wrapper, input);
-
-    // Input hiển thị DD/MM/YYYY cho người dùng
-    const display = document.createElement('input');
-    display.type = 'text';
-    display.readOnly = true;
-    display.className = input.className;
-    display.placeholder = 'DD/MM/YYYY';
-    display.style.cursor = 'pointer';
-    wrapper.appendChild(display);
-
-    // Đặt date input thật vào wrapper, phủ trong suốt lên display
-    // iOS Safari sẽ nhận touch trực tiếp → mở native date picker
-    wrapper.appendChild(input);
-    input.style.cssText = 'position:absolute; top:0; left:0; width:100%; height:100%; opacity:0; cursor:pointer; box-sizing:border-box; margin:0;';
-
-    const syncDisplay = () => {
-        if (input.value) {
-            const [y, m, d] = input.value.split('-');
-            display.value = `${d}/${m}/${y}`;
-        } else {
-            display.value = '';
-        }
-    };
-    syncDisplay();
-
-    input.addEventListener('change', syncDisplay);
-    input.addEventListener('input', syncDisplay);
-}
-
 function mergeSchedulesForTSC(s1, s2) {
     const merged = {};
     const allKeys = new Set([...Object.keys(s1 || {}), ...Object.keys(s2 || {})]);
@@ -529,7 +492,6 @@ function setupUI(schedule, scheduleCoNhiet) {
     const searchInput = document.getElementById('person-search');
     
     if (!datePicker.value) datePicker.value = dateToKey(new Date());
-    initDatePickerDisplay('date-picker');
 
     const mergedSchedule = mergeSchedulesForTSC(schedule, scheduleCoNhiet);
 
