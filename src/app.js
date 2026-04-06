@@ -85,6 +85,7 @@ function getCurrentOnDuty(schedule, dateKey) {
     if (!Array.isArray(entries)) return [];
 
     const now = new Date();
+    const nowMin = now.getHours() * 60 + now.getMinutes();
     const result = [];
 
     entries.forEach((entry) => {
@@ -94,12 +95,56 @@ function getCurrentOnDuty(schedule, dateKey) {
         if (parsed.code) {
             const def = SHIFT_DEFINITIONS[parsed.code];
             if (!def) return;
-            const isOnDuty = def.dayWindow.some(([s, e]) => inTimeWindow(now, s, e));
+            const isOnDuty = def.dayWindow.some(([s, e]) => {
+                const [sh, sm] = s.split(':').map(Number);
+                const [eh, em] = e.split(':').map(Number);
+                const startMin = sh * 60 + sm;
+                const endMin = eh * 60 + em;
+                if (startMin > endMin) {
+                    // Ca qua đêm (vd: 18:00-06:00): chỉ tính "đang trực" nếu đã qua giờ bắt đầu hôm nay.
+                    // Phần 0:00-06:00 thuộc lịch của hôm qua, sẽ được xử lý bởi getOvernightContinuationOnDuty.
+                    return nowMin >= startMin;
+                }
+                return nowMin >= startMin && nowMin < endMin;
+            });
             if (isOnDuty) {
                 result.push({ code: parsed.code, role: def.description, name: parsed.name, phone: parsed.phone });
             }
         } else if (parsed.name) {
             result.push({ code: '??', role: 'Không xác định ca', name: parsed.name, phone: parsed.phone });
+        }
+    });
+
+    return result;
+}
+
+// Lấy nhân sự ca qua đêm hôm qua đang tiếp tục trực trong khoảng 0:00-kết thúc ca
+function getOvernightContinuationOnDuty(schedule, yesterdayKey) {
+    const entries = (schedule && schedule[yesterdayKey]) || [];
+    if (!Array.isArray(entries)) return [];
+
+    const now = new Date();
+    const nowMin = now.getHours() * 60 + now.getMinutes();
+    const result = [];
+
+    entries.forEach((entry) => {
+        const parsed = parseScheduleEntry(entry);
+        if (!parsed || parsed.code === 'X') return;
+
+        if (parsed.code) {
+            const def = SHIFT_DEFINITIONS[parsed.code];
+            if (!def) return;
+            const isOnDuty = def.dayWindow.some(([s, e]) => {
+                const [sh, sm] = s.split(':').map(Number);
+                const [eh, em] = e.split(':').map(Number);
+                const startMin = sh * 60 + sm;
+                const endMin = eh * 60 + em;
+                // Chỉ xét ca qua đêm, và chỉ khi đang trong phần sáng sớm (0:00 đến giờ kết thúc)
+                return startMin > endMin && nowMin < endMin;
+            });
+            if (isOnDuty) {
+                result.push({ code: parsed.code, role: def.description, name: parsed.name, phone: parsed.phone });
+            }
         }
     });
 
@@ -175,9 +220,22 @@ function getAssignmentsForDate(schedule, dateKey, excludeX = false) {
 }
 
 function renderCurrentShift(schedule, targetId = 'current-shift-info') {
-    const todayKey = dateToKey(new Date());
+    const now = new Date();
+    const todayKey = dateToKey(now);
     const todayDisplay = formatDateWithDayOfWeek(todayKey);
+    const nowMin = now.getHours() * 60 + now.getMinutes();
+
     let currentList = getCurrentOnDuty(schedule, todayKey);
+
+    // Từ 0:00 đến 5:59: ca đêm (18:00-06:00) thuộc lịch hôm qua vẫn đang tiếp tục trực
+    if (nowMin < 6 * 60) {
+        const yesterday = new Date(now);
+        yesterday.setDate(yesterday.getDate() - 1);
+        const yesterdayKey = dateToKey(yesterday);
+        const overnightList = getOvernightContinuationOnDuty(schedule, yesterdayKey);
+        currentList = [...overnightList, ...currentList];
+    }
+
     currentList = sortByShiftPriority(currentList);
     const wrap = document.getElementById(targetId);
 
@@ -491,7 +549,7 @@ function setupUI(schedule, scheduleCoNhiet) {
     const selectedDateDisplay = document.getElementById('selected-date-display');
     const searchInput = document.getElementById('person-search');
     
-    if (!datePicker.value) datePicker.value = dateToKey(new Date());
+    datePicker.value = dateToKey(new Date());
 
     const mergedSchedule = mergeSchedulesForTSC(schedule, scheduleCoNhiet);
 
@@ -746,10 +804,29 @@ function renderOperationsCurrentShift(t4tcData, t4vhvData) {
 }
 
 function renderCVHCurrentShift(cvhData, targetElementId) {
-    const todayKey = dateToKey(new Date());
+    const now = new Date();
+    const todayKey = dateToKey(now);
+    const nowMin = now.getHours() * 60 + now.getMinutes();
     
     const currentShiftCode = getCurrentShiftCode(cvhData.thongTinCa);
-    const currentStaff = (cvhData.lichTruc[todayKey] && cvhData.lichTruc[todayKey][currentShiftCode]) || [];
+
+    // Xác định ngày cần tra lịch nhân sự:
+    // Ca qua đêm (vd: 18:00-06:00) trong khoảng 0:00-kết thúc ca → nhân sự là của lịch hôm qua
+    let staffDateKey = todayKey;
+    if (currentShiftCode) {
+        const shiftInfo = cvhData.thongTinCa[currentShiftCode];
+        const [sh, sm] = shiftInfo.gioBatDau.split(':').map(Number);
+        const [eh, em] = shiftInfo.gioKetThuc.split(':').map(Number);
+        const startMin = sh * 60 + sm;
+        const endMin = eh * 60 + em;
+        if (startMin > endMin && nowMin < endMin) {
+            const yesterday = new Date(now);
+            yesterday.setDate(yesterday.getDate() - 1);
+            staffDateKey = dateToKey(yesterday);
+        }
+    }
+
+    const currentStaff = (cvhData.lichTruc[staffDateKey] && cvhData.lichTruc[staffDateKey][currentShiftCode]) || [];
     
     const sortedCurrentStaff = sortStaffByRole(currentStaff);
     const targetEl = document.getElementById(targetElementId);
@@ -956,7 +1033,7 @@ function setupOperationsUI(t4tcData, t4vhvData) {
     const datePickerOps = document.getElementById('operations-date-picker');
     const selectedDateDisplayOps = document.getElementById('operations-selected-date-display');
     
-    if (!datePickerOps.value) datePickerOps.value = dateToKey(new Date());
+    datePickerOps.value = dateToKey(new Date());
     
     const updateOpsDateDisplay = () => {
         if (selectedDateDisplayOps && datePickerOps.value) {
@@ -986,7 +1063,7 @@ function setupCVHUI(cvhData, datePickerId, displayId, currentShiftDateId, curren
     const selectedDateDisplay = document.getElementById(displayId);
     const currentShiftDateEl = document.getElementById(currentShiftDateId);
     
-    if (!datePicker.value) datePicker.value = dateToKey(new Date());
+    datePicker.value = dateToKey(new Date());
     
     const updateDateDisplay = () => {
         if (selectedDateDisplay && datePicker.value) {
