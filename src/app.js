@@ -1,5 +1,5 @@
 const SHIFT_DEFINITIONS = {
-    O: { label: 'O', description: 'Trực qua điện thoại ngoài giờ hành chính + on-site khi có sự cố', dayWindow: [['00:00','24:00']] },
+    O: { label: 'O', description: 'Trực qua điện thoại ngoài giờ hành chính + on-site khi có sự cố', dayWindow: [['06:00','06:00']] },
     X: { label: 'X', description: 'Giờ hành chính, điều động theo chuyên môn khi có sự cố', dayWindow: [['08:00','17:00']] },
     WO: { label: 'WO', description: 'Giờ hành chính + on-call đêm 18:00-06:00', dayWindow: [['08:00','17:00'], ['18:00','06:00']] },
     D: { label: 'D', description: 'Ca ngày 06:00-18:00', dayWindow:[['06:00','18:00']] },
@@ -100,9 +100,14 @@ function getCurrentOnDuty(schedule, dateKey) {
                 const [eh, em] = e.split(':').map(Number);
                 const startMin = sh * 60 + sm;
                 const endMin = eh * 60 + em;
+                if (startMin === endMin) {
+                    // Ca 24h bắt đầu từ startMin (vd: O: 06:00-06:00): active nếu đã qua giờ bắt đầu.
+                    // Phần sáng sớm (0:00 đến startMin) thuộc lịch hôm qua, xử lý bởi getOvernightContinuationOnDuty.
+                    return nowMin >= startMin;
+                }
                 if (startMin > endMin) {
-                    // Ca qua đêm (vd: 18:00-06:00): chỉ tính "đang trực" nếu đã qua giờ bắt đầu hôm nay.
-                    // Phần 0:00-06:00 thuộc lịch của hôm qua, sẽ được xử lý bởi getOvernightContinuationOnDuty.
+                    // Ca qua đêm (vd: N: 18:00-06:00): chỉ tính active nếu đã qua giờ bắt đầu hôm nay.
+                    // Phần 0:00-endMin thuộc lịch hôm qua, xử lý bởi getOvernightContinuationOnDuty.
                     return nowMin >= startMin;
                 }
                 return nowMin >= startMin && nowMin < endMin;
@@ -139,7 +144,11 @@ function getOvernightContinuationOnDuty(schedule, yesterdayKey) {
                 const [eh, em] = e.split(':').map(Number);
                 const startMin = sh * 60 + sm;
                 const endMin = eh * 60 + em;
-                // Chỉ xét ca qua đêm, và chỉ khi đang trong phần sáng sớm (0:00 đến giờ kết thúc)
+                if (startMin === endMin) {
+                    // Ca 24h (vd: O: 06:00-06:00): phần sáng sớm (0:00 đến startMin) vẫn là lịch hôm qua
+                    return nowMin < startMin;
+                }
+                // Ca qua đêm thông thường (vd: N: 18:00-06:00)
                 return startMin > endMin && nowMin < endMin;
             });
             if (isOnDuty) {
