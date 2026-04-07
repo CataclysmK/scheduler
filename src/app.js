@@ -1146,57 +1146,14 @@ function renderDashboard(schedule, scheduleCoNhiet, cvh3Data, cvh4Data) {
     else document.getElementById('dashboard-nt4').innerHTML = '<p class="text-gray-500">Không có dữ liệu.</p>';
 }
 
-function setupTabSwitching(onDashboardActivate) {
-    const tab0Btn = document.getElementById('tab-0-btn');
-    const tab1Btn = document.getElementById('tab-1-btn');
-    const tab2Btn = document.getElementById('tab-2-btn');
-    const tab3Btn = document.getElementById('tab-3-btn');
-    const tab0Content = document.getElementById('tab-0-content');
-    const tab1Content = document.getElementById('tab-1-content');
-    const tab2Content = document.getElementById('tab-2-content');
-    const tab3Content = document.getElementById('tab-3-content');
-    
-    if (!tab0Btn || !tab1Btn || !tab2Btn || !tab3Btn) return;
-    
-    const allBtns = [tab0Btn, tab1Btn, tab2Btn, tab3Btn];
-    const allContents = [tab0Content, tab1Content, tab2Content, tab3Content];
-
-    const activateTab = (btn, content) => {
-        allBtns.forEach(b => b.classList.remove('active'));
-        allContents.forEach(c => c.classList.add('hidden'));
-        btn.classList.add('active');
-        content.classList.remove('hidden');
-    };
-    
-    tab0Btn.addEventListener('click', () => {
-        activateTab(tab0Btn, tab0Content);
-        localStorage.setItem('activeTab', 'tab0');
-    });
-
-    tab1Btn.addEventListener('click', () => {
-        activateTab(tab1Btn, tab1Content);
-        localStorage.setItem('activeTab', 'tab1');
-    });
-    
-    tab2Btn.addEventListener('click', () => {
-        activateTab(tab2Btn, tab2Content);
-        localStorage.setItem('activeTab', 'tab2');
-    });
-    
-    tab3Btn.addEventListener('click', () => {
-        activateTab(tab3Btn, tab3Content);
-        localStorage.setItem('activeTab', 'tab3');
-    });
-    
-    const activeTab = localStorage.getItem('activeTab') || 'tab0';
-    if (activeTab === 'tab1') {
-        tab1Btn.click();
-    } else if (activeTab === 'tab2') {
-        tab2Btn.click();
-    } else if (activeTab === 'tab3') {
-        tab3Btn.click();
-    }
-    // default: tab0 is already active/visible via HTML
+function switchTab(tabContentId) {
+    document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
+    document.querySelectorAll('.tab-button').forEach(el => el.classList.remove('active'));
+    const content = document.getElementById(tabContentId);
+    if (content) content.classList.remove('hidden');
+    const btn = document.getElementById(tabContentId.replace('-content', '-btn'));
+    if (btn) btn.classList.add('active');
+    localStorage.setItem('activeTab', tabContentId);
 }
 
 
@@ -1251,5 +1208,8 @@ function setupTabSwitching(onDashboardActivate) {
         document.getElementById('operations-cvh4-current').textContent = 'Không tải được dữ liệu CVH 4 (T4CVH4)';
     }
     
-    setupTabSwitching();
+    // Restore last active tab (supports both new 'tab-X-content' and legacy 'tabX' format)
+    const stored = localStorage.getItem('activeTab') || 'tab-0-content';
+    const activeTabId = stored.includes('-content') ? stored : stored.replace('tab', 'tab-') + '-content';
+    if (activeTabId !== 'tab-0-content') switchTab(activeTabId);
 })();
